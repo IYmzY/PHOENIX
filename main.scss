@@ -28,7 +28,7 @@ html {
 }
 
 body {
-  background-color: #dfe4ec;
+  background-color: #122545;
   margin: 0 auto;
   padding: 0 auto;
   header {
@@ -41,6 +41,7 @@ body {
       justify-content: space-around;
       align-items: center;
       flex-direction: row;
+      background-color: #dfe4ec;
       img {
         margin-top: 1vw;
         margin-bottom: 1vw;
@@ -62,14 +63,17 @@ body {
       }
     }
     .subHeaderContainer {
-      background-color: #5b739c;
+      background-image: url(images/headerBackground.png);
+      background-size: 2000px;
+      background-repeat: no-repeat;
       height: calc(100vh - 60px);
       width: 100%;
-      color: white;
+      color: #103f8e;
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
+      position: relative;
 
       .subHeaderContentContainer {
         width: 80%;
@@ -78,11 +82,15 @@ body {
         align-items: flex-start;
         flex-direction: column;
         font-family: SF_PRO_DISPLAY_Bold;
+
         h1 {
           font-size: 56rem;
+          margin-top: -10vh;
         }
         .subHeaderSubTitle {
-          margin-top: -50px;
+          margin-top: -2vh;
+          margin-bottom: 10vh;
+
           width: 90%;
         }
         p {
@@ -102,6 +110,8 @@ body {
             background-color: #dbd9d9;
             color: #122545;
             border: none;
+            padding-left: 1vw;
+            outline: none;
           }
           button {
             border-radius: 25px;
@@ -113,8 +123,51 @@ body {
             border: none;
             background-color: #122545;
             color: #dfe4ec;
+            outline: none;
+            cursor: pointer;
           }
         }
+      }
+      .headerLogoBackground1 {
+        position: absolute;
+        right: 0;
+        bottom: -23vh;
+      }
+      .headerLogoBackground2 {
+        position: absolute;
+        right: 0;
+        bottom: -13.4vh;
+      }
+    }
+  }
+  main {
+    color: white;
+    font-size: 20px;
+    margin-left: 5vw;
+    h2 {
+      font-size: 48px;
+      color: #dfe4ec;
+      margin-top: 18vh;
+
+      span {
+        color: #ff5740;
+      }
+    }
+    h3 {
+      font-size: 40px;
+      color: #dfe4ec;
+    }
+    .numbersContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        height: 200px;
+      }
+      p {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
       }
     }
   }
