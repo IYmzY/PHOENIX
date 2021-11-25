@@ -68,9 +68,13 @@ header{
 }
 
 #first-section{
+  display: flex;
   height: calc(100vh - 60px);
   background-color: #103F8E;
+  justify-content: center;
+  align-items: center;
   &-content{
     padding: 0 $padding;
   }
+
 }
