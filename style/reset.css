@@ -69,5 +69,13 @@ i:focus{
 	outline: none;
 }
 
+*{
+	box-sizing: border-box;
+}
+
+img{
+	display: block;
+}
+
 
 /***** FIN RESET CSS *****/

@@ -40,7 +40,6 @@ body {
   font-weight: 400;
   font-style: normal;
   background-color: #122545;
-  box-sizing: border-box;
   color: #DFE4EC;
 }
 
@@ -61,17 +60,17 @@ header{
     &-navigation{
       display: flex;
       align-items: center;
-      li a{
+      li{
         padding: 0 20px;
       }
     }
   }
 }
 
-.header-section{
-  padding: 0 $padding;
-}
-
-main{
-  padding: 0 $padding;
+#first-section{
+  height: calc(100vh - 60px);
+  background-color: #103F8E;
+  &-content{
+    padding: 0 $padding;
+  }
 }
