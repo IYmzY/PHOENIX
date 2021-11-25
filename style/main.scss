@@ -1,35 +1,38 @@
 @font-face {
   font-family: 'SF Display';
-  src: url(Fonts/SF-Pro-Display-Regular.otf);
+  src: url(fonts/SF-Pro-Display-Regular.otf);
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: 'SF Display';
-  src: url(Fonts/SF-Pro-Display-Bold.otf);
+  src: url(fonts/SF-Pro-Display-Bold.otf);
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: 'SF Text';
-  src: url(Fonts/SF-Pro-Text-Regular.otf);
+  src: url(fonts/SF-Pro-Text-Regular.otf);
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: 'SF Text';
-  src: url(Fonts/SF-Pro-Text-Semibold.otf);
+  src: url(fonts/SF-Pro-Text-Semibold.otf);
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: 'SF Text';
-  src: url(Fonts/SF-Pro-Text-Bold.otf);
+  src: url(fonts/SF-Pro-Text-Bold.otf);
   font-weight: 700;
   font-style: normal;
 }
+
+$padding: 90px;
+
 html {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 body {
@@ -38,4 +41,37 @@ body {
   font-style: normal;
   background-color: #122545;
   box-sizing: border-box;
+  color: #DFE4EC;
+}
+
+header{
+  position: sticky;
+  top: 0;
+  .header-navbar{
+    font-size: .8rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #DFE4EC;
+    color: #103F8E;
+    padding: 0 $padding;
+    img{
+      height: 40px;
+      margin: 10px 0;
+    }
+    &-navigation{
+      display: flex;
+      align-items: center;
+      li a{
+        padding: 0 20px;
+      }
+    }
+  }
+}
+
+.header-section{
+  padding: 0 $padding;
+}
+
+main{
+  padding: 0 $padding;
 }
