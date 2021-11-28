@@ -9,5 +9,9 @@
   "devDependencies": {
     "sass": "^1.43.4",
     "vite": "^2.6.4"
+  },
+  "dependencies": {
+    "@mailchimp/mailchimp_marketing": "^3.0.72",
+    "axios": "^0.24.0"
   }
 }
