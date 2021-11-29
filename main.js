@@ -40,7 +40,7 @@ window.onload = function () {
   // async function run() {
   //   // console.log(mailchimp.ping)
   //   const response = await mailchimp.ping.get()
-  //   console.log(response)
+  //   console.log(response) 
   // }
   //
   // run()
@@ -80,7 +80,7 @@ window.onload = function () {
 }
 
 tsParticles
-  .loadJSON("tsparticles", "./assets/particlesjs-config.json")
+  .loadJSON("tsparticles", "./particlesjs-config.json")
   .then((container) => {
     console.log("callback - tsparticles config loaded");
   })
@@ -89,4 +89,4 @@ tsParticles
   });
 
 
-tsParticles.a
+
