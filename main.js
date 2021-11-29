@@ -1,6 +1,7 @@
 import './style/reset.css'
 import './style/main.scss'
 import axios from 'axios'
+import { tsParticles } from 'tsparticles'
 
 const instance = axios.create({
   baseURL: 'https://us20.api.mailchimp.com/3.0',
@@ -77,3 +78,15 @@ window.onload = function () {
   //   run();
   // })
 }
+
+tsParticles
+  .loadJSON("tsparticles", "./assets/particlesjs-config.json")
+  .then((container) => {
+    console.log("callback - tsparticles config loaded");
+  })
+  .catch((error) => {
+    console.error(error);
+  });
+
+
+tsParticles.a

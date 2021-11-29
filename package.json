@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@mailchimp/mailchimp_marketing": "^3.0.72",
-    "axios": "^0.24.0"
+    "axios": "^0.24.0",
+    "tsparticles": "^1.37.5"
   }
 }
