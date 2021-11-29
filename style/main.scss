@@ -29,52 +29,192 @@
   font-style: normal;
 }
 
-$padding: 90px;
+$max-width: 80%;
+
+$grey: #DFE4EC;
+
+$primary-blue: #122545;
+
+$primary-orange: #FF5740;
+
+$second-blue: #4385F5;
+
 
 html {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 body {
   font-family: 'SF Text', sans-serif;
   font-weight: 400;
   font-style: normal;
-  background-color: #122545;
-  color: #DFE4EC;
+  background-color: $primary-blue;
+  color: $grey;
 }
 
 header{
   position: sticky;
   top: 0;
+  background-color: $grey;
   .header-navbar{
+    width: $max-width;
+    margin: 0 auto;
     font-size: .8rem;
     display: flex;
     justify-content: space-between;
-    background-color: #DFE4EC;
-    color: #103F8E;
-    padding: 0 $padding;
+    color: $primary-blue;
     img{
-      height: 40px;
+      height: 33px;
       margin: 10px 0;
     }
     &-navigation{
       display: flex;
       align-items: center;
+      font-weight: 600;
       li{
-        padding: 0 20px;
+        padding-left: 20px;
       }
     }
   }
 }
 
+section{
+  margin: 170px auto;
+  &> div {
+    width: $max-width;
+    margin: auto;
+  }
+}
+
 #first-section{
-  display: flex;
-  height: calc(100vh - 60px);
-  background-color: #103F8E;
+  background-color: rgba(16, 63, 142, .2);
   justify-content: center;
   align-items: center;
-  &-content{
-    padding: 0 $padding;
+  padding: 160px 0;
+  margin: 0 auto;
+  h1{
+    font-weight: 700;
+    padding-bottom: 20px;
+    font-size: 3.3rem;
   }
+  form{
+    padding-top: 80px;
+  }
+}
 
+.container-date{
+  h2{
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+}
+
+.form-email{
+  .container-email-input{
+    margin-top: 15px;
+    display: flex;
+    background-color: #DFE4EC;
+    border-radius: 25px;
+    width: fit-content;
+  }
+  input{
+    padding: 10px 20px;
+    width: 220px;
+  }
+  input::placeholder{
+    color: $primary-blue;
+  }
+  button{
+    background-color: $primary-blue;
+    border-radius: inherit;
+    padding: 0 20px;
+    color: $grey;
+    font-weight: 600;
+  }
+}
+
+.section-main-title{
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+.section-second-title{
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 100px;
+  .section-second-title-decoration{
+    color: $primary-orange;
+  }
+}
+
+#container-item-insight{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  .item-insight{
+    text-align: center;
+    padding: 30px 135px;
+    .item-insight-icon{
+      color: $primary-orange;
+    }
+  }
+}
+#container-video{
+  display: flex;
+  justify-content: center;
+  iframe{
+    width: 100%;
+    margin: 0 130px;
+    height: 500px;
+  }
+}
+
+#section-dispositif{
+  background-color: $grey;
+  color: $primary-blue;
+  padding: 84px 0 93px;
+  h1{
+    margin-bottom: 19px;
+  }
+  figure{
+    max-width: 440px;
+    blockquote{
+      font-weight: 600;
+      font-size: 1.9rem;
+      line-height: 2.3rem;
+    }
+    figcaption{
+      font-weight: 700;
+      margin-top: 14px;
+    }
+  }
+}
+
+#section-webinaire{
+  .section-webinaire-description{
+    margin-top: 16px;
+    line-height: 1.3rem;
+    max-width: 565px;
+  }
+  .form-email{
+    margin-top: 95px;
+  }
+  button{
+    background-color: $second-blue;
+    color: $primary-blue;
+  }
+  .container-date{
+    margin: 188px 0 0 164px;
+    p{
+      font-weight: 700;
+      line-height: 1.3rem;
+    }
+    p:first-child{
+      margin-bottom: 32px;
+    }
+    a{
+      font-weight: 700;
+      margin-top: 32px;
+      display: inline-block;
+    }
+  }
 }

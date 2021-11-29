@@ -45,7 +45,13 @@ table {
 	border-spacing: 0;
 }
 
-button {
+input{
+	border: none;
+	border-radius: inherit;
+	background-color: inherit;
+}
+
+button{
 	background-color: transparent;
 	border: none;
   color: inherit;
@@ -65,7 +71,8 @@ a:visited{
 a:active,
 a:focus,
 i:active,
-i:focus{
+i:focus,
+input:focus{
 	outline: none;
 }
 
