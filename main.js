@@ -14,7 +14,8 @@ window.onload = function () {
     req.open('POST', `https://adoublesens.herokuapp.com/signup`)
 
     //On l'execute
-    req.send(`email=${email}`)
+    req.setRequestHeader("Content-Type", "application/json;charset=UTF-8")
+    req.send(JSON.stringify({"email": email}))
 
     req.onreadystatechange = function () {
       // On attends que la requete atteigne le stade 4
