@@ -1,93 +1,43 @@
 import './style/reset.css'
 import './style/main.scss'
-import axios from 'axios'
 import { tsParticles } from 'tsparticles'
 import particlesConfig from './particlesjs-config.json'
 
-const instance = axios.create({
-  baseURL: 'https://us20.api.mailchimp.com/3.0',
-  timeout: 1000,
-  headers: {
-    Authorization: 'Bearer 56092964a22a21ea2bbd2055664733e8-us20',
-    server: 'us20'
-  }
-})
-
-instance.get('/ping')
-  .then((response) => {
-    console.log(response)
-  })
-  .catch((error) => {
-    console.log('test')
-    console.log(error)
-  })
-
-// import mailchimp from '@mailchimp/mailchimp_marketing'
-//
-// mailchimp.setConfig({
-//   apiKey: "56092964a22a21ea2bbd2055664733e8-us20",
-//   server: "us20"
-// })
-// mailchimp.ping.get()
-//   .then((e) => {
-//     console.log(e)
-//   })
-//   .catch((error) => {
-//     console.log(error)
-//   })
-
 window.onload = function () {
+  document.querySelector('.form-email').addEventListener('submit', function(e) {
+    e.preventDefault()
+    const email = document.querySelector('#email-input').value
+    // On créer une object qui sait ouvrir des url
+    let req = new XMLHttpRequest()
 
-  // async function run() {
-  //   // console.log(mailchimp.ping)
-  //   const response = await mailchimp.ping.get()
-  //   console.log(response) 
-  // }
-  //
-  // run()
+    // On définit la méthode et l'adresse à utiliser
+    req.open('POST', `https://adoublesens.herokuapp.com/signup`)
 
-  // Fonction d'ajout d'un nombre au tableau
-  // document.querySelector('#form-email').addEventListener('submit', function(e) {
-  //   // On bloque le rechargement de la page
-  //   e.preventDefault()
-  //
-  //   const email = document.querySelector('#form-email-input').value
-  //   const listId = "YOUR_LIST_ID";
-  //   const subscribingUser = {
-  //     firstName: "Prudence",
-  //     lastName: "McVankab",
-  //     email: "prudence.mcvankab@example.com"
-  //   };
-  //
-  //   async function run() {
-  //     const response = await mailchimp.lists.addListMember(listId, {
-  //       email_address: subscribingUser.email,
-  //       status: "subscribed",
-  //       merge_fields: {
-  //         FNAME: subscribingUser.firstName,
-  //         LNAME: subscribingUser.lastName
-  //       }
-  //     });
-  //
-  //     console.log(
-  //       `Successfully added contact as an audience member. The contact's id is ${
-  //         response.id
-  //       }.`
-  //     );
-  //   }
-  //
-  //   run();
-  // })
+    //On l'execute
+    req.send(`email=${email}`)
+
+    req.onreadystatechange = function () {
+      // On attends que la requete atteigne le stade 4
+      if (req.readyState === 4) {
+        // Si la requete renvoit un statut 200 on resolve la promise
+        if (req.status === 200) {
+          console.log('success')
+          // Si la requete renvoit une erreur on affiche un notification d'erreur
+        } else {
+          console.log('echec')
+        }
+      }
+    }
+  })
 }
 
 tsParticles
   .load("tsparticles", particlesConfig)
-  .then((container) => {
+  .then(() => {
     console.log("callback - tsparticles config loaded");
   })
   .catch((error) => {
     console.error(error);
   });
-
 
 
