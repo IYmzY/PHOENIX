@@ -55,6 +55,8 @@ button{
 	background-color: transparent;
 	border: none;
   color: inherit;
+	padding: 0;
+	cursor: pointer;
 }
 
 textarea {
