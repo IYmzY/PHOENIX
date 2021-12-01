@@ -22,6 +22,33 @@ function updateInsight (id) {
   })
 }
 
+const observer = new IntersectionObserver(updateNavigation, {
+  rootMargin: '-200px',
+  threshold: 0
+})
+
+const headerMenu = document.querySelectorAll('header nav ul li a')
+
+function updateNavigation (elements) {
+  elements.forEach((section) => {
+    if (section.intersectionRatio > 0) {
+      headerMenu.forEach((link) => {
+        if (section.target.id === link.href.split('#')[1]) {
+          link.classList.add('current-navigation')
+        } else {
+          link.classList.remove('current-navigation')
+        }
+      })
+    }
+  })
+}
+
+const sections = document.querySelectorAll('section')
+
+sections.forEach((section) => {
+  observer.observe(section)
+})
+
 window.onload = function () {
   document.querySelector('.form-email').addEventListener('submit', function(e) {
     e.preventDefault()

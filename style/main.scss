@@ -43,8 +43,11 @@ $space-little: 25px;
 
 $transition-duration: .2s;
 
+$offset-header: 70px;
+
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -72,8 +75,8 @@ header {
     justify-content: space-between;
     color: $primary-blue;
     img {
-      height: 33px;
-      margin: 10px 0;
+      height: 32px;
+      margin: 15px 0;
     }
     &-navigation {
       display: flex;
@@ -81,6 +84,17 @@ header {
       font-weight: 600;
       li {
         padding-left: 77px;
+        .current-navigation{
+          color: $primary-orange;
+          text-decoration: underline;
+        }
+        a{
+          transition-duration: $transition-duration;
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+
       }
     }
   }
@@ -92,12 +106,14 @@ header {
 }
 
 .section-main-title {
+  padding-top: $offset-header;
   font-weight: 700;
   font-size: 2.7rem;
   line-height: 3rem;
 }
 
 .section-second-title {
+  padding-top: $offset-header;
   color: $primary-orange;
   font-size: 2.2rem;
   margin-bottom: 100px;
@@ -259,6 +275,7 @@ header {
     }
   }
   #webinaire-informations{
+    padding-top: $offset-header;
     max-width: 363px;
     font-weight: 700;
     #webinaire-informations-next{
