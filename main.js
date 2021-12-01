@@ -3,6 +3,25 @@ import './style/main.scss'
 import { tsParticles } from 'tsparticles'
 import particlesConfig from './particlesjs-config.json'
 
+const dispositifInsights = [
+  '<strong>A double sens</strong> a pour objectif principal de valoriser l’épanouissement personnel par le biais de l’entrepreneuriat social. Il nous semble essentiel de mettre du sens à notre activité professionnelle et de concilier ses valeurs personnelles avec son travail.',
+  'Au programme : des présentations sur des thématiques de l’entrepreneuriat social, des intervenants spécialistes, des interviews, des témoignages, des foires aux questions et bien plus !',
+  'Après un début de carrière dans le conseil et l\'AMOA projet SI, j\'ai choisi de prendre une direction différente afin de mettre à profit mes compétences pour lutter contre les changements climatiques et préserver la biodiversité.'
+]
+
+const insights = document.querySelectorAll('.dispositif-insight-button')
+
+insights.forEach((insight, index) => {
+  insight.addEventListener('click', () => { updateInsight(index) })
+})
+
+function updateInsight (id) {
+  document.querySelector('#dispositif-insight-description').innerHTML = dispositifInsights[id]
+  insights.forEach((insight, index) => {
+    insight.setAttribute('aria-selected', (index === id).toString())
+  })
+}
+
 window.onload = function () {
   document.querySelector('.form-email').addEventListener('submit', function(e) {
     e.preventDefault()
