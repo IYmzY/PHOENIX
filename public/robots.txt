@@ -1,1 +1,2 @@
+Sitemap: https://adoublesens.fr/sitemap.xml
 User-agent: *
