@@ -41,7 +41,7 @@ $second-blue: #4385f5;
 
 $space-little: 25px;
 
-$transition-duration: .2s;
+$transition-duration: 0.2s;
 
 $offset-header: 70px;
 
@@ -58,7 +58,7 @@ body {
   color: $grey;
 }
 
-strong{
+strong {
   font-weight: 700;
 }
 
@@ -84,32 +84,24 @@ header {
       font-weight: 600;
       li {
         padding-left: 77px;
-        .current-navigation{
+        .current-navigation {
           color: $primary-orange;
           text-decoration: underline;
         }
-        a{
+        a {
           transition-duration: $transition-duration;
-          &:hover{
+          &:hover {
             text-decoration: underline;
           }
         }
-
       }
     }
   }
 }
 
-.max-width{
+.max-width {
   width: $max-width;
   margin: 150px auto 0 auto;
-}
-
-.section-main-title {
-  padding-top: $offset-header;
-  font-weight: 700;
-  font-size: 2.7rem;
-  line-height: 3rem;
 }
 
 .section-second-title {
@@ -119,57 +111,153 @@ header {
   margin-bottom: 100px;
 }
 
-.webinaire-informations-date-time{
+.webinaire-informations-date-time {
   border-bottom: 4px solid $primary-orange;
   padding-bottom: 5px;
 }
 
 #first-section {
   background-color: rgba(16, 63, 142, 0.2);
-  justify-content: center;
-  align-items: center;
   padding: 160px 0;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
-  #tsparticles {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -1;
-    canvas {
-      position: static !important;
+  .main-section-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    .main-section-title-container {
+      .section-main-title {
+        padding-bottom: $offset-header;
+        padding-top: $offset-header;
+        font-weight: 400;
+        font-size: 2.7rem;
+        line-height: 3rem;
+        width: 35vw;
+        span {
+          font-weight: 700;
+        }
+      }
+      button {
+        background-color: #ff5740;
+        border-radius: 30px;
+        height: 42px;
+        width: 229px;
+      }
     }
-  }
-  form {
-    padding-top: 80px;
-  }
-  h1{
-    max-width: 840px;
-    padding-bottom: 20px;
+    /* ---------- Container for the orbiting circles animation ---------- */
+    #circle-orbit-container {
+      position: relative;
+      height: 437px;
+      width: 437px;
+      #inner-orbit {
+        position: absolute;
+        top: 153.37px;
+        left: 153.37px;
+        width: 130.26px;
+        height: 130.26px;
+        border: 2px #dfe4ec solid;
+        border-radius: 100%;
+        -webkit-animation: spin-right 5s linear infinite;
+        animation: spin-right 5s linear infinite;
+        .inner-orbit-circle {
+          position: absolute;
+          top: 62px;
+          left: -13px;
+          height: 30.72px;
+          width: 30.72px;
+          border-radius: 100%;
+          background-color: #dfe4ec;
+        }
+      }
+      #middle-orbit {
+        position: absolute;
+        top: 99.07px;
+        left: 99.07px;
+        width: 238.85px;
+        height: 238.85px;
+        border: 2px #dfe4ec solid;
+        border-radius: 100%;
+        -webkit-animation: spin-right 10s linear infinite;
+        animation: spin-right 10s linear infinite;
+        .middle-orbit-circle {
+          position: absolute;
+          top: 25px;
+          left: 17px;
+          height: 26.88px;
+          width: 26.88px;
+          border-radius: 100%;
+          background-color: #dfe4ec;
+        }
+      }
+      #outer-orbit {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 437px;
+        height: 437px;
+        border: 2px #dfe4ec solid;
+        border-radius: 100%;
+        -webkit-animation: spin-left 25s linear infinite;
+        animation: spin-left 25s linear infinite;
+        .outer-orbit-first-circle {
+          position: absolute;
+          top: -17px;
+          left: 125px;
+          height: 56.73px;
+          width: 56.73px;
+          border-radius: 100%;
+          background-color: #dfe4ec;
+        }
+        .outer-orbit-second-circle {
+          position: absolute;
+          top: 411px;
+          left: 288px;
+          height: 22.06px;
+          width: 22.06px;
+          border-radius: 100%;
+          background-color: #dfe4ec;
+        }
+      }
+    }
+    @keyframes spin-right {
+      100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+    @keyframes spin-left {
+      100% {
+        -webkit-transform: rotate(-360deg);
+        -moz-transform: rotate(-360deg);
+        -ms-transform: rotate(-360deg);
+        -o-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+      }
+    }
   }
 }
 
-#section-dispositif{
-  .section-second-title{
+#section-dispositif {
+  .section-second-title {
     margin-bottom: $space-little;
   }
-  #section-dispositif-content{
+  #section-dispositif-content {
     display: flex;
     justify-content: space-between;
   }
 }
 
-#container-advantage{
+#container-advantage {
   display: flex;
   justify-content: space-between;
-  .advantage-item{
+  .advantage-item {
     max-width: 257px;
     text-align: center;
-    .advantage-item-image{
+    .advantage-item-image {
       margin: 0 auto 26px auto;
       display: flex;
       justify-content: center;
@@ -178,29 +266,29 @@ header {
       height: 113px;
       border-radius: 50%;
     }
-    h2{
+    h2 {
       font-weight: 700;
       font-size: 1.3rem;
       margin-bottom: 10px;
     }
-    p{
+    p {
       line-height: 1.3rem;
     }
   }
 }
 
-#dispostif-insight{
+#dispostif-insight {
   max-width: 563px;
-  #dispositif-insight-title{
+  #dispositif-insight-title {
     margin-bottom: 32px;
-    .dispositif-insight-button{
+    .dispositif-insight-button {
       margin-right: 45px;
       font-weight: 600;
       transition-duration: $transition-duration;
-      &:hover{
+      &:hover {
         text-decoration: underline;
       }
-      &[aria-selected='true']{
+      &[aria-selected="true"] {
         color: $second-blue;
         text-decoration: underline;
       }
@@ -228,11 +316,11 @@ header {
       margin-bottom: 18px;
     }
   }
-  .item-insight:nth-child(-n+3){
+  .item-insight:nth-child(-n + 3) {
     border-bottom: 1px solid $primary-orange;
   }
-  .item-insight:nth-child(3n+1),
-  .item-insight:nth-child(3n+2){
+  .item-insight:nth-child(3n + 1),
+  .item-insight:nth-child(3n + 2) {
     border-right: 1px solid $primary-orange;
   }
 }
@@ -246,7 +334,7 @@ header {
   }
 }
 
-#figure-quote{
+#figure-quote {
   max-width: 440px;
   blockquote {
     font-size: 1.9rem;
@@ -255,46 +343,46 @@ header {
   figcaption {
     margin-top: 14px;
   }
-  .quotation-mark{
-    font-family: 'Redressed', cursive;
+  .quotation-mark {
+    font-family: "Redressed", cursive;
     color: $primary-orange;
     font-size: 4rem;
   }
 }
 
-#container-webinaire-information{
+#container-webinaire-information {
   display: flex;
   justify-content: space-between;
-  #webinaire-presentation{
+  #webinaire-presentation {
     max-width: 565px;
-    h1{
+    h1 {
       margin-bottom: 32px;
     }
-    p{
+    p {
       margin-bottom: 33px;
     }
   }
-  #webinaire-informations{
+  #webinaire-informations {
     padding-top: $offset-header;
     max-width: 363px;
     font-weight: 700;
-    #webinaire-informations-next{
+    #webinaire-informations-next {
       margin-bottom: 43px;
     }
-    h2{
+    h2 {
       margin-bottom: 10px;
       font-size: 1.4rem;
     }
-    #webinaire-informations-subject{
+    #webinaire-informations-subject {
       margin-bottom: 15px;
     }
   }
 }
 
-#section-webinaire{
-  .form-email{
+#section-webinaire {
+  .form-email {
     text-align: center;
-    .container-email-input{
+    .container-email-input {
       margin: 15px auto 0 auto;
     }
   }
@@ -325,40 +413,40 @@ header {
   }
 }
 
-footer{
+footer {
   margin-bottom: 0;
   > div {
     display: flex;
     justify-content: space-between;
-    h1.section-second-title{
+    h1.section-second-title {
       color: $grey;
       padding-top: 33px;
       border-top: 3px solid $primary-orange;
     }
-    ul{
+    ul {
       margin-top: 30px;
-      li{
+      li {
         margin: 10px 0;
       }
-      li:nth-child(2){
+      li:nth-child(2) {
         margin: 68px 0 44px 0;
       }
     }
   }
-  #footer-copyright{
+  #footer-copyright {
     background-color: $grey;
     color: $primary-blue;
     width: 100%;
     margin-top: 32px;
-    .max-width{
+    .max-width {
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
     }
-    p{
+    p {
       margin: 30px 0;
       font-weight: 600;
-      a{
+      a {
         margin-left: 15px;
       }
     }

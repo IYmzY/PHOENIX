@@ -1,7 +1,10 @@
 import './style/reset.css'
 import './style/main.scss'
-import { tsParticles } from 'tsparticles'
-import particlesConfig from './particlesjs-config.json'
+let outerFirstOrbitCircle = document.querySelector('.outer-orbit-first-circle')
+let middleOrbitCircle = document.querySelector('.middle-orbit-circle')
+let innerOrbitCircle = document.querySelector('.inner-orbit-circle')
+let SecondOuterOrbitCircle = document.querySelector('.outer-orbit-second-circle')
+
 
 const dispositifInsights = [
   '<strong>A double sens</strong> a pour objectif principal de valoriser l’épanouissement personnel par le biais de l’entrepreneuriat social. Il nous semble essentiel de mettre du sens à notre activité professionnelle et de concilier ses valeurs personnelles avec son travail.',
@@ -15,7 +18,7 @@ insights.forEach((insight, index) => {
   insight.addEventListener('click', () => { updateInsight(index) })
 })
 
-function updateInsight (id) {
+function updateInsight(id) {
   document.querySelector('#dispositif-insight-description').innerHTML = dispositifInsights[id]
   insights.forEach((insight, index) => {
     insight.setAttribute('aria-selected', (index === id).toString())
@@ -29,7 +32,7 @@ const observer = new IntersectionObserver(updateNavigation, {
 
 const headerMenu = document.querySelectorAll('header nav ul li a')
 
-function updateNavigation (elements) {
+function updateNavigation(elements) {
   elements.forEach((section) => {
     if (section.intersectionRatio > 0) {
       headerMenu.forEach((link) => {
@@ -50,7 +53,7 @@ sections.forEach((section) => {
 })
 
 window.onload = function () {
-  document.querySelector('.form-email').addEventListener('submit', function(e) {
+  document.querySelector('.form-email').addEventListener('submit', function (e) {
     e.preventDefault()
     const email = document.querySelector('#email-input').value
     // On créer une object qui sait ouvrir des url
@@ -61,7 +64,7 @@ window.onload = function () {
 
     //On l'execute
     req.setRequestHeader("Content-Type", "application/json;charset=UTF-8")
-    req.send(JSON.stringify({"email": email}))
+    req.send(JSON.stringify({ "email": email }))
 
     req.onreadystatechange = function () {
       // On attends que la requete atteigne le stade 4
@@ -78,13 +81,25 @@ window.onload = function () {
   })
 }
 
-tsParticles
-  .load("tsparticles", particlesConfig)
-  .then(() => {
-    console.log("callback - tsparticles config loaded");
-  })
-  .catch((error) => {
-    console.error(error);
-  });
+const changeFisrtOuterOrbitCircleColor = () => {
+  //outerOrbitCircle.style.transition = "all 2s"
+  outerFirstOrbitCircle.style.backgroundColor = "#FF5740"
+}
+const changeSecondOuterOrbitCircleColor = () => {
+  //middleOrbitCircle.style.transition = "all 2.5s"
+  SecondOuterOrbitCircle.style.backgroundColor = "#E5C8CA"
+}
+const changeMiddleOrbitCircleColor = () => {
+  //middleOrbitCircle.style.transition = "all 2.5s"
+  middleOrbitCircle.style.backgroundColor = "#ECABA7"
+}
+const changeInnerOrbitCircleColor = () => {
+  //middleOrbitCircle.style.transition = "all 2.5s"
+  innerOrbitCircle.style.backgroundColor = "#F97362"
+}
+setInterval(changeFisrtOuterOrbitCircleColor, 1500);
+setInterval(changeSecondOuterOrbitCircleColor, 3000);
+setInterval(changeMiddleOrbitCircleColor, 2500);
+setInterval(changeInnerOrbitCircleColor, 2000);
 
 
