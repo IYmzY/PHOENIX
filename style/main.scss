@@ -101,12 +101,11 @@ header {
 
 .max-width {
   width: $max-width;
-  margin: 150px auto 0 auto;
+  margin-left: 150px;
 }
 
 .section-second-title {
   padding-top: $offset-header;
-  color: $primary-orange;
   font-size: 2.2rem;
   margin-bottom: 100px;
 }
@@ -121,7 +120,7 @@ header {
   padding: 160px 0;
   margin: 0 auto;
   position: relative;
-  overflow: hidden;
+
   .main-section-container {
     display: flex;
     flex-flow: row wrap;
@@ -133,7 +132,7 @@ header {
         font-weight: 400;
         font-size: 2.7rem;
         line-height: 3rem;
-        width: 35vw;
+        width: 34vw;
         span {
           font-weight: 700;
         }
@@ -239,15 +238,82 @@ header {
       }
     }
   }
+  .confucius-quote {
+    position: absolute;
+    background: #dfe4ec;
+    border: 1px solid #234174;
+    box-sizing: border-box;
+    bottom: -100px;
+    color: black;
+    text-align: center;
+    line-height: 29px;
+    width: 566px;
+    height: 201px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    #figure-quote {
+      max-width: 440px;
+      blockquote {
+        font-size: 24px;
+        line-height: 29px;
+      }
+      .quotation-mark {
+        font-family: "Redressed", cursive;
+        color: $primary-orange;
+        font-size: 4rem;
+      }
+    }
+    figcaption {
+      font-weight: bold;
+      font-size: 1rem;
+      margin-top: 14px;
+    }
+  }
 }
 
 #section-dispositif {
+  background-color: #1b2d4b;
+  height: 630px;
+  display: flex;
+  align-items: center;
+  position: relative;
   .section-second-title {
     margin-bottom: $space-little;
+    display: flex;
+    flex-flow: column;
+    .section-second-title-orange {
+      color: rgba(255, 87, 64, 0.6);
+    }
   }
   #section-dispositif-content {
-    display: flex;
     justify-content: space-between;
+    font-size: 1rem;
+    #dispostif-insight {
+      max-width: 563px;
+      #dispositif-insight-title {
+        margin-bottom: 32px;
+        .dispositif-insight-button {
+          margin-right: 45px;
+          font-weight: 600;
+          color: rgba(223, 228, 236, 0.6);
+          transition-duration: $transition-duration;
+          &:hover {
+            text-decoration: underline;
+          }
+          &[aria-selected="true"] {
+            color: $primary-orange;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .whoimg {
+      position: absolute;
+      top: 7vw;
+      right: 0;
+    }
   }
 }
 
@@ -273,25 +339,6 @@ header {
     }
     p {
       line-height: 1.3rem;
-    }
-  }
-}
-
-#dispostif-insight {
-  max-width: 563px;
-  #dispositif-insight-title {
-    margin-bottom: 32px;
-    .dispositif-insight-button {
-      margin-right: 45px;
-      font-weight: 600;
-      transition-duration: $transition-duration;
-      &:hover {
-        text-decoration: underline;
-      }
-      &[aria-selected="true"] {
-        color: $second-blue;
-        text-decoration: underline;
-      }
     }
   }
 }
@@ -331,22 +378,6 @@ header {
     width: 100%;
     margin: 0 130px;
     height: 500px;
-  }
-}
-
-#figure-quote {
-  max-width: 440px;
-  blockquote {
-    font-size: 1.9rem;
-    line-height: 2.3rem;
-  }
-  figcaption {
-    margin-top: 14px;
-  }
-  .quotation-mark {
-    font-family: "Redressed", cursive;
-    color: $primary-orange;
-    font-size: 4rem;
   }
 }
 
