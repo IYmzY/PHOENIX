@@ -1,5 +1,12 @@
 import './style/reset.css'
 import './style/main.scss'
+import SfDisplayRegular from './fonts/SF-Pro-Display-Regular.otf'
+import SfDisplayBold from './fonts/SF-Pro-Display-Bold.otf'
+import SfTextRegular from './fonts/SF-Pro-Text-Regular.otf'
+import SfTextSemibold from './fonts/SF-Pro-Text-Semibold.otf'
+import SfTextBold from './fonts/SF-Pro-Text-Bold.otf'
+
+
 let outerFirstOrbitCircle = document.querySelector('.outer-orbit-first-circle')
 let middleOrbitCircle = document.querySelector('.middle-orbit-circle')
 let innerOrbitCircle = document.querySelector('.inner-orbit-circle')
