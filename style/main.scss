@@ -328,7 +328,7 @@ header {
       margin-top: 9.5rem;
       margin-bottom: 12.375rem;
       font-weight: 700;
-      font-family: "SF DISPLAY";
+      font-family: "SF DISPLAY", sans-serif;
     }
     #container-advantage {
       display: flex;
@@ -385,7 +385,7 @@ header {
       h1 {
         font-size: 2.25rem;
         font-weight: 700;
-        font-family: "SF DISPLAY";
+        font-family: "SF DISPLAY", sans-serif;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -393,12 +393,13 @@ header {
         line-height: 2.375rem;
         margin-bottom: 2rem;
         span:first-child {
-          color: $primary-orange;
+          color: rgba(255, 87, 64, 0.6);
         }
       }
       p {
         line-height: 1.193125rem;
         margin-bottom: 1rem;
+        text-align: center;
         span {
           font-weight: 700;
         }
@@ -454,7 +455,7 @@ header {
       margin-top: 1.3125rem;
       font-weight: 700;
       font-size: 2.25rem;
-      font-family: "SF DISPLAY";
+      font-family: "SF DISPLAY", sans-serif;
       text-align: center;
     }
     button {
