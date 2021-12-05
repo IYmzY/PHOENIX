@@ -430,7 +430,7 @@ header {
     width: 498px;
     height: 244px;
     color: #234174;
-    bottom: -9vw;
+    bottom: -121px;
     right: 33vw;
     p {
       line-height: 19.09px;
@@ -438,13 +438,17 @@ header {
       font-weight: 400;
       width: 80%;
       text-align: center;
+      span {
+        font-weight: 700;
+      }
     }
     p:last-child {
       margin-top: 24px;
       font-weight: 700;
-      span {
-        font-weight: 700;
-      }
+    }
+    .webinar-date-text {
+      font-weight: 700;
+      margin-bottom: 52px;
     }
     h2 {
       margin-top: 1.3125rem;
