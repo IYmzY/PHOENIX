@@ -107,6 +107,7 @@ header {
 .section-second-title {
   padding-top: $offset-header;
   font-size: 2.2rem;
+  font-weight: 700;
   margin-bottom: 100px;
 }
 
@@ -116,7 +117,6 @@ header {
 }
 
 #first-section {
-  background-color: rgba(16, 63, 142, 0.2);
   padding: 160px 0;
   margin: 0 auto;
   position: relative;
@@ -317,28 +317,46 @@ header {
   }
 }
 
-#container-advantage {
+#section-entrepreneurship {
+  height: 644px;
   display: flex;
-  justify-content: space-between;
-  .advantage-item {
-    max-width: 257px;
-    text-align: center;
-    .advantage-item-image {
-      margin: 0 auto 26px auto;
+  div {
+    h1 {
       display: flex;
       justify-content: center;
-      overflow: hidden;
-      width: 113px;
-      height: 113px;
-      border-radius: 50%;
-    }
-    h2 {
+      font-size: 2.25rem;
+      margin-top: 9.5rem;
+      margin-bottom: 12.375rem;
       font-weight: 700;
-      font-size: 1.3rem;
-      margin-bottom: 10px;
+      font-family: "SF DISPLAY";
     }
-    p {
-      line-height: 1.3rem;
+    #container-advantage {
+      display: flex;
+      justify-content: space-between;
+      .advantage-item {
+        max-width: 257px;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 700;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .background-number {
+          position: absolute;
+          font-size: 288px;
+          line-height: 344px;
+          text-align: center;
+          color: rgba(255, 87, 64, 0.4);
+          z-index: -1;
+        }
+        .background-number::selection {
+          display: none;
+        }
+        p {
+          line-height: 1.3rem;
+        }
+      }
     }
   }
 }
@@ -347,37 +365,6 @@ header {
   h2 {
     font-size: 2rem;
     margin-bottom: 15px;
-  }
-}
-
-#container-item-insight {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  max-width: 900px;
-  margin: 100px auto 144px auto;
-  .item-insight {
-    text-align: center;
-    padding: 30px 80px;
-    .item-insight-icon {
-      color: $primary-orange;
-      margin-bottom: 18px;
-    }
-  }
-  .item-insight:nth-child(-n + 3) {
-    border-bottom: 1px solid $primary-orange;
-  }
-  .item-insight:nth-child(3n + 1),
-  .item-insight:nth-child(3n + 2) {
-    border-right: 1px solid $primary-orange;
-  }
-}
-#container-video {
-  display: flex;
-  justify-content: center;
-  iframe {
-    width: 100%;
-    margin: 0 130px;
-    height: 500px;
   }
 }
 
