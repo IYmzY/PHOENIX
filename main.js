@@ -1,10 +1,12 @@
 import './style/reset.css'
+import './style/fonts.css'
 import './style/main.scss'
-import SfDisplayRegular from './fonts/SF-Pro-Display-Regular.otf'
-import SfDisplayBold from './fonts/SF-Pro-Display-Bold.otf'
-import SfTextRegular from './fonts/SF-Pro-Text-Regular.otf'
-import SfTextSemibold from './fonts/SF-Pro-Text-Semibold.otf'
-import SfTextBold from './fonts/SF-Pro-Text-Bold.otf'
+//import SfDisplayRegular from './fonts/SF-Pro-Display-Regular.otf'
+//import SfDisplayBold from './fonts/SF-Pro-Display-Bold.otf'
+//import SfTextRegular from './fonts/SF-Pro-Text-Regular.otf'
+//import SfTextSemibold from './fonts/SF-Pro-Text-Semibold.otf'
+//import SfTextBold from './fonts/SF-Pro-Text-Bold.otf'
+
 
 
 let outerFirstOrbitCircle = document.querySelector('.outer-orbit-first-circle')
