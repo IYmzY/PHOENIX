@@ -318,7 +318,7 @@ header {
 }
 
 #section-entrepreneurship {
-  height: 644px;
+  height: 40.25rem;
   display: flex;
   div {
     h1 {
@@ -332,7 +332,9 @@ header {
     }
     #container-advantage {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
+      width: 913px;
+      margin-left: 10vw;
       .advantage-item {
         max-width: 257px;
         text-align: center;
@@ -368,6 +370,46 @@ header {
   }
 }
 
+.webinar-section {
+  background-color: #1b2d4b;
+  max-height: 712px;
+  div {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    .webinar-text-container {
+      margin-top: 9.5rem;
+      width: 506px;
+      h1 {
+        font-size: 2.25rem;
+        font-weight: 700;
+        font-family: "SF DISPLAY";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+        line-height: 2.375rem;
+        margin-bottom: 2rem;
+        span:first-child {
+          color: $primary-orange;
+        }
+      }
+      p {
+        line-height: 1.193125rem;
+        margin-bottom: 1rem;
+        span {
+          font-weight: 700;
+        }
+      }
+      div {
+        p {
+          color: $primary-orange;
+        }
+      }
+    }
+  }
+}
 #container-webinaire-information {
   display: flex;
   justify-content: space-between;
