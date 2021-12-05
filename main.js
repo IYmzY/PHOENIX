@@ -9,7 +9,7 @@ let SecondOuterOrbitCircle = document.querySelector('.outer-orbit-second-circle'
 const dispositifInsights = [
   '<strong>A double sens</strong> a pour objectif principal de valoriser l’épanouissement personnel par le biais de l’entrepreneuriat social. Il nous semble essentiel de mettre du sens à notre activité professionnelle et de concilier ses valeurs personnelles avec son travail.',
   '<strong>A double sens</strong> prône l’épanouissement personnel à travers l’entrepreneuriat social. Le partage, l’engagement, la tolérance et l’écoute sont les valeurs principales de ce dispositif. Ce sont des valeurs collectives qui paraissent essentielles pour une société solidaire et solide.',
-  '<strong>A double sens</strong> propose des actions qui permettent principalement d’échanger : des webinaires pour donner la parole aux principaux concernés, des jeux concours pour interagir avec notre communauté ainsi que des blogs et des posts pour informer nos lecteurs.'
+  '<strong>A double sens</strong> propose des webinaires pour donner la parole aux principaux concernés, une newsletter, des jeux concours pour interagir avec notre communauté ainsi que des articles et des posts pour informer nos lecteurs.'
 ]
 
 const insights = document.querySelectorAll('.dispositif-insight-button')
