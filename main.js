@@ -1,6 +1,7 @@
 import './style/reset.css'
 // import './style/fonts.css'
 import './style/main.scss'
+import './style/flickity.min.css'
 //import SfDisplayRegular from './fonts/SF-Pro-Display-Regular.otf'
 //import SfDisplayBold from './fonts/SF-Pro-Display-Bold.otf'
 //import SfTextRegular from './fonts/SF-Pro-Text-Regular.otf'
