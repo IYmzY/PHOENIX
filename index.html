@@ -91,6 +91,7 @@
       sizes="167x167"
       href="./public/touch-icon-ipad-retina.png"
     />
+<!--    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">-->
 
     <title>Agir c'est s'épanouir | Dispositif A double sens</title>
   </head>
@@ -109,7 +110,9 @@
       <nav class="header-navbar">
         <h1>
           <a href="#home">
-            <img src="images/logoHeader.svg" alt="Logo À Double Sens" />
+            <picture>
+              <img src="images/logoHeader.svg" alt="Logo À Double Sens" />
+            </picture>
           </a>
         </h1>
         <ul class="header-navbar-navigation">
@@ -204,7 +207,7 @@
       <section id="section-dispositif">
         <div class="max-width">
           <h1 class="section-second-title">
-            <span class="section-second-title-orange">Qui sommes nous?</span>
+            <span class="section-second-title-orange">Qui sommes-nous?</span>
             <br />
             À double sens
           </h1>
@@ -231,7 +234,9 @@
             </div>
           </div>
         </div>
-        <img src="./images/background.svg" alt="whoimg" id="background" />
+        <picture id="background">
+          <img src="./images/background.svg" alt="Logo 'A Double Sens' Illustration" />
+        </picture>
       </section>
       <section id="section-definition">
         <div class="max-width">
@@ -258,7 +263,9 @@
         </div>
       </section>
       <section id="section-webinar">
-        <img class="webinar-decoration" src="./images/logoTiret.svg" alt="rightArrow" />
+        <picture class="webinar-decoration">
+          <img src="./images/logoTiret.svg" alt="Logo 'A Double Sens' Pointillé" />
+        </picture>
         <div class="max-width">
           <div class="webinar-text-container">
             <h1 class="section-second-title">
@@ -291,7 +298,9 @@
           </p>
           <button id="btn-cta">Je m'inscris</button>
         </div>
-        <img class="webinar-decoration" src="./images/logoTiret.svg" alt="rightArrow" />
+        <picture class="webinar-decoration">
+          <img src="./images/logoTiret.svg" alt="Logo 'A Double Sens' Pointillé" />
+        </picture>
       </section>
       <section id="section-benefice">
         <div class="max-width">
@@ -304,7 +313,9 @@
             <div class="benef-subcontainer">
               <div class="benef-item-block">
                 <div class="benef-image-container">
-                  <img src="./images/PICTO1.svg" alt="Pictogramme Sens" />
+                  <picture>
+                    <img src="./images/PICTO1.svg" alt="Pictogramme Sens" />
+                  </picture>
                 </div>
                 <div class="benef-item-text">
                   <h2>Mettre du sens dans ce que vous faites</h2>
@@ -316,7 +327,9 @@
               </div>
               <div class="benef-item-block">
                 <div class="benef-image-container">
-                  <img src="./images/PICTO2.svg" alt="Pictogramme Valeur" />
+                  <picture>
+                    <img src="./images/PICTO2.svg" alt="Pictogramme Valeur" />
+                  </picture>
                 </div>
                 <div class="benef-item-text">
                   <h2>Concilier vos valeurs et votre activité</h2>
@@ -330,7 +343,9 @@
             <div class="benef-subcontainer">
               <div class="benef-item-block">
                 <div class="benef-image-container">
-                  <img src="./images/PICTO3.svg" alt="Pictogramme Agir" />
+                  <picture>
+                    <img src="./images/PICTO3.svg" alt="Pictogramme Agir" />
+                  </picture>
                 </div>
                 <div class="benef-item-text">
                   <h2>Agir pour les autres</h2>
@@ -342,7 +357,9 @@
               </div>
               <div class="benef-item-block">
                 <div class="benef-image-container">
-                  <img src="./images/PICTO4.svg" alt="Pictogramme Impact Positif" />
+                  <picture>
+                    <img src="./images/PICTO4.svg" alt="Pictogramme Impact Positif" />
+                  </picture>
                 </div>
                 <div class="benef-item-text">
                   <h2>Avoir un impact positif sur la société</h2>
@@ -355,7 +372,7 @@
               </div>
             </div>
           </div>
-          <a class="external-link">
+          <a href="https://www.youtube.com/channel/UCQwmHpdiIuLl0htFlwTLmWA/featured" target="_blank" class="external-link">
             Retrouvez notre vidéo explicative sur Youtube
             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M9 0C11.3869 0 13.6761 0.948212 15.364 2.63604C17.0518 4.32387 18 6.61305 18 9C18 11.3869 17.0518 13.6761 15.364 15.364C13.6761 17.0518 11.3869 18 9 18C6.61305 18 4.32387 17.0518 2.63604 15.364C0.948212 13.6761 0 11.3869 0 9C0 6.61305 0.948212 4.32387 2.63604 2.63604C4.32387 0.948212 6.61305 0 9 0V0ZM5.0625 8.4375C4.91332 8.4375 4.77024 8.49676 4.66475 8.60225C4.55926 8.70774 4.5 8.85082 4.5 9C4.5 9.14918 4.55926 9.29226 4.66475 9.39775C4.77024 9.50324 4.91332 9.5625 5.0625 9.5625H11.5796L9.16425 11.9767C9.11195 12.029 9.07047 12.0911 9.04216 12.1595C9.01386 12.2278 8.99929 12.301 8.99929 12.375C8.99929 12.449 9.01386 12.5222 9.04216 12.5905C9.07047 12.6589 9.11195 12.721 9.16425 12.7733C9.21655 12.8255 9.27864 12.867 9.34697 12.8953C9.4153 12.9236 9.48854 12.9382 9.5625 12.9382C9.63646 12.9382 9.7097 12.9236 9.77803 12.8953C9.84636 12.867 9.90845 12.8255 9.96075 12.7733L13.3358 9.39825C13.3881 9.346 13.4297 9.28393 13.4581 9.21559C13.4864 9.14725 13.501 9.07399 13.501 9C13.501 8.92601 13.4864 8.85275 13.4581 8.78441C13.4297 8.71607 13.3881 8.654 13.3358 8.60175L9.96075 5.22675C9.90845 5.17445 9.84636 5.13297 9.77803 5.10466C9.7097 5.07636 9.63646 5.06179 9.5625 5.06179C9.48854 5.06179 9.4153 5.07636 9.34697 5.10466C9.27864 5.13297 9.21655 5.17445 9.16425 5.22675C9.11195 5.27905 9.07047 5.34114 9.04216 5.40947C9.01386 5.4778 8.99929 5.55104 8.99929 5.625C8.99929 5.69896 9.01386 5.7722 9.04216 5.84053C9.07047 5.90886 9.11195 5.97095 9.16425 6.02325L11.5796 8.4375H5.0625Z" fill="#FF5740"/>
@@ -366,7 +383,115 @@
       <section id="section-testimony">
         <div class="max-width">
           <h1 class="section-second-title">Ils en parlent le mieux</h1>
-          <span>SLIDER</span>
+          <div
+            class="gallery js-flickity"
+            data-flickity-options='{
+              "wrapAround": true,
+              "prevNextButtons": false,
+              "prevNextButtons": false
+            }'
+          >
+            <div class="gallery-cell">
+              <div class="gallery-cell-content">
+                <div class="gallery-cell-content-image">
+                  <picture class="gallery-cell-content-image-container">
+                    <source srcset="./images/florence_b.webp" type="image/webp">
+                    <img src="./images/florence_b.jpg" alt="Photo Florence B." loading="lazy">
+                  </picture>
+                </div>
+                <p class="gallery-cell-content-name">
+                  <strong>Florence B.</strong>
+                  <br />
+                  Head of Impact
+                </p>
+                <p class="gallery-cell-content-quote">
+                  <img src="./images/quote.svg" class="quote quote-open" alt="Guillemet ouvrant">
+                  Après un début de carrière dans le conseil et l'AMOA projet SI, j'ai choisi de prendre une direction différente afin de mettre à profit mes compétences pour lutter contre les changements climatiques et préserver la biodiversité<span class="color-orange">.</span>
+                  <img src="./images/quote.svg" class="quote quote-close" alt="Guillemet ouvrant">
+                </p>
+              </div>
+            </div>
+            <div class="gallery-cell">
+              <div class="gallery-cell-content">
+                <div class="gallery-cell-content-image">
+                  <picture class="gallery-cell-content-image-container">
+                    <source srcset="./images/bastien_j.webp" type="image/webp">
+                    <img src="./images/bastien_j.jpg" alt="Photo Léopoldine M." loading="lazy">
+                  </picture>
+                </div>
+                <p class="gallery-cell-content-name">
+                  <strong>Bastien J.</strong>
+                  <br />
+                  En reconversion professionnelle
+                </p>
+                <p class="gallery-cell-content-quote">
+                  <img src="./images/quote.svg" class="quote quote-open" alt="Guillemet ouvrant">
+                  J’avais ce qu’on appelle une dissonance cognitive : un écart entre ce que je pense dans ma tête, ce que je ressens dans notre cœur et comment j’agis de manière journalière au quotidien<span class="color-orange">.</span>
+                  <img src="./images/quote.svg" class="quote quote-close" alt="Guillemet ouvrant">
+                </p>
+              </div>
+            </div>
+            <div class="gallery-cell">
+              <div class="gallery-cell-content">
+                <div class="gallery-cell-content-image">
+                  <picture class="gallery-cell-content-image-container">
+                    <source srcset="./images/augustin_c.webp" type="image/webp">
+                    <img src="./images/augustin_c.jpg" alt="Photo Augustin C." loading="lazy">
+                  </picture>
+                </div>
+                <p class="gallery-cell-content-name">
+                  <strong>Augustin C.</strong>
+                  <br />
+                  Co-fondateur
+                  Tech for Good</p>
+                <p class="gallery-cell-content-quote">
+                  <img src="./images/quote.svg" class="quote quote-open" alt="Guillemet ouvrant">
+                  Je rentrais chez moi et j’avais l’impression que j’étais pas vraiment la même personne au boulot et dans ma vie personnelle, et ne pas être aligné sur ce que je faisais sur ma journée de travail<span class="color-orange">.</span>
+                  <img src="./images/quote.svg" class="quote quote-close" alt="Guillemet ouvrant">
+                </p>
+              </div>
+            </div>
+            <div class="gallery-cell">
+              <div class="gallery-cell-content">
+                <div class="gallery-cell-content-image">
+                  <picture class="gallery-cell-content-image-container">
+                    <source srcset="./images/julien_w.webp" type="image/webp">
+                    <img src="./images/julien_w.jpg" alt="Photo Julien W." loading="lazy">
+                  </picture>
+                </div>
+                <p class="gallery-cell-content-name">
+                  <strong>Julien W.</strong>
+                  <br />
+                  Développeur écoresponsable
+                </p>
+                <p class="gallery-cell-content-quote">
+                  <img src="./images/quote.svg" class="quote quote-open" alt="Guillemet ouvrant">
+                  J’ai totalement remodelé mes missions et mon métier pour être en lien avec mes convictions, le but, c’était de donner du sens pour moi, pour mes enfants<span class="color-orange">.</span>
+                  <img src="./images/quote.svg" class="quote quote-close" alt="Guillemet ouvrant">
+                </p>
+              </div>
+            </div>
+            <div class="gallery-cell">
+              <div class="gallery-cell-content">
+                <div class="gallery-cell-content-image">
+                  <picture class="gallery-cell-content-image-container">
+                    <source srcset="./images/leopoldine_m.webp" type="image/webp">
+                    <img src="./images/leopoldine_m.jpg" alt="Photo Léopoldine M." loading="lazy">
+                  </picture>
+                </div>
+                <p class="gallery-cell-content-name">
+                  <strong>Léopoldine M.</strong>
+                  <br />
+                  Auto-entrepreneur
+                  ESS</p>
+                <p class="gallery-cell-content-quote">
+                  <img src="./images/quote.svg" class="quote quote-open" alt="Guillemet ouvrant">
+                  Mes valeurs ont pris plus de place et j’ai eu du mal à trouver des offres d’emplois qui correspondaient à ce que je recherchais, il n’y avait pas de notion de responsabilité<span class="color-orange">.</span>
+                  <img src="./images/quote.svg" class="quote quote-close" alt="Guillemet ouvrant">
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -374,48 +499,63 @@
       <div class="max-width">
         <div>
           <h1 class="section-second-title">Restons connectés</h1>
-          <form class="form-email">
-            <label for="footer-email-input">
-              Inscrivez-vous à notre newletter pour ne rien rater
-            </label>
-            <div class="container-email-input">
-              <input
-                id="footer-email-input"
-                type="email"
-                placeholder="Indiquez votre adresse-mail"
-              />
-              <button type="submit">Je m'informe</button>
-            </div>
-          </form>
+          <div class="footer-container-links">
+            <a
+              href="https://www.facebook.com/%C3%80-double-sens-110598774778290"
+              title="La page Facebook 'A Double Sens'"
+              class="links-item"
+            >
+              <svg width="15" height="32" viewBox="0 0 15 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.7003 31.2205V16.5709H0V11.2964H3.7003V6.79124C3.7003 3.25106 5.88608 0 10.9226 0C12.9618 0 14.4697 0.204651 14.4697 0.204651L14.3509 5.13019C14.3509 5.13019 12.8131 5.11451 11.1349 5.11451C9.31869 5.11451 9.0277 5.99072 9.0277 7.445V11.2964H14.4952L14.2573 16.5709H9.0277V31.2205H3.7003Z" fill="#DFE4EC"/>
+              </svg>
+            </a>
+            <a
+              href="https://www.linkedin.com/company/à-double-sens"
+              title="La page Linkedin 'A Double Sens'"
+              class="links-item"
+            >
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.08975 31.2205V10.1561H0.397293V31.2205H7.08975ZM3.74438 7.27837C6.07816 7.27837 7.53082 5.66087 7.53082 3.63953C7.48734 1.57261 6.07825 0 3.78867 0C1.49945 0 0.00244141 1.57264 0.00244141 3.63953C0.00244141 5.66096 1.45475 7.27837 3.70069 7.27837H3.74418H3.74438ZM10.794 31.2205H17.4865V19.4571C17.4865 18.8275 17.5299 18.1986 17.7067 17.7486C18.1905 16.4908 19.2916 15.188 21.1404 15.188C23.5621 15.188 24.5309 17.1197 24.5309 19.9514V31.2204H31.223V19.1422C31.223 12.6721 27.9213 9.66156 23.518 9.66156C19.9077 9.66156 18.3226 11.7727 17.4419 13.2107H17.4866V10.1557H10.7941C10.882 12.1322 10.7941 31.2201 10.7941 31.2201L10.794 31.2205Z" fill="#DFE4EC"/>
+              </svg>
+            </a>
+            <a
+              href="https://www.instagram.com/a_double_sens/"
+              title="Le compte Instagram 'A Double Sens'"
+              class="links-item"
+            >
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.6075 10.4046C12.7412 10.4046 10.402 12.7438 10.402 15.6103C10.402 18.4767 12.7412 20.8159 15.6075 20.8159C18.4739 20.8159 20.8131 18.4767 20.8131 15.6103C20.8131 12.7438 18.4739 10.4046 15.6075 10.4046ZM31.2202 15.6103C31.2202 13.4546 31.2398 11.3184 31.1187 9.16667C30.9977 6.66734 30.4275 4.44919 28.5999 2.62155C26.7684 0.790012 24.5542 0.223758 22.0549 0.102697C19.8993 -0.0183645 17.7632 0.00116158 15.6114 0.00116158C13.4558 0.00116158 11.3197 -0.0183645 9.16797 0.102697C6.66868 0.223758 4.45057 0.793918 2.62297 2.62155C0.791463 4.45309 0.225219 6.66734 0.10416 9.16667C-0.0168993 11.3223 0.0026264 13.4585 0.0026264 15.6103C0.0026264 17.762 -0.0168993 19.9021 0.10416 22.0538C0.225219 24.5532 0.795368 26.7713 2.62297 28.599C4.45448 30.4305 6.66868 30.9968 9.16797 31.1178C11.3236 31.2389 13.4597 31.2194 15.6114 31.2194C17.7671 31.2194 19.9032 31.2389 22.0549 31.1178C24.5542 30.9968 26.7723 30.4266 28.5999 28.599C30.4314 26.7674 30.9977 24.5532 31.1187 22.0538C31.2437 19.9021 31.2202 17.7659 31.2202 15.6103ZM15.6075 23.6198C11.1752 23.6198 7.59811 20.0427 7.59811 15.6103C7.59811 11.1779 11.1752 7.60069 15.6075 7.60069C20.0399 7.60069 23.617 11.1779 23.617 15.6103C23.617 20.0427 20.0399 23.6198 15.6075 23.6198ZM23.945 9.14324C22.9101 9.14324 22.0744 8.30753 22.0744 7.27265C22.0744 6.23777 22.9101 5.40206 23.945 5.40206C24.9798 5.40206 25.8155 6.23777 25.8155 7.27265C25.8158 7.51839 25.7677 7.76177 25.6738 7.98886C25.5799 8.21595 25.4421 8.42229 25.2684 8.59605C25.0946 8.76981 24.8883 8.90758 24.6612 9.00148C24.4341 9.09538 24.1907 9.14355 23.945 9.14324Z" fill="#DFE4EC"/>
+              </svg>
+            </a>
+          </div>
+          <a href="https://www.youtube.com/channel/UCQwmHpdiIuLl0htFlwTLmWA/featured" target="_blank" class="external-link">
+            Retrouvez notre vidéo explicative sur Youtube
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 0C11.3869 0 13.6761 0.948212 15.364 2.63604C17.0518 4.32387 18 6.61305 18 9C18 11.3869 17.0518 13.6761 15.364 15.364C13.6761 17.0518 11.3869 18 9 18C6.61305 18 4.32387 17.0518 2.63604 15.364C0.948212 13.6761 0 11.3869 0 9C0 6.61305 0.948212 4.32387 2.63604 2.63604C4.32387 0.948212 6.61305 0 9 0V0ZM5.0625 8.4375C4.91332 8.4375 4.77024 8.49676 4.66475 8.60225C4.55926 8.70774 4.5 8.85082 4.5 9C4.5 9.14918 4.55926 9.29226 4.66475 9.39775C4.77024 9.50324 4.91332 9.5625 5.0625 9.5625H11.5796L9.16425 11.9767C9.11195 12.029 9.07047 12.0911 9.04216 12.1595C9.01386 12.2278 8.99929 12.301 8.99929 12.375C8.99929 12.449 9.01386 12.5222 9.04216 12.5905C9.07047 12.6589 9.11195 12.721 9.16425 12.7733C9.21655 12.8255 9.27864 12.867 9.34697 12.8953C9.4153 12.9236 9.48854 12.9382 9.5625 12.9382C9.63646 12.9382 9.7097 12.9236 9.77803 12.8953C9.84636 12.867 9.90845 12.8255 9.96075 12.7733L13.3358 9.39825C13.3881 9.346 13.4297 9.28393 13.4581 9.21559C13.4864 9.14725 13.501 9.07399 13.501 9C13.501 8.92601 13.4864 8.85275 13.4581 8.78441C13.4297 8.71607 13.3881 8.654 13.3358 8.60175L9.96075 5.22675C9.90845 5.17445 9.84636 5.13297 9.77803 5.10466C9.7097 5.07636 9.63646 5.06179 9.5625 5.06179C9.48854 5.06179 9.4153 5.07636 9.34697 5.10466C9.27864 5.13297 9.21655 5.17445 9.16425 5.22675C9.11195 5.27905 9.07047 5.34114 9.04216 5.40947C9.01386 5.4778 8.99929 5.55104 8.99929 5.625C8.99929 5.69896 9.01386 5.7722 9.04216 5.84053C9.07047 5.90886 9.11195 5.97095 9.16425 6.02325L11.5796 8.4375H5.0625Z" fill="#FF5740"/>
+            </svg>
+          </a>
         </div>
         <div>
           <ul>
             <li>
-              <strong>
-                <a
-                  href="#"
-                  target="_blank"
-                  title="Retrouvez nos Webinaires en replay"
-                >
-                  <span>ICONE</span> Retrouvez nos Webinaires en replay
-                </a>
-              </strong>
-            </li>
-            <li>
-              <a href="mailto:contact@adoublesens.com" title="Contactez nous">
-                contact@adoublesens.com
+              <a title="Dossier de presse" href="#">
+                Dossier de presse
               </a>
             </li>
             <li>
-              <a title="Dossier de presse" href="#">Dossier de presse</a>
+              <a title="Communiqué de presse" href="#">
+                Communiqué de presse
+              </a>
             </li>
             <li>
-              <a title="Politique de confidentialité" href="#"
-                >Politique de confidentialité</a
-              >
+              <a title="Politique de confidentialité" href="#">
+                Politique de confidentialité
+              </a>
             </li>
             <li>
-              <a title="Communiqué de presse" href="#">Communiqué de presse</a>
+              <a title="Mention légales" href="#">
+                Mention légales
+              </a>
             </li>
           </ul>
         </div>
@@ -424,28 +564,14 @@
         <div class="max-width">
           <p>© PHOENIX INC 2021 All rights reserved</p>
           <p>
-            <a
-              href="https://www.facebook.com/%C3%80-double-sens-110598774778290"
-              title="La page Facebook 'A Double Sens'"
-            >
-              Facebook
-            </a>
-            <a
-              href="https://www.linkedin.com/company/à-double-sens"
-              title="La page Linkedin 'A Double Sens'"
-            >
-              Linkedin
-            </a>
-            <a
-              href="https://www.instagram.com/a_double_sens/"
-              title="Le compte Instagram 'A Double Sens'"
-            >
-              Instagram
+            <a href="mailto:contact@adoublesens.com" title="Contactez nous">
+              contact@adoublesens.com
             </a>
           </p>
         </div>
       </div>
     </footer>
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="./main.js"></script>
+    <script src="./flickity.pkgd.min.js"></script>
   </body>
 </html>

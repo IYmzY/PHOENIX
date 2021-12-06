@@ -44,6 +44,7 @@ $primary-blue: #122545;
 $second-blue: #1B2D4B;
 
 $primary-orange: #ff5740;
+$second-orange: rgba(255, 87, 64, 0.6);
 
 $space-little: 25px;
 
@@ -78,6 +79,10 @@ h1, h2, h3, h4, h5, h6{
   font-family: 'SF Display', sans-serif;
 }
 
+.color-orange{
+  color: $primary-orange;
+}
+
 .external-link{
   align-items: center;
   display: flex;
@@ -85,6 +90,14 @@ h1, h2, h3, h4, h5, h6{
   color: $primary-orange !important;
   svg{
     padding-left: 5px;
+  }
+}
+
+.quote{
+  display: inline;
+  width: 15px;
+  &-close{
+    transform: scale(-1);
   }
 }
 
@@ -139,7 +152,7 @@ header {
   font-weight: 700;
   margin-bottom: 2rem;
   .section-second-title-orange {
-    color: rgba(255, 87, 64, 0.6);
+    color: $second-orange;
   }
 }
 
@@ -480,29 +493,87 @@ header {
 
 #section-testimony{
   background-color: $second-blue;
+  .max-width{
+    width: unset;
+  }
   h1{
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 61px;
+  }
+
+  .gallery{
+    .gallery-cell {
+      width: 40%;
+      margin-right: 10px;
+      counter-increment: gallery-cell;
+      &-content{
+        max-width: 500px;
+        margin: 69px auto 0 auto;
+        border: 1px solid $primary-orange;
+        text-align: center;
+        &-image{
+          position: relative;
+          display: flex;
+          justify-content: center;
+          &-container{
+            position: absolute;
+            bottom: -69px;
+            width: 139px;
+            height: 139px;
+            border-radius: 50%;
+            overflow: hidden;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            border: 8px solid $second-blue;
+            img{
+              height: 100%;
+            }
+          }
+        }
+        &-name{
+          margin: 77px 0 1rem 0;
+          line-height: 1.1rem;
+        }
+        &-quote{
+          margin: 0 56px 30px 56px;
+          line-height: 1.1rem;
+        }
+      }
+    }
+    .flickity-page-dots{
+      margin-top: 40px;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      .dot{
+        background-color: $second-orange;
+        opacity: 1;
+        width: 50px;
+        height: 4px;
+        border-radius: 5px;
+        transition-duration: .2s;
+      }
+      .is-selected{
+        background-color: $primary-orange;
+        width: 100px;
+      }
+    }
   }
 }
 
 footer {
   margin-bottom: 0;
+  .max-width{
+    padding: 80px 0 96px 0;
+  }
   > div {
     display: flex;
     justify-content: space-between;
-    h1.section-second-title {
-      color: $grey;
-      padding-top: 33px;
-      border-top: 3px solid $primary-orange;
-    }
     ul {
       margin-top: 30px;
       li {
-        margin: 10px 0;
-      }
-      li:nth-child(2) {
-        margin: 68px 0 44px 0;
+        margin-top: 1rem;
       }
     }
   }
@@ -510,9 +581,9 @@ footer {
     background-color: $grey;
     color: $primary-blue;
     width: 100%;
-    margin-top: 32px;
     .max-width {
       margin: 0 auto;
+      padding: 0;
       display: flex;
       justify-content: space-between;
     }
