@@ -1,5 +1,5 @@
 import './style/reset.css'
-import './style/fonts.css'
+// import './style/fonts.css'
 import './style/main.scss'
 //import SfDisplayRegular from './fonts/SF-Pro-Display-Regular.otf'
 //import SfDisplayBold from './fonts/SF-Pro-Display-Bold.otf'
