@@ -36,7 +36,7 @@ function updateInsight(id) {
 }
 
 const observer = new IntersectionObserver(updateNavigation, {
-  rootMargin: '-200px',
+  rootMargin: '-300px',
   threshold: 0
 })
 
@@ -63,31 +63,56 @@ sections.forEach((section) => {
 })
 
 window.onload = function () {
-  document.querySelector('.form-email').addEventListener('submit', function (e) {
+
+  const buttonsCta = document.querySelectorAll('.btn-cta')
+  const modaleInscription = document.querySelector('#container-modale-inscription')
+  const buttonCloseModale = document.querySelector('#modale-inscription-close')
+
+  buttonsCta.forEach((button) => {
+    button.addEventListener('click', (e) => {
+      e.preventDefault()
+      modaleInscription.classList.add('modale-is-open')
+    })
+  })
+
+  buttonCloseModale.addEventListener('click', (e) => {
     e.preventDefault()
-    const email = document.querySelector('#email-input').value
-    // On créer une object qui sait ouvrir des url
-    let req = new XMLHttpRequest()
+    modaleInscription.classList.remove('modale-is-open')
+  })
 
-    // On définit la méthode et l'adresse à utiliser
-    req.open('POST', `https://adoublesens.herokuapp.com/signup`)
+  const formNewsletter = document.querySelector('#modale-inscription-form')
 
-    //On l'execute
-    req.setRequestHeader("Content-Type", "application/json;charset=UTF-8")
-    req.send(JSON.stringify({ "email": email }))
+  formNewsletter.addEventListener('submit', function (e) {
+    e.preventDefault()
+    formNewsletter.classList.remove('email-error')
 
-    req.onreadystatechange = function () {
-      // On attends que la requete atteigne le stade 4
-      if (req.readyState === 4) {
-        // Si la requete renvoit un statut 200 on resolve la promise
-        if (req.status === 200) {
-          console.log('success')
-          // Si la requete renvoit une erreur on affiche un notification d'erreur
-        } else {
-          console.log('echec')
-        }
-      }
+    const email = document.querySelector('#modale-inscription-form input').value
+    if (!email.match(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3})|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)) {
+      formNewsletter.classList.add('email-error')
     }
+
+    // On créer une object qui sait ouvrir des url
+    // let req = new XMLHttpRequest()
+    //
+    // // On définit la méthode et l'adresse à utiliser
+    // req.open('POST', `https://adoublesens.herokuapp.com/signup`)
+    //
+    // //On l'execute
+    // req.setRequestHeader("Content-Type", "application/json;charset=UTF-8")
+    // req.send(JSON.stringify({ "email": email }))
+    //
+    // req.onreadystatechange = function () {
+    //   // On attends que la requete atteigne le stade 4
+    //   if (req.readyState === 4) {
+    //     // Si la requete renvoit un statut 200 on resolve la promise
+    //     if (req.status === 200) {
+    //       console.log('success')
+    //       // Si la requete renvoit une erreur on affiche un notification d'erreur
+    //     } else {
+    //       console.log('echec')
+    //     }
+    //   }
+    // }
   })
 }
 

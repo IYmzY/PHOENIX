@@ -1,3 +1,4 @@
+// import police title (SF Display)
 @font-face {
   font-family: "SF Display";
   src: url(./fonts/SF-Pro-Display-Light.otf);
@@ -14,6 +15,14 @@
   font-family: "SF Display";
   src: url(./fonts/SF-Pro-Display-Bold.otf);
   font-weight: 700;
+  font-style: normal;
+}
+
+// Import police title (SF Text)
+@font-face {
+  font-family: "SF Text";
+  src: url(./fonts/SF-Pro-Text-Light.otf);
+  font-weight: 100;
   font-style: normal;
 }
 @font-face {
@@ -45,6 +54,8 @@ $second-blue: #1B2D4B;
 
 $primary-orange: #ff5740;
 $second-orange: rgba(255, 87, 64, 0.6);
+
+$boxshadow-focus: 0px 0px 0px 4px $second-orange;
 
 $space-little: 25px;
 
@@ -79,17 +90,69 @@ h1, h2, h3, h4, h5, h6{
   font-family: 'SF Display', sans-serif;
 }
 
+a,
+button,
+svg path{
+  transition-duration: $transition-duration;
+}
+
 .color-orange{
   color: $primary-orange;
 }
 
-.external-link{
-  align-items: center;
-  display: flex;
+.btn-cta{
+  background-color: $primary-orange;
+  border-radius: 30px;
+  color: white;
   font-weight: 700;
-  color: $primary-orange !important;
-  svg{
-    padding-left: 5px;
+  padding: 10px 20px;
+  border: 2px solid transparent;
+  &:hover{
+    background-color: white;
+    border-color: $primary-orange;
+    color: $primary-orange;
+  }
+  &:active{
+    border-color: transparent;
+  }
+  &:focus-visible{
+    background-color: white;
+    border-color: $primary-orange;
+    color: $primary-orange;
+    box-shadow: $boxshadow-focus;
+  }
+}
+
+.container-external-link{
+  display: flex;
+  a.external-link {
+    align-items: center;
+    display: flex;
+    font-weight: 700;
+    color: $primary-orange;
+    border-bottom: 1px solid transparent;
+    padding: 2px;
+    svg {
+      padding-left: 5px;
+    }
+
+    &:hover {
+      border-bottom-color: $second-orange;
+    }
+    &:active{
+      color: $grey;
+      svg path{
+        fill: $grey;
+      }
+    }
+    &:focus-visible{
+      border-bottom-color: $second-orange;
+      color: $grey;
+      svg path{
+        fill: $grey;
+      }
+      box-shadow: $boxshadow-focus;
+    }
   }
 }
 
@@ -129,7 +192,6 @@ header {
           text-decoration: underline;
         }
         a {
-          transition-duration: $transition-duration;
           &:hover {
             text-decoration: underline;
           }
@@ -171,6 +233,95 @@ header {
   z-index: 1;
 }
 
+#container-modale-inscription{
+  background-color: rgba(0, 0, 0, .5);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  display: none;
+  &.modale-is-open{
+    display: flex;
+  }
+  .modale-inscription{
+    position: relative;
+    #modale-inscription-close{
+      width: 40px;
+      position: absolute;
+      right: 40px;
+      top: 40px;
+    }
+    max-width: 720px;
+    background-color: $primary-blue;
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.25);
+    border: 1px solid $primary-orange;
+    padding: 123px 93px;
+    h2{
+      text-align: center;
+      font-weight: 700;
+      font-size: 2rem;
+      line-height: 2.3rem;
+      text-transform: uppercase;
+    }
+    #modale-inscription-description{
+      margin: 1rem 30px;
+      line-height: 1.2rem;
+    }
+    #modale-inscription-form{
+      &.email-error{
+        input {
+          color: $primary-orange;
+        }
+        #modale-inscription-form-error {
+          display: block;
+          color: $primary-orange;
+          font-weight: 100;
+        }
+      }
+      margin: 1rem 30px;
+      text-align: right;
+      width: 300px;
+      input{
+        width: 100%;
+        color: $grey;
+        display: block;
+        margin-bottom: 1rem;
+        padding-bottom: 8px;
+        border-bottom: 1px solid $grey;
+        transition-duration: $transition-duration;
+        &:focus{
+          border-bottom-color: $primary-orange;
+        }
+        &::-moz-selection,
+        &::selection { /* Code for Firefox */
+          color: $primary-blue;
+          background: $grey;
+        }
+      }
+      & > div{
+        display: flex;
+        #modale-inscription-form-error {
+          display: none;
+        }
+        button{
+          display: flex;
+          align-items: center;
+          justify-content: right;
+          margin-left: auto;
+          color: $primary-orange;
+          svg{
+            margin-left: 6px;
+          }
+        }
+      }
+    }
+  }
+}
+
 #first-section {
   position: relative;
   display: flex;
@@ -178,13 +329,14 @@ header {
   .max-width {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 253px;
     .main-section-title-container {
-      display: flex;
-      align-items: center;
+      align-self: center;
       .section-main-title {
         font-weight: 100;
         font-size: 2.7rem;
         line-height: 3.3rem;
+        margin-bottom: 26px;
       }
     }
     /* ---------- Container for the orbiting circles animation ---------- */
@@ -324,7 +476,6 @@ header {
           margin-right: 45px;
           font-weight: 600;
           color: rgba(223, 228, 236, 0.6);
-          transition-duration: $transition-duration;
           &:hover {
             text-decoration: underline;
           }
@@ -435,15 +586,13 @@ header {
     p:last-child {
       margin-bottom: 52px;
     }
-    #btn-cta{
-      background-color: $primary-orange;
-      border-radius: 30px;
-      color: white;
-      font-weight: 700;
-      padding: 12px 45px;
+    .btn-cta{
       position: absolute;
       bottom: -20px;
     }
+  }
+  .container-external-link{
+    justify-content: center;
   }
 }
 
@@ -547,7 +696,7 @@ header {
       align-content: center;
       justify-content: center;
       .dot{
-        background-color: $second-orange;
+        background-color: rgba(255, 87, 64, 0.2);
         opacity: 1;
         width: 50px;
         height: 4px;
@@ -567,6 +716,12 @@ footer {
   .max-width{
     padding: 80px 0 96px 0;
   }
+  .footer-container-links{
+    margin-bottom: 2rem;
+    a{
+      margin-right: 25px;
+    }
+  }
   > div {
     display: flex;
     justify-content: space-between;
@@ -575,6 +730,12 @@ footer {
       li {
         margin-top: 1rem;
       }
+    }
+  }
+  .footer-link-item:hover{
+    color: rgba(223, 228, 236, 0.6);
+    svg path{
+      fill: rgba(223, 228, 236, 0.6);
     }
   }
   #footer-copyright {
@@ -590,8 +751,8 @@ footer {
     p {
       margin: 30px 0;
       font-weight: 600;
-      a {
-        margin-left: 15px;
+      a{
+        font-weight: 100;
       }
     }
   }

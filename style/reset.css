@@ -155,7 +155,8 @@ a:active,
 a:focus,
 i:active,
 i:focus,
-input:focus {
+input:focus,
+button:focus{
   outline: none;
 }
 
