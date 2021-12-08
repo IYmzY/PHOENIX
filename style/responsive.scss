@@ -140,6 +140,9 @@
     display: none;
   }
   #section-dispositif{
+    .max-width{
+      padding-top: 180px;
+    }
     .section-second-title{
       text-align: center;
     }
@@ -170,6 +173,11 @@
   .section-second-title{
     text-align: center;
   }
+  #section-benefice{
+    .max-width{
+      padding-top: 180px;
+    }
+  }
   footer{
     .max-width{
       display: block;
@@ -199,11 +207,25 @@
 }
 
 @media screen and (max-width: 520px) {
+  #first-section .max-width .main-section-title-container{
+    .section-main-title{
+      font-size: 2.0rem;
+    }
+  }
   #section-webinar .out-of-flow{
     padding: 32px 23px 52px 23px;
   }
   #first-section .out-of-flow{
     padding: 49px 23px 34px 23px;
+  }
+  #container-modale-inscription{
+    #modale-inscription{
+      padding: 63px 20px;
+      &-close{
+        top: 20px;
+        right: 20px;
+      }
+    }
   }
   #section-testimony{
     .gallery-cell{

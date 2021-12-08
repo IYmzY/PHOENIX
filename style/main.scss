@@ -409,7 +409,7 @@ svg path{
 header{
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 5;
   background-color: $grey;
   #header-navbar {
     width: $max-width;
@@ -467,6 +467,7 @@ header{
 }
 
 #first-section{
+  overflow: hidden;
   position: relative;
   display: flex;
   justify-content: center;
@@ -476,7 +477,7 @@ header{
     justify-content: space-between;
     padding-bottom: 253px;
     position: relative;
-    z-index: 5;
+    z-index: 3;
     .main-section-title-container {
       align-self: center;
       .section-main-title {
@@ -584,10 +585,21 @@ header{
       }
     }
   }
+}
+
+#section-dispositif{
+  position: relative;
+  background-color: $second-blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .max-width{
+    padding-top: 252px;
+  }
   .out-of-flow{
     max-width: 566px;
-    bottom: -100px;
-    padding: 49px 63px 34px 63px;
+    padding: 49px 12% 34px 12%;
+    top: -100px;
     #figure-quote {
       blockquote p {
         font-size: 1.5rem;
@@ -604,21 +616,12 @@ header{
       margin-top: 12px;
     }
   }
-}
-
-#section-dispositif{
-  background-color: $second-blue;
-  display: flex;
-  align-items: center;
-  .max-width{
-    padding-top: 252px;
-  }
   .section-second-title {
     margin-bottom: 2rem;
   }
   #section-dispositif-content {
     position: relative;
-    z-index: 5;
+    z-index: 2;
     #dispostif-insight {
       max-width: 563px;
       line-height: 1.2rem;
@@ -842,7 +845,7 @@ header{
         line-height: 1.1rem;
       }
       &-quote{
-        margin: 0 56px 30px 56px;
+        margin: 0 10% 30px 10%;
         line-height: 1.1rem;
       }
     }
