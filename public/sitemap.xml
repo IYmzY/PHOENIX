@@ -5,4 +5,9 @@
         <priority>1.0</priority>
         <changefreq>monthly</changefreq>
     </url>
+    <url>
+        <loc>https://adoublesens.fr/privacy-policy.html</loc>
+        <priority>0.5</priority>
+        <changefreq>monthly</changefreq>
+    </url>
 </urlset>

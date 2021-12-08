@@ -367,6 +367,10 @@ svg path {
           color: $primary-blue;
           background: $grey;
         }
+        &:disabled{
+          background-color: rgba(255, 255, 255, .2);
+          cursor: not-allowed;
+        }
       }
       & > div {
         display: flex;
@@ -379,8 +383,30 @@ svg path {
           justify-content: right;
           margin-left: auto;
           color: $primary-orange;
-          svg {
+          border-bottom: 1px solid transparent;
+          svg{
             margin-left: 6px;
+            path{
+              stroke: $primary-orange;
+            }
+          }
+          &:hover{
+            border-bottom-color: $primary-orange;
+          }
+          &:active{
+            border-bottom-color: $primary-orange;
+            color: $grey;
+            svg path{
+              stroke: $grey;
+            }
+          }
+          &:focus-visible{
+            box-shadow: $boxshadow-focus;
+            border-bottom-color: $primary-orange;
+            color: $grey;
+            svg path{
+              stroke: $grey;
+            }
           }
         }
       }
