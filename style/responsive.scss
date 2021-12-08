@@ -1,0 +1,212 @@
+@media screen and (max-width: 1220px) {
+  #section-benefice{
+    .section-second-title{
+      text-align: center;
+    }
+    &-container {
+      grid-template-columns: 1fr;
+      gap: 3rem 100px;
+    }
+    .benefice-item-description {;
+      max-width: 565px;
+    }
+    .container-external-link{
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #circle-orbit-container{
+    display: none;
+  }
+  .webinar-decoration{
+    opacity: .2;
+  }
+}
+
+@media screen and (max-width: 1240px){
+  #section-dispositif{
+    &-background{
+      opacity: .2;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  #section-dispositif .flickity-page-dots,
+  #section-testimony .flickity-page-dots,
+  #section-benefice .flickity-page-dots{
+    margin-top: 16px;
+  }
+  .max-width{
+    padding: 48px 0;
+  }
+  header{
+    #header-navbar{
+      &-responsive-button{
+        display: block;
+      }
+      ul{
+        display: none;
+      }
+    }
+  }
+  #section-definition{
+    h1{
+      margin-bottom: 31px;
+    }
+    #container-advantage{
+      margin-bottom: 0;
+      flex-direction: column;
+      .advantage-item{
+        max-width: unset;
+        margin-top: 10px;
+        &-content{
+          width: 400px;
+          text-align: left;
+        }
+        &-number{
+          font-size: 92px;
+          position: static;
+          color: #FF5740CC;
+          font-weight: 400;
+          margin-right: 21px;
+        }
+        &-content{
+          font-weight: 400;
+        }
+      }
+    }
+  }
+  #section-testimony{
+    .gallery-cell{
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 700px){
+  header picture{
+    overflow: hidden;
+    width: 57px;
+    display: block;
+  }
+  #section-benefice{
+    .container-external-link{
+      margin-top: 1rem;
+    }
+    &-container{
+      display: none;
+    }
+    .gallery{
+      display: block;
+      .cell-item{
+        width: 100%;
+        .benefice-item{
+          display: block;
+          max-width: 400px;
+          padding: 0 20px;
+          margin: 0 auto;
+          > div{
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+          }
+          &-title{
+            margin-bottom: 0;
+          }
+          &-image{
+            padding: 15px;
+            img{
+              width: 30px;
+              height: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+  header #header-navbar{
+    width: 90%;
+  }
+  .max-width{
+    width: 90%;
+  }
+  .webinar-decoration{
+    display: none;
+  }
+  #section-dispositif{
+    .section-second-title{
+      text-align: center;
+    }
+    #section-dispositif-content{
+      display: none;
+    }
+    .gallery{
+      display: block;
+      &-cell{
+        text-align: center;
+        width: 100%;
+        margin-right: 10px;
+        h3{
+          color: #ff5740;
+          padding-bottom: 9px;
+          font-weight: 600;
+        }
+        p{
+          margin: auto;
+          max-width: 328px;
+        }
+      }
+    }
+    &-background{
+      display: none;
+    }
+  }
+  .section-second-title{
+    text-align: center;
+  }
+  footer{
+    .max-width{
+      display: block;
+      .container-newtworks{
+        text-align: center;
+      }
+      #footer-container-newtworks{
+        text-align: center;
+      }
+      .container-external-link{
+        justify-content: center;
+      }
+    }
+    ul{
+      text-align: center;
+    }
+    #footer-copyright{
+      .max-width{
+        flex-direction: column-reverse;
+        text-align: center;
+        p:first-child{
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+  #section-webinar .out-of-flow{
+    padding: 32px 23px 52px 23px;
+  }
+  #first-section .out-of-flow{
+    padding: 49px 23px 34px 23px;
+  }
+  #section-testimony{
+    .gallery-cell{
+      &-content{
+        margin: 69px 20px 0 20px;
+      }
+    }
+  }
+}

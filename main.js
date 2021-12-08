@@ -1,14 +1,8 @@
 import './style/reset.css'
 // import './style/fonts.css'
 import './style/main.scss'
+import './style/responsive.scss'
 import './style/flickity.min.css'
-//import SfDisplayRegular from './fonts/SF-Pro-Display-Regular.otf'
-//import SfDisplayBold from './fonts/SF-Pro-Display-Bold.otf'
-//import SfTextRegular from './fonts/SF-Pro-Text-Regular.otf'
-//import SfTextSemibold from './fonts/SF-Pro-Text-Semibold.otf'
-//import SfTextBold from './fonts/SF-Pro-Text-Bold.otf'
-
-
 
 let outerFirstOrbitCircle = document.querySelector('.outer-orbit-first-circle')
 let middleOrbitCircle = document.querySelector('.middle-orbit-circle')
@@ -77,8 +71,12 @@ window.onload = function () {
 
   buttonCloseModale.addEventListener('click', (e) => {
     e.preventDefault()
-    modaleInscription.classList.remove('modale-is-open')
+    closeInscriptionModale()
   })
+
+  function closeInscriptionModale () {
+    modaleInscription.classList.remove('modale-is-open')
+  }
 
   const formNewsletter = document.querySelector('#modale-inscription-form')
 
@@ -114,27 +112,52 @@ window.onload = function () {
     //   }
     // }
   })
+
+  // responsive interaction
+  const navbarResponsiveOpen = document.querySelector('#header-navbar-responsive-button')
+  const asideMenu = document.querySelector('#container-modale-aside')
+  const headerNavbarClose = document.querySelector('#aside-menu-btn-close')
+  const containerModale = document.querySelector('#container-modale-aside .container-modale')
+
+  navbarResponsiveOpen.addEventListener('click', (e) => {
+    e.preventDefault()
+    asideMenu.classList.add('modale-is-open')
+  })
+
+  headerNavbarClose.addEventListener('click', (e) => {
+    e.preventDefault()
+    closeAsideMenu()
+  })
+
+  containerModale.addEventListener('click', (e) => {
+    closeAsideMenu()
+    closeInscriptionModale()
+  })
+
+  function closeAsideMenu () {
+    asideMenu.classList.remove('modale-is-open')
+  }
 }
 
-const changeFisrtOuterOrbitCircleColor = () => {
-  //outerOrbitCircle.style.transition = "all 2s"
-  outerFirstOrbitCircle.style.backgroundColor = "#FF5740"
-}
-const changeSecondOuterOrbitCircleColor = () => {
-  //middleOrbitCircle.style.transition = "all 2.5s"
-  SecondOuterOrbitCircle.style.backgroundColor = "#E5C8CA"
-}
-const changeMiddleOrbitCircleColor = () => {
-  //middleOrbitCircle.style.transition = "all 2.5s"
-  middleOrbitCircle.style.backgroundColor = "#ECABA7"
-}
-const changeInnerOrbitCircleColor = () => {
-  //middleOrbitCircle.style.transition = "all 2.5s"
-  innerOrbitCircle.style.backgroundColor = "#F97362"
-}
-setInterval(changeFisrtOuterOrbitCircleColor, 1500);
-setInterval(changeSecondOuterOrbitCircleColor, 3000);
-setInterval(changeMiddleOrbitCircleColor, 2500);
-setInterval(changeInnerOrbitCircleColor, 2000);
+// const changeFisrtOuterOrbitCircleColor = () => {
+//   //outerOrbitCircle.style.transition = "all 2s"
+//   outerFirstOrbitCircle.style.backgroundColor = "#FF5740"
+// }
+// const changeSecondOuterOrbitCircleColor = () => {
+//   //middleOrbitCircle.style.transition = "all 2.5s"
+//   SecondOuterOrbitCircle.style.backgroundColor = "#E5C8CA"
+// }
+// const changeMiddleOrbitCircleColor = () => {
+//   //middleOrbitCircle.style.transition = "all 2.5s"
+//   middleOrbitCircle.style.backgroundColor = "#ECABA7"
+// }
+// const changeInnerOrbitCircleColor = () => {
+//   //middleOrbitCircle.style.transition = "all 2.5s"
+//   innerOrbitCircle.style.backgroundColor = "#F97362"
+// }
+// setInterval(changeFisrtOuterOrbitCircleColor, 1500);
+// setInterval(changeSecondOuterOrbitCircleColor, 3000);
+// setInterval(changeMiddleOrbitCircleColor, 2500);
+// setInterval(changeInnerOrbitCircleColor, 2000);
 
 
