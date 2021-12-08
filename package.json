@@ -9,8 +9,5 @@
   "devDependencies": {
     "sass": "^1.43.4",
     "vite": "^2.6.4"
-  },
-  "dependencies": {
-    "tsparticles": "^1.37.5"
   }
 }
