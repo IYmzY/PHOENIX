@@ -143,7 +143,7 @@ svg path{
   &:active{
     border-color: transparent;
   }
-  &:focus{
+  &:focus-visible{
     background-color: white;
     border-color: $primary-orange;
     color: $primary-orange;
@@ -194,7 +194,7 @@ svg path{
         fill: $grey;
       }
     }
-    &:focus{
+    &:focus-visible{
       border-bottom-color: $second-orange;
       color: $grey;
       svg path{
@@ -244,7 +244,7 @@ svg path{
   &:active{
     border-color: transparent;
   }
-  &:focus{
+  &:focus-visible{
     background-color: $grey;
     border-color: transparent;
     box-shadow: $boxshadow-focus;
@@ -354,7 +354,7 @@ svg path{
         padding-bottom: 8px;
         border-bottom: 1px solid $grey;
         transition-duration: $transition-duration;
-        &:focus{
+        &:focus-visible{
           border-bottom-color: $primary-orange;
         }
         &::-moz-selection,
@@ -422,7 +422,7 @@ header{
     &-responsive-button{
       display: none;
     }
-    a:focus{
+    a:focus-visible{
       img{
         box-shadow: $boxshadow-focus;
       }
@@ -456,7 +456,7 @@ header{
           &:active{
             color: $primary-blue;
           }
-          &:focus{
+          &:focus-visible{
             color: $primary-blue;
             border-bottom-color: $primary-orange;
           }
@@ -648,7 +648,7 @@ header{
               color: $grey;
               border-bottom: 1px solid $primary-orange;
             }
-            &:focus{
+            &:focus-visible{
               color: $grey;
               border-bottom: 1px solid $primary-orange;
             }
@@ -883,7 +883,7 @@ footer{
         fill: $primary-orange;
       }
     }
-    &:focus{
+    &:focus-visible{
       color: $primary-orange;
       box-shadow: $boxshadow-focus;
       svg path{
