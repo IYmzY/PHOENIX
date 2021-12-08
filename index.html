@@ -1,825 +1,729 @@
 <!DOCTYPE html>
 <html lang="fr" id="home">
-  <head>
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        const f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-W5MMH66");
-    </script>
-    <!-- End Google Tag Manager -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="A Double Sens vous présente son dispositif basé sur l'entrepreneuriat social, l'entrepreneuriat spécialisé dans les valeurs humaines et sociales"
-    />
-    <meta
-      name="keywords"
-      content="valeurs, social, humaines, entrepreneuriat, dispositif, agir, épanouissement, autrement, personnel, développement "
-    />
-    <meta name="author" content="Phoenix DevTeam" />
-    <meta name="theme-color" content="#FF5740" />
 
-    <meta
-      property="og:title"
-      content="Agir c'est s'épanouir | Dispositif A double Sens"
-    />
-    <meta
-      property="og:description"
-      content="A Double Sens vous présente son dispositif basé sur l'entrepreneuriat social, l'entrepreneuriat spécialisé dans les valeurs humaines et sociales"
-    />
-    <meta property="og:url" content="https://adoublesens.fr/" />
-    <meta property="og:site_name" content="A double Sens" />
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="fr_FR" />
-    <meta property="og:image" content="http://adoublesens.fr/open_graph.jpg" />
-    <meta
-      property="og:image:secure_url"
-      content="https://adoublesens.fr/open_graph.jpg"
-    />
-    <meta property="og:image:type" content="image/jpg" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Logo A double sens" />
+<head>
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+      const f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != "dataLayer" ? "&l=" + l : "";
+      j.async = true;
+      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-W5MMH66");
+  </script>
+  <!-- End Google Tag Manager -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="A Double Sens vous présente son dispositif basé sur l'entrepreneuriat social, l'entrepreneuriat spécialisé dans les valeurs humaines et sociales" />
+  <meta name="keywords"
+    content="valeurs, social, humaines, entrepreneuriat, dispositif, agir, épanouissement, autrement, personnel, développement " />
+  <meta name="author" content="Phoenix DevTeam" />
+  <meta name="theme-color" content="#FF5740" />
 
-    <meta
-      name="twitter:title"
-      content="Agir c'est s'épanouir | Dispositif A double Sens"
-    />
-    <meta
-      name="twitter:description"
-      content="A Double Sens vous présente son dispositif basé sur l'entrepreneuriat social, l'entrepreneuriat spécialisé dans les valeurs humaines et sociales"
-    />
-    <meta name="twitter:url" content="https://adoublesens.fr/" />
-    <meta name="twitter:site" content="@adoublesens.fr" />
-    <meta name="twitter:creator" content="@Phoenix DevTeam" />
-    <meta
-      name="twitter:image"
-      content="https://adoublesens.fr/twitter_card.png"
-    />
-    <meta name="twitter:card" content="summary_large_image" />
+  <meta property="og:title" content="Agir c'est s'épanouir | Dispositif A double Sens" />
+  <meta property="og:description"
+    content="A Double Sens vous présente son dispositif basé sur l'entrepreneuriat social, l'entrepreneuriat spécialisé dans les valeurs humaines et sociales" />
+  <meta property="og:url" content="https://adoublesens.fr/" />
+  <meta property="og:site_name" content="A double Sens" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:image" content="http://adoublesens.fr/open_graph.jpg" />
+  <meta property="og:image:secure_url" content="https://adoublesens.fr/open_graph.jpg" />
+  <meta property="og:image:type" content="image/jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Logo A double sens" />
 
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta
-      name="apple-mobile-web-app-status-bar-style"
-      content="black-translucent"
-    />
-    <meta name="apple-mobile-web-app-title" content="A Double Sens" />
+  <meta name="twitter:title" content="Agir c'est s'épanouir | Dispositif A double Sens" />
+  <meta name="twitter:description"
+    content="A Double Sens vous présente son dispositif basé sur l'entrepreneuriat social, l'entrepreneuriat spécialisé dans les valeurs humaines et sociales" />
+  <meta name="twitter:url" content="https://adoublesens.fr/" />
+  <meta name="twitter:site" content="@adoublesens.fr" />
+  <meta name="twitter:creator" content="@Phoenix DevTeam" />
+  <meta name="twitter:image" content="https://adoublesens.fr/twitter_card.png" />
+  <meta name="twitter:card" content="summary_large_image" />
 
-    <link rel="icon" type="image/png" href="./public/icon.png" />
-    <link rel="apple-touch-icon" href="./public/apple-touch-icon.png" />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="./public/touch-icon-ipad.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./public/touch-icon-iphone-retina.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="167x167"
-      href="./public/touch-icon-ipad-retina.png"
-    />
-<!--    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">-->
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="A Double Sens" />
 
-    <title>Agir c'est s'épanouir | Dispositif A double sens</title>
-  </head>
-  <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-W5MMH66"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-      ></iframe
-    ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <header>
-      <nav id="header-navbar">
-        <button id="header-navbar-responsive-button">
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C6.89543 16 6 15.1046 6 14V14C6 12.8954 6.89543 12 8 12H40C41.1046 12 42 12.8954 42 14V14C42 15.1046 41.1046 16 40 16H8ZM6 24C6 25.1046 6.89543 26 8 26H40C41.1046 26 42 25.1046 42 24V24C42 22.8954 41.1046 22 40 22H8C6.89543 22 6 22.8954 6 24V24ZM6 34C6 35.1046 6.89543 36 8 36H40C41.1046 36 42 35.1046 42 34V34C42 32.8954 41.1046 32 40 32H8C6.89543 32 6 32.8954 6 34V34Z" fill="#122545"/>
-          </svg>
-        </button>
-        <h1>
-          <a href="#home">
-            <picture>
-              <img src="images/logoHeader.svg" alt="Logo À Double Sens" />
-            </picture>
+  <link rel="icon" type="image/png" href="./public/icon.png" />
+  <link rel="apple-touch-icon" href="./public/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="./public/touch-icon-ipad.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./public/touch-icon-iphone-retina.png" />
+  <link rel="apple-touch-icon" sizes="167x167" href="./public/touch-icon-ipad-retina.png" />
+  <!--    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">-->
+
+  <title>Agir c'est s'épanouir | Dispositif A double sens</title>
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W5MMH66" height="0" width="0"
+      style="display: none; visibility: hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <header>
+    <nav id="header-navbar">
+      <button id="header-navbar-responsive-button">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M8 16C6.89543 16 6 15.1046 6 14V14C6 12.8954 6.89543 12 8 12H40C41.1046 12 42 12.8954 42 14V14C42 15.1046 41.1046 16 40 16H8ZM6 24C6 25.1046 6.89543 26 8 26H40C41.1046 26 42 25.1046 42 24V24C42 22.8954 41.1046 22 40 22H8C6.89543 22 6 22.8954 6 24V24ZM6 34C6 35.1046 6.89543 36 8 36H40C41.1046 36 42 35.1046 42 34V34C42 32.8954 41.1046 32 40 32H8C6.89543 32 6 32.8954 6 34V34Z"
+            fill="#122545" />
+        </svg>
+      </button>
+      <h1>
+        <a href="#home">
+          <picture>
+            <img src="images/logoHeader.svg" alt="Logo À Double Sens" />
+          </picture>
+        </a>
+      </h1>
+      <ul id="header-navbar-navigation">
+        <li>
+          <a href="#section-dispositif" title="À double sens">
+            À double sens
           </a>
-        </h1>
-        <ul id="header-navbar-navigation">
-          <li>
-            <a href="#section-dispositif" title="À double sens">
-              À double sens
-            </a>
-          </li>
-          <li>
-            <a href="#section-definition" title="L’entrepreneuriat social">
-              L’entrepreneuriat social
-            </a>
-          </li>
-          <li>
-            <a href="#section-webinar" title="Webinaire">
-              Webinaire
-            </a>
-          </li>
-          <li>
-            <a href="#section-benefice" title="Témoignages">
-              Et vous ?
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <div id="container-modale-aside">
-      <aside id="aside-menu">
+        </li>
+        <li>
+          <a href="#section-definition" title="L’entrepreneuriat social">
+            L’entrepreneuriat social
+          </a>
+        </li>
+        <li>
+          <a href="#section-webinar" title="Webinaire">
+            Webinaire
+          </a>
+        </li>
+        <li>
+          <a href="#section-benefice" title="Témoignages">
+            Et vous ?
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div id="container-modale-aside">
+    <aside id="aside-menu">
       <button tabindex="-1" id="aside-menu-btn-close" class="btn-close">
         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M10.4695 8.95046L17.7595 1.66046C17.9234 1.46916 18.009 1.22308 17.9993 0.971403C17.9895 0.719727 17.8852 0.480988 17.7071 0.302894C17.529 0.124799 17.2903 0.0204662 17.0386 0.0107451C16.7869 0.00102391 16.5408 0.0866304 16.3495 0.250457L9.05954 7.54046L1.76954 0.240457C1.57824 0.0766302 1.33217 -0.00897537 1.08049 0.000745785C0.828814 0.0104669 0.590075 0.114799 0.411981 0.292893C0.233886 0.470988 0.129554 0.709727 0.119832 0.961403C0.110111 1.21308 0.195718 1.45915 0.359544 1.65046L7.64954 8.95046L0.349544 16.2405C0.244862 16.3301 0.159842 16.4404 0.0998186 16.5645C0.0397953 16.6886 0.00606467 16.8237 0.000745179 16.9614C-0.00457431 17.0991 0.0186316 17.2365 0.0689062 17.3648C0.119181 17.4931 0.195439 17.6097 0.292894 17.7071C0.390349 17.8046 0.506896 17.8808 0.635221 17.9311C0.763546 17.9814 0.900878 18.0046 1.0386 17.9993C1.17632 17.9939 1.31145 17.9602 1.43551 17.9002C1.55958 17.8402 1.6699 17.7551 1.75954 17.6505L9.05954 10.3605L16.3495 17.6505C16.5408 17.8143 16.7869 17.8999 17.0386 17.8902C17.2903 17.8804 17.529 17.7761 17.7071 17.598C17.8852 17.4199 17.9895 17.1812 17.9993 16.9295C18.009 16.6778 17.9234 16.4318 17.7595 16.2405L10.4695 8.95046Z" fill="#FF5740"/>
+          <path
+            d="M10.4695 8.95046L17.7595 1.66046C17.9234 1.46916 18.009 1.22308 17.9993 0.971403C17.9895 0.719727 17.8852 0.480988 17.7071 0.302894C17.529 0.124799 17.2903 0.0204662 17.0386 0.0107451C16.7869 0.00102391 16.5408 0.0866304 16.3495 0.250457L9.05954 7.54046L1.76954 0.240457C1.57824 0.0766302 1.33217 -0.00897537 1.08049 0.000745785C0.828814 0.0104669 0.590075 0.114799 0.411981 0.292893C0.233886 0.470988 0.129554 0.709727 0.119832 0.961403C0.110111 1.21308 0.195718 1.45915 0.359544 1.65046L7.64954 8.95046L0.349544 16.2405C0.244862 16.3301 0.159842 16.4404 0.0998186 16.5645C0.0397953 16.6886 0.00606467 16.8237 0.000745179 16.9614C-0.00457431 17.0991 0.0186316 17.2365 0.0689062 17.3648C0.119181 17.4931 0.195439 17.6097 0.292894 17.7071C0.390349 17.8046 0.506896 17.8808 0.635221 17.9311C0.763546 17.9814 0.900878 18.0046 1.0386 17.9993C1.17632 17.9939 1.31145 17.9602 1.43551 17.9002C1.55958 17.8402 1.6699 17.7551 1.75954 17.6505L9.05954 10.3605L16.3495 17.6505C16.5408 17.8143 16.7869 17.8999 17.0386 17.8902C17.2903 17.8804 17.529 17.7761 17.7071 17.598C17.8852 17.4199 17.9895 17.1812 17.9993 16.9295C18.009 16.6778 17.9234 16.4318 17.7595 16.2405L10.4695 8.95046Z"
+            fill="#FF5740" />
         </svg>
       </button>
       <nav>
         <ul>
           <li>
-            <a
-              tabindex="-1"
-              href="#section-dispositif"
-              title="À double sens"
-            >
+            <a tabindex="-1" href="#section-dispositif" title="À double sens">
               À double sens
             </a>
           </li>
           <li>
-            <a
-              tabindex="-1"
-              href="#section-definition"
-              title="L’entrepreneuriat social"
-            >
+            <a tabindex="-1" href="#section-definition" title="L’entrepreneuriat social">
               L'entrepreneuriat social
             </a>
           </li>
           <li>
-            <a
-              tabindex="-1"
-              href="#section-webinar"
-              title="Webinaire"
-            >
+            <a tabindex="-1" href="#section-webinar" title="Webinaire">
               Webinaire
             </a>
           </li>
           <li>
-            <a
-              tabindex="-1"
-              href="#section-benefice"
-              title="Et vous ?"
-            >
+            <a tabindex="-1" href="#section-benefice" title="Et vous ?">
               Et vous ?
             </a>
           </li>
         </ul>
         <div class="container-newtworks">
-          <a
-            tabindex="-1"
-            href="https://www.facebook.com/%C3%80-double-sens-110598774778290"
-            target="_blank"
-            title="La page Facebook 'A Double Sens'"
-            class="footer-link-item"
-          >
+          <a tabindex="-1" href="https://www.facebook.com/%C3%80-double-sens-110598774778290" target="_blank"
+            title="La page Facebook 'A Double Sens'" class="footer-link-item">
             <svg width="32" height="32" viewBox="0 0 15 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3.7003 31.2205V16.5709H0V11.2964H3.7003V6.79124C3.7003 3.25106 5.88608 0 10.9226 0C12.9618 0 14.4697 0.204651 14.4697 0.204651L14.3509 5.13019C14.3509 5.13019 12.8131 5.11451 11.1349 5.11451C9.31869 5.11451 9.0277 5.99072 9.0277 7.445V11.2964H14.4952L14.2573 16.5709H9.0277V31.2205H3.7003Z" fill="#DFE4EC"/>
+              <path
+                d="M3.7003 31.2205V16.5709H0V11.2964H3.7003V6.79124C3.7003 3.25106 5.88608 0 10.9226 0C12.9618 0 14.4697 0.204651 14.4697 0.204651L14.3509 5.13019C14.3509 5.13019 12.8131 5.11451 11.1349 5.11451C9.31869 5.11451 9.0277 5.99072 9.0277 7.445V11.2964H14.4952L14.2573 16.5709H9.0277V31.2205H3.7003Z"
+                fill="#DFE4EC" />
             </svg>
           </a>
-          <a
-            tabindex="-1"
-            href="https://www.linkedin.com/company/à-double-sens"
-            target="_blank"
-            title="La page Linkedin 'A Double Sens'"
-            class="footer-link-item"
-          >
+          <a tabindex="-1" href="https://www.linkedin.com/company/à-double-sens" target="_blank"
+            title="La page Linkedin 'A Double Sens'" class="footer-link-item">
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M7.08975 31.2205V10.1561H0.397293V31.2205H7.08975ZM3.74438 7.27837C6.07816 7.27837 7.53082 5.66087 7.53082 3.63953C7.48734 1.57261 6.07825 0 3.78867 0C1.49945 0 0.00244141 1.57264 0.00244141 3.63953C0.00244141 5.66096 1.45475 7.27837 3.70069 7.27837H3.74418H3.74438ZM10.794 31.2205H17.4865V19.4571C17.4865 18.8275 17.5299 18.1986 17.7067 17.7486C18.1905 16.4908 19.2916 15.188 21.1404 15.188C23.5621 15.188 24.5309 17.1197 24.5309 19.9514V31.2204H31.223V19.1422C31.223 12.6721 27.9213 9.66156 23.518 9.66156C19.9077 9.66156 18.3226 11.7727 17.4419 13.2107H17.4866V10.1557H10.7941C10.882 12.1322 10.7941 31.2201 10.7941 31.2201L10.794 31.2205Z" fill="#DFE4EC"/>
+              <path
+                d="M7.08975 31.2205V10.1561H0.397293V31.2205H7.08975ZM3.74438 7.27837C6.07816 7.27837 7.53082 5.66087 7.53082 3.63953C7.48734 1.57261 6.07825 0 3.78867 0C1.49945 0 0.00244141 1.57264 0.00244141 3.63953C0.00244141 5.66096 1.45475 7.27837 3.70069 7.27837H3.74418H3.74438ZM10.794 31.2205H17.4865V19.4571C17.4865 18.8275 17.5299 18.1986 17.7067 17.7486C18.1905 16.4908 19.2916 15.188 21.1404 15.188C23.5621 15.188 24.5309 17.1197 24.5309 19.9514V31.2204H31.223V19.1422C31.223 12.6721 27.9213 9.66156 23.518 9.66156C19.9077 9.66156 18.3226 11.7727 17.4419 13.2107H17.4866V10.1557H10.7941C10.882 12.1322 10.7941 31.2201 10.7941 31.2201L10.794 31.2205Z"
+                fill="#DFE4EC" />
             </svg>
           </a>
-          <a
-            tabindex="-1"
-            href="https://www.instagram.com/a_double_sens/"
-            target="_blank"
-            title="Le compte Instagram 'A Double Sens'"
-            class="footer-link-item"
-          >
+          <a tabindex="-1" href="https://www.instagram.com/a_double_sens/" target="_blank"
+            title="Le compte Instagram 'A Double Sens'" class="footer-link-item">
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M15.6075 10.4046C12.7412 10.4046 10.402 12.7438 10.402 15.6103C10.402 18.4767 12.7412 20.8159 15.6075 20.8159C18.4739 20.8159 20.8131 18.4767 20.8131 15.6103C20.8131 12.7438 18.4739 10.4046 15.6075 10.4046ZM31.2202 15.6103C31.2202 13.4546 31.2398 11.3184 31.1187 9.16667C30.9977 6.66734 30.4275 4.44919 28.5999 2.62155C26.7684 0.790012 24.5542 0.223758 22.0549 0.102697C19.8993 -0.0183645 17.7632 0.00116158 15.6114 0.00116158C13.4558 0.00116158 11.3197 -0.0183645 9.16797 0.102697C6.66868 0.223758 4.45057 0.793918 2.62297 2.62155C0.791463 4.45309 0.225219 6.66734 0.10416 9.16667C-0.0168993 11.3223 0.0026264 13.4585 0.0026264 15.6103C0.0026264 17.762 -0.0168993 19.9021 0.10416 22.0538C0.225219 24.5532 0.795368 26.7713 2.62297 28.599C4.45448 30.4305 6.66868 30.9968 9.16797 31.1178C11.3236 31.2389 13.4597 31.2194 15.6114 31.2194C17.7671 31.2194 19.9032 31.2389 22.0549 31.1178C24.5542 30.9968 26.7723 30.4266 28.5999 28.599C30.4314 26.7674 30.9977 24.5532 31.1187 22.0538C31.2437 19.9021 31.2202 17.7659 31.2202 15.6103ZM15.6075 23.6198C11.1752 23.6198 7.59811 20.0427 7.59811 15.6103C7.59811 11.1779 11.1752 7.60069 15.6075 7.60069C20.0399 7.60069 23.617 11.1779 23.617 15.6103C23.617 20.0427 20.0399 23.6198 15.6075 23.6198ZM23.945 9.14324C22.9101 9.14324 22.0744 8.30753 22.0744 7.27265C22.0744 6.23777 22.9101 5.40206 23.945 5.40206C24.9798 5.40206 25.8155 6.23777 25.8155 7.27265C25.8158 7.51839 25.7677 7.76177 25.6738 7.98886C25.5799 8.21595 25.4421 8.42229 25.2684 8.59605C25.0946 8.76981 24.8883 8.90758 24.6612 9.00148C24.4341 9.09538 24.1907 9.14355 23.945 9.14324Z" fill="#DFE4EC"/>
+              <path
+                d="M15.6075 10.4046C12.7412 10.4046 10.402 12.7438 10.402 15.6103C10.402 18.4767 12.7412 20.8159 15.6075 20.8159C18.4739 20.8159 20.8131 18.4767 20.8131 15.6103C20.8131 12.7438 18.4739 10.4046 15.6075 10.4046ZM31.2202 15.6103C31.2202 13.4546 31.2398 11.3184 31.1187 9.16667C30.9977 6.66734 30.4275 4.44919 28.5999 2.62155C26.7684 0.790012 24.5542 0.223758 22.0549 0.102697C19.8993 -0.0183645 17.7632 0.00116158 15.6114 0.00116158C13.4558 0.00116158 11.3197 -0.0183645 9.16797 0.102697C6.66868 0.223758 4.45057 0.793918 2.62297 2.62155C0.791463 4.45309 0.225219 6.66734 0.10416 9.16667C-0.0168993 11.3223 0.0026264 13.4585 0.0026264 15.6103C0.0026264 17.762 -0.0168993 19.9021 0.10416 22.0538C0.225219 24.5532 0.795368 26.7713 2.62297 28.599C4.45448 30.4305 6.66868 30.9968 9.16797 31.1178C11.3236 31.2389 13.4597 31.2194 15.6114 31.2194C17.7671 31.2194 19.9032 31.2389 22.0549 31.1178C24.5542 30.9968 26.7723 30.4266 28.5999 28.599C30.4314 26.7674 30.9977 24.5532 31.1187 22.0538C31.2437 19.9021 31.2202 17.7659 31.2202 15.6103ZM15.6075 23.6198C11.1752 23.6198 7.59811 20.0427 7.59811 15.6103C7.59811 11.1779 11.1752 7.60069 15.6075 7.60069C20.0399 7.60069 23.617 11.1779 23.617 15.6103C23.617 20.0427 20.0399 23.6198 15.6075 23.6198ZM23.945 9.14324C22.9101 9.14324 22.0744 8.30753 22.0744 7.27265C22.0744 6.23777 22.9101 5.40206 23.945 5.40206C24.9798 5.40206 25.8155 6.23777 25.8155 7.27265C25.8158 7.51839 25.7677 7.76177 25.6738 7.98886C25.5799 8.21595 25.4421 8.42229 25.2684 8.59605C25.0946 8.76981 24.8883 8.90758 24.6612 9.00148C24.4341 9.09538 24.1907 9.14355 23.945 9.14324Z"
+                fill="#DFE4EC" />
             </svg>
           </a>
         </div>
       </nav>
     </aside>
-      <div class="container-modale"></div>
-    </div>
-    <main>
-      <section id="first-section">
-        <div class="max-width">
-          <div class="main-section-title-container">
-            <h1 class="section-main-title">
-              <b>S’épanouir</b> en mettant<br />
-              du <b>SENS</b> dans ce que<br />
-              vous <strong>faites</strong>.
-            </h1>
-            <button class="btn-cta">Découvrir le webinaire</button>
-          </div>
+    <div class="container-modale"></div>
+  </div>
+  <main>
+    <section id="first-section">
+      <div class="max-width">
+        <div class="main-section-title-container">
+          <h1 class="section-main-title">
+            <b>S’épanouir</b> en mettant<br />
+            du <b>SENS</b> dans ce que<br />
+            vous <strong>faites</strong>.
+          </h1>
+          <button class="btn-cta">Découvrir le webinaire</button>
         </div>
-        <div id="container-modale-inscription" class="container-modale">
-          <div id="modale-inscription">
-            <button id="modale-inscription-close" class="btn-close">
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M10.4695 8.95046L17.7595 1.66046C17.9234 1.46916 18.009 1.22308 17.9993 0.971403C17.9895 0.719727 17.8852 0.480988 17.7071 0.302894C17.529 0.124799 17.2903 0.0204662 17.0386 0.0107451C16.7869 0.00102391 16.5408 0.0866304 16.3495 0.250457L9.05954 7.54046L1.76954 0.240457C1.57824 0.0766302 1.33217 -0.00897537 1.08049 0.000745785C0.828814 0.0104669 0.590075 0.114799 0.411981 0.292893C0.233886 0.470988 0.129554 0.709727 0.119832 0.961403C0.110111 1.21308 0.195718 1.45915 0.359544 1.65046L7.64954 8.95046L0.349544 16.2405C0.244862 16.3301 0.159842 16.4404 0.0998186 16.5645C0.0397953 16.6886 0.00606467 16.8237 0.000745179 16.9614C-0.00457431 17.0991 0.0186316 17.2365 0.0689062 17.3648C0.119181 17.4931 0.195439 17.6097 0.292894 17.7071C0.390349 17.8046 0.506896 17.8808 0.635221 17.9311C0.763546 17.9814 0.900878 18.0046 1.0386 17.9993C1.17632 17.9939 1.31145 17.9602 1.43551 17.9002C1.55958 17.8402 1.6699 17.7551 1.75954 17.6505L9.05954 10.3605L16.3495 17.6505C16.5408 17.8143 16.7869 17.8999 17.0386 17.8902C17.2903 17.8804 17.529 17.7761 17.7071 17.598C17.8852 17.4199 17.9895 17.1812 17.9993 16.9295C18.009 16.6778 17.9234 16.4318 17.7595 16.2405L10.4695 8.95046Z" fill="#FF5740"/>
+      </div>
+      <div id="container-modale-inscription" class="container-modale">
+        <div id="modale-inscription">
+          <button id="modale-inscription-close" class="btn-close">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.4695 8.95046L17.7595 1.66046C17.9234 1.46916 18.009 1.22308 17.9993 0.971403C17.9895 0.719727 17.8852 0.480988 17.7071 0.302894C17.529 0.124799 17.2903 0.0204662 17.0386 0.0107451C16.7869 0.00102391 16.5408 0.0866304 16.3495 0.250457L9.05954 7.54046L1.76954 0.240457C1.57824 0.0766302 1.33217 -0.00897537 1.08049 0.000745785C0.828814 0.0104669 0.590075 0.114799 0.411981 0.292893C0.233886 0.470988 0.129554 0.709727 0.119832 0.961403C0.110111 1.21308 0.195718 1.45915 0.359544 1.65046L7.64954 8.95046L0.349544 16.2405C0.244862 16.3301 0.159842 16.4404 0.0998186 16.5645C0.0397953 16.6886 0.00606467 16.8237 0.000745179 16.9614C-0.00457431 17.0991 0.0186316 17.2365 0.0689062 17.3648C0.119181 17.4931 0.195439 17.6097 0.292894 17.7071C0.390349 17.8046 0.506896 17.8808 0.635221 17.9311C0.763546 17.9814 0.900878 18.0046 1.0386 17.9993C1.17632 17.9939 1.31145 17.9602 1.43551 17.9002C1.55958 17.8402 1.6699 17.7551 1.75954 17.6505L9.05954 10.3605L16.3495 17.6505C16.5408 17.8143 16.7869 17.8999 17.0386 17.8902C17.2903 17.8804 17.529 17.7761 17.7071 17.598C17.8852 17.4199 17.9895 17.1812 17.9993 16.9295C18.009 16.6778 17.9234 16.4318 17.7595 16.2405L10.4695 8.95046Z"
+                fill="#FF5740" />
+            </svg>
+          </button>
+          <h2>Obtenez tous les détails sur nos Webinaires</h2>
+          <p id="modale-inscription-description">Inscrivez-vous à notre newsletter afin de recevoir toutes les
+            informations sur nos webinaires et sur A double sens !</p>
+          <form id="modale-inscription-form">
+            <input autofocus type="email" placeholder="Indiquez votre adresse mail" />
+            <div>
+              <p id="modale-inscription-form-error">*adresse mail invalid</p>
+              <button type="submit">
+                Je m'inscris
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9 0C11.3869 0 13.6761 0.948212 15.364 2.63604C17.0518 4.32387 18 6.61305 18 9C18 11.3869 17.0518 13.6761 15.364 15.364C13.6761 17.0518 11.3869 18 9 18C6.61305 18 4.32387 17.0518 2.63604 15.364C0.948212 13.6761 0 11.3869 0 9C0 6.61305 0.948212 4.32387 2.63604 2.63604C4.32387 0.948212 6.61305 0 9 0V0ZM5.0625 8.4375C4.91332 8.4375 4.77024 8.49676 4.66475 8.60225C4.55926 8.70774 4.5 8.85082 4.5 9C4.5 9.14918 4.55926 9.29226 4.66475 9.39775C4.77024 9.50324 4.91332 9.5625 5.0625 9.5625H11.5796L9.16425 11.9767C9.11195 12.029 9.07047 12.0911 9.04216 12.1595C9.01386 12.2278 8.99929 12.301 8.99929 12.375C8.99929 12.449 9.01386 12.5222 9.04216 12.5905C9.07047 12.6589 9.11195 12.721 9.16425 12.7733C9.21655 12.8255 9.27864 12.867 9.34697 12.8953C9.4153 12.9236 9.48854 12.9382 9.5625 12.9382C9.63646 12.9382 9.7097 12.9236 9.77803 12.8953C9.84636 12.867 9.90845 12.8255 9.96075 12.7733L13.3358 9.39825C13.3881 9.346 13.4297 9.28393 13.4581 9.21559C13.4864 9.14725 13.501 9.07399 13.501 9C13.501 8.92601 13.4864 8.85275 13.4581 8.78441C13.4297 8.71607 13.3881 8.654 13.3358 8.60175L9.96075 5.22675C9.90845 5.17445 9.84636 5.13297 9.77803 5.10466C9.7097 5.07636 9.63646 5.06179 9.5625 5.06179C9.48854 5.06179 9.4153 5.07636 9.34697 5.10466C9.27864 5.13297 9.21655 5.17445 9.16425 5.22675C9.11195 5.27905 9.07047 5.34114 9.04216 5.40947C9.01386 5.4778 8.99929 5.55104 8.99929 5.625C8.99929 5.69896 9.01386 5.7722 9.04216 5.84053C9.07047 5.90886 9.11195 5.97095 9.16425 6.02325L11.5796 8.4375H5.0625Z"
+                    fill="#FF5740" />
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div id="circle-orbit-container">
+        <div class="orbit" id="inner-orbit"></div>
+        <div class="orbit" id="middle-orbit"></div>
+        <div class="orbit" id="outer-orbit"></div>
+      </div>
+    </section>
+    <section id="section-dispositif">
+      <div class="out-of-flow">
+        <figure id="figure-quote">
+          <blockquote cite="https://www.dicocitations.com/citations/citation-4473.php">
+            <p>
+              <svg width="33" height="24" viewBox="0 0 33 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M30.2802 10.6286C28.9077 9.51429 27.7068 8.91429 26.7632 8.91429C26.849 8.31429 27.2779 7.37143 28.1357 6C28.9935 4.62857 30.0229 3.51429 31.2238 2.57143C31.138 1.45714 30.5375 0.6 29.4224 0C27.2779 0.685714 25.1334 1.97143 23.2462 3.85714C21.2732 5.74286 19.815 7.88571 18.614 10.2857C17.4989 12.6857 16.8984 14.9143 16.8984 17.0571C16.8984 19.2 17.5847 20.9143 18.9572 22.1143C20.3297 23.3143 22.131 24 24.2756 24C26.4201 24 28.3072 23.1429 29.8513 21.4286C31.3953 19.7143 32.1674 17.7429 32.1674 15.6857C32.3389 13.4571 31.6527 11.8286 30.2802 10.6286Z"
+                  fill="#FF5740" />
+                <path
+                  d="M13.2102 10.6286C11.8377 9.51429 10.6368 8.91429 9.6932 8.91429C9.77898 8.31429 10.2937 7.37143 11.1515 6C12.0093 4.62857 13.0386 3.51429 14.2396 2.57143C14.1538 1.37143 13.5533 0.514286 12.4382 0C9.17851 1.02857 6.26198 3.25714 3.77434 6.77143C1.28671 10.2857 0 13.4571 0 16.1143C0 18.8571 0.686244 20.8286 2.05873 22.0286C3.43122 23.2286 5.23261 23.9143 7.37712 23.9143C9.52164 23.9143 11.4088 23.0571 12.9529 21.3429C14.4969 19.6286 15.2689 17.6571 15.2689 15.6C15.3547 13.4571 14.5827 11.8286 13.2102 10.6286Z"
+                  fill="#FF5740" />
               </svg>
-            </button>
-            <h2>Obtenez tous les détails sur nos Webinaires</h2>
-            <p id="modale-inscription-description">Inscrivez-vous à notre newsletter afin de recevoir toutes les informations sur nos webinaires et sur A double sens !</p>
-            <form id="modale-inscription-form">
-              <input autofocus type="email" placeholder="Indiquez votre adresse mail" />
+              Choisissez un travail que vous aimez et vous n’aurez pas à
+              travailler un seul jour de votre vie.
+              <svg width="33" height="24" viewBox="0 0 33 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M1.91512 13.3714C3.28761 14.4857 4.48853 15.0857 5.43212 15.0857C5.34634 15.6857 4.91744 16.6286 4.05963 18C3.20183 19.3714 2.17246 20.4857 0.971531 21.4286C1.05731 22.5429 1.65778 23.4 2.77292 24C4.91744 23.3143 7.06195 22.0286 8.94912 20.1429C10.9221 18.2571 12.3803 16.1143 13.5813 13.7143C14.6964 11.3143 15.2969 9.08571 15.2969 6.94286C15.2969 4.8 14.6106 3.08571 13.2381 1.88572C11.8657 0.685715 10.0643 0 7.91975 0C5.77524 0 3.88807 0.857143 2.34402 2.57143C0.799972 4.28571 0.0279465 6.25714 0.0279465 8.31429C-0.143615 10.5429 0.54263 12.1714 1.91512 13.3714Z"
+                  fill="#FF5740" />
+                <path
+                  d="M18.9851 13.3714C20.3576 14.4857 21.5585 15.0857 22.5021 15.0857C22.4163 15.6857 21.9017 16.6286 21.0438 18C20.186 19.3714 19.1567 20.4857 17.9558 21.4286C18.0415 22.6286 18.642 23.4857 19.7571 24C23.0168 22.9714 25.9333 20.7429 28.421 17.2286C30.9086 13.7143 32.1953 10.5429 32.1953 7.88572C32.1953 5.14286 31.5091 3.17143 30.1366 1.97143C28.7641 0.771427 26.9627 0.0857143 24.8182 0.0857143C22.6737 0.0857143 20.7865 0.942858 19.2425 2.65714C17.6984 4.37143 16.9264 6.34286 16.9264 8.4C16.8406 10.5429 17.6126 12.1714 18.9851 13.3714Z"
+                  fill="#FF5740" />
+              </svg>
+            </p>
+          </blockquote>
+          <figcaption>Confucius</figcaption>
+        </figure>
+      </div>
+      <div class="max-width">
+        <h1 class="section-second-title">
+          <span class="section-second-title-orange">Qui sommes-nous?</span>
+          <br />
+          À double sens
+        </h1>
+        <div id="section-dispositif-content">
+          <div id="dispostif-insight">
+            <div id="dispositif-insight-title">
               <div>
-                <p id="modale-inscription-form-error">*adresse mail invalid</p>
-                <button type="submit">
-                  Je m'inscris
-                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9 0C11.3869 0 13.6761 0.948212 15.364 2.63604C17.0518 4.32387 18 6.61305 18 9C18 11.3869 17.0518 13.6761 15.364 15.364C13.6761 17.0518 11.3869 18 9 18C6.61305 18 4.32387 17.0518 2.63604 15.364C0.948212 13.6761 0 11.3869 0 9C0 6.61305 0.948212 4.32387 2.63604 2.63604C4.32387 0.948212 6.61305 0 9 0V0ZM5.0625 8.4375C4.91332 8.4375 4.77024 8.49676 4.66475 8.60225C4.55926 8.70774 4.5 8.85082 4.5 9C4.5 9.14918 4.55926 9.29226 4.66475 9.39775C4.77024 9.50324 4.91332 9.5625 5.0625 9.5625H11.5796L9.16425 11.9767C9.11195 12.029 9.07047 12.0911 9.04216 12.1595C9.01386 12.2278 8.99929 12.301 8.99929 12.375C8.99929 12.449 9.01386 12.5222 9.04216 12.5905C9.07047 12.6589 9.11195 12.721 9.16425 12.7733C9.21655 12.8255 9.27864 12.867 9.34697 12.8953C9.4153 12.9236 9.48854 12.9382 9.5625 12.9382C9.63646 12.9382 9.7097 12.9236 9.77803 12.8953C9.84636 12.867 9.90845 12.8255 9.96075 12.7733L13.3358 9.39825C13.3881 9.346 13.4297 9.28393 13.4581 9.21559C13.4864 9.14725 13.501 9.07399 13.501 9C13.501 8.92601 13.4864 8.85275 13.4581 8.78441C13.4297 8.71607 13.3881 8.654 13.3358 8.60175L9.96075 5.22675C9.90845 5.17445 9.84636 5.13297 9.77803 5.10466C9.7097 5.07636 9.63646 5.06179 9.5625 5.06179C9.48854 5.06179 9.4153 5.07636 9.34697 5.10466C9.27864 5.13297 9.21655 5.17445 9.16425 5.22675C9.11195 5.27905 9.07047 5.34114 9.04216 5.40947C9.01386 5.4778 8.99929 5.55104 8.99929 5.625C8.99929 5.69896 9.01386 5.7722 9.04216 5.84053C9.07047 5.90886 9.11195 5.97095 9.16425 6.02325L11.5796 8.4375H5.0625Z" fill="#FF5740"/>
-                  </svg>
+                <button class="dispositif-insight-button" aria-selected="true">
+                  Notre mission
                 </button>
               </div>
-            </form>
-          </div>
-        </div>
-        <div id="circle-orbit-container">
-          <div class="orbit" id="inner-orbit"></div>
-          <div class="orbit" id="middle-orbit"></div>
-          <div class="orbit" id="outer-orbit"></div>
-        </div>
-      </section>
-      <section id="section-dispositif">
-        <div class="out-of-flow">
-          <figure id="figure-quote">
-            <blockquote
-              cite="https://www.dicocitations.com/citations/citation-4473.php"
-            >
-              <p>
-                <svg
-                  width="33"
-                  height="24"
-                  viewBox="0 0 33 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M30.2802 10.6286C28.9077 9.51429 27.7068 8.91429 26.7632 8.91429C26.849 8.31429 27.2779 7.37143 28.1357 6C28.9935 4.62857 30.0229 3.51429 31.2238 2.57143C31.138 1.45714 30.5375 0.6 29.4224 0C27.2779 0.685714 25.1334 1.97143 23.2462 3.85714C21.2732 5.74286 19.815 7.88571 18.614 10.2857C17.4989 12.6857 16.8984 14.9143 16.8984 17.0571C16.8984 19.2 17.5847 20.9143 18.9572 22.1143C20.3297 23.3143 22.131 24 24.2756 24C26.4201 24 28.3072 23.1429 29.8513 21.4286C31.3953 19.7143 32.1674 17.7429 32.1674 15.6857C32.3389 13.4571 31.6527 11.8286 30.2802 10.6286Z"
-                    fill="#FF5740"
-                  />
-                  <path
-                    d="M13.2102 10.6286C11.8377 9.51429 10.6368 8.91429 9.6932 8.91429C9.77898 8.31429 10.2937 7.37143 11.1515 6C12.0093 4.62857 13.0386 3.51429 14.2396 2.57143C14.1538 1.37143 13.5533 0.514286 12.4382 0C9.17851 1.02857 6.26198 3.25714 3.77434 6.77143C1.28671 10.2857 0 13.4571 0 16.1143C0 18.8571 0.686244 20.8286 2.05873 22.0286C3.43122 23.2286 5.23261 23.9143 7.37712 23.9143C9.52164 23.9143 11.4088 23.0571 12.9529 21.3429C14.4969 19.6286 15.2689 17.6571 15.2689 15.6C15.3547 13.4571 14.5827 11.8286 13.2102 10.6286Z"
-                    fill="#FF5740"
-                  />
-                </svg>
-                Choisissez un travail que vous aimez et vous n’aurez pas à
-                travailler un seul jour de votre vie.
-                <svg
-                  width="33"
-                  height="24"
-                  viewBox="0 0 33 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1.91512 13.3714C3.28761 14.4857 4.48853 15.0857 5.43212 15.0857C5.34634 15.6857 4.91744 16.6286 4.05963 18C3.20183 19.3714 2.17246 20.4857 0.971531 21.4286C1.05731 22.5429 1.65778 23.4 2.77292 24C4.91744 23.3143 7.06195 22.0286 8.94912 20.1429C10.9221 18.2571 12.3803 16.1143 13.5813 13.7143C14.6964 11.3143 15.2969 9.08571 15.2969 6.94286C15.2969 4.8 14.6106 3.08571 13.2381 1.88572C11.8657 0.685715 10.0643 0 7.91975 0C5.77524 0 3.88807 0.857143 2.34402 2.57143C0.799972 4.28571 0.0279465 6.25714 0.0279465 8.31429C-0.143615 10.5429 0.54263 12.1714 1.91512 13.3714Z"
-                    fill="#FF5740"
-                  />
-                  <path
-                    d="M18.9851 13.3714C20.3576 14.4857 21.5585 15.0857 22.5021 15.0857C22.4163 15.6857 21.9017 16.6286 21.0438 18C20.186 19.3714 19.1567 20.4857 17.9558 21.4286C18.0415 22.6286 18.642 23.4857 19.7571 24C23.0168 22.9714 25.9333 20.7429 28.421 17.2286C30.9086 13.7143 32.1953 10.5429 32.1953 7.88572C32.1953 5.14286 31.5091 3.17143 30.1366 1.97143C28.7641 0.771427 26.9627 0.0857143 24.8182 0.0857143C22.6737 0.0857143 20.7865 0.942858 19.2425 2.65714C17.6984 4.37143 16.9264 6.34286 16.9264 8.4C16.8406 10.5429 17.6126 12.1714 18.9851 13.3714Z"
-                    fill="#FF5740"
-                  />
-                </svg>
-              </p>
-            </blockquote>
-            <figcaption>Confucius</figcaption>
-          </figure>
-        </div>
-        <div class="max-width">
-          <h1 class="section-second-title">
-            <span class="section-second-title-orange">Qui sommes-nous?</span>
-            <br />
-            À double sens
-          </h1>
-          <div id="section-dispositif-content">
-            <div id="dispostif-insight">
-              <div id="dispositif-insight-title">
-                <div>
-                  <button class="dispositif-insight-button" aria-selected="true">
-                    Notre mission
-                  </button>
-                </div>
-                <div>
-                  <button class="dispositif-insight-button" aria-selected="false">
-                    Nos valeurs
-                  </button>
-                </div>
-                <div>
-                  <button class="dispositif-insight-button" aria-selected="false">
-                    Nos actions
-                  </button>
-                </div>
+              <div>
+                <button class="dispositif-insight-button" aria-selected="false">
+                  Nos valeurs
+                </button>
               </div>
-              <p id="dispositif-insight-description">
-                <strong>A double sens</strong> a pour objectif principal de
-                valoriser l’épanouissement personnel par le biais de
-                l’entrepreneuriat social. Il nous semble essentiel de mettre du
-                sens à notre activité professionnelle et de concilier ses
-                valeurs personnelles avec son travail.
-              </p>
+              <div>
+                <button class="dispositif-insight-button" aria-selected="false">
+                  Nos actions
+                </button>
+              </div>
             </div>
+            <p id="dispositif-insight-description">
+              <strong>A double sens</strong> a pour objectif principal de
+              valoriser l’épanouissement personnel par le biais de
+              l’entrepreneuriat social. Il nous semble essentiel de mettre du
+              sens à notre activité professionnelle et de concilier ses
+              valeurs personnelles avec son travail.
+            </p>
           </div>
-          <div
-            class="gallery js-flickity"
-            data-flickity-options='{
+        </div>
+        <div class="gallery js-flickity" data-flickity-options='{
               "wrapAround": true,
               "prevNextButtons": false,
               "prevNextButtons": false,
               "autoPlay": true
-            }'
-          >
-            <div class="gallery-cell">
-              <h3>Notre mission</h3>
-              <p><strong>A double sens</strong> a pour objectif principal de valoriser l’épanouissement personnel par le biais de l’entrepreneuriat social. Il nous semble essentiel de mettre du sens à notre activité professionnelle et de concilier ses valeurs personnelles avec son travail.</p>
-            </div>
-            <div class="gallery-cell">
-              <h3>Nos valeurs</h3>
-              <p><strong>A double sens</strong> a pour objectif principal de valoriser l’épanouissement personnel par le biais de l’entrepreneuriat social. Il nous semble essentiel de mettre du sens à notre activité professionnelle et de concilier ses valeurs personnelles avec son travail.</p>
-            </div>
-            <div class="gallery-cell">
-              <h3>Nos actions</h3>
-              <p><strong>A double sens</strong> a pour objectif principal de valoriser l’épanouissement personnel par le biais de l’entrepreneuriat social. Il nous semble essentiel de mettre du sens à notre activité professionnelle et de concilier ses valeurs personnelles avec son travail.</p>
-            </div>
+            }'>
+          <div class="gallery-cell">
+            <h3>Notre mission</h3>
+            <p><strong>A double sens</strong> a pour objectif principal de valoriser l’épanouissement personnel par le
+              biais de l’entrepreneuriat social. Il nous semble essentiel de mettre du sens à notre activité
+              professionnelle et de concilier ses valeurs personnelles avec son travail.</p>
+          </div>
+          <div class="gallery-cell">
+            <h3>Nos valeurs</h3>
+            <p><strong>A double sens</strong> a pour objectif principal de valoriser l’épanouissement personnel par le
+              biais de l’entrepreneuriat social. Il nous semble essentiel de mettre du sens à notre activité
+              professionnelle et de concilier ses valeurs personnelles avec son travail.</p>
+          </div>
+          <div class="gallery-cell">
+            <h3>Nos actions</h3>
+            <p><strong>A double sens</strong> a pour objectif principal de valoriser l’épanouissement personnel par le
+              biais de l’entrepreneuriat social. Il nous semble essentiel de mettre du sens à notre activité
+              professionnelle et de concilier ses valeurs personnelles avec son travail.</p>
           </div>
         </div>
-        <picture id="section-dispositif-background">
-          <img src="./images/background.svg" alt="Logo 'A Double Sens' Illustration" />
-        </picture>
-      </section>
-      <section id="section-definition">
-        <div class="max-width">
-          <h1 class="section-second-title">Connaissez vous l’entrepreneuriat social ?</h1>
-          <div id="container-advantage">
-            <div class="advantage-item">
-              <p class="advantage-item-number">1</p>
-              <p class="advantage-item-content">
-                La recherche d’une utilité sociale est son but principal.
-              </p>
-            </div>
-            <div class="advantage-item">
-              <p class="advantage-item-number">2</p>
-              <p class="advantage-item-content">
-                Il contribue positivement au dénouement des problèmes sociaux.
-              </p>
-            </div>
-            <div class="advantage-item">
-              <p class="advantage-item-number">3</p>
-              <p class="advantage-item-content">
-                Il permet d’être épanoui grâce aux bénéfices sociaux et
-                environnementaux générés.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="section-webinar">
-        <picture class="webinar-decoration">
-          <img src="./images/logoTiret.svg" alt="Logo 'A Double Sens' Pointillé" />
-        </picture>
-        <div class="max-width">
-          <div id="section-webinar-text-container">
-            <h1 class="section-second-title">
-              <span class="section-second-title-orange">Pour en savoir plus,</span>
-              <br />
-              découvrez notre webinaire !
-            </h1>
-            <p>
-              <strong>Au programme :</strong> des présentations sur des thématiques
-              de l’entrepreneuriat social, des intervenants spécialistes, des
-              interviews, des témoignages, des foires à questions et bien plus !
+      </div>
+      <picture id="section-dispositif-background">
+        <img src="./images/background.svg" alt="Logo 'A Double Sens' Illustration" />
+      </picture>
+    </section>
+    <section id="section-definition">
+      <div class="max-width">
+        <h1 class="section-second-title">Connaissez vous l’entrepreneuriat social ?</h1>
+        <div id="container-advantage">
+          <div class="advantage-item">
+            <p class="advantage-item-number">1</p>
+            <p class="advantage-item-content">
+              La recherche d’une utilité sociale est son but principal.
             </p>
-            <p class="container-external-link">
-              <a
-                class="external-link"
-                title="Retrouvez nos webinaires en replay"
-                href="https://www.youtube.com/channel/UCQwmHpdiIuLl0htFlwTLmWA/featured"
-                target="_blank"
-              >
-                Retrouvez nos webinaires en replay
-                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9 0C11.3869 0 13.6761 0.948212 15.364 2.63604C17.0518 4.32387 18 6.61305 18 9C18 11.3869 17.0518 13.6761 15.364 15.364C13.6761 17.0518 11.3869 18 9 18C6.61305 18 4.32387 17.0518 2.63604 15.364C0.948212 13.6761 0 11.3869 0 9C0 6.61305 0.948212 4.32387 2.63604 2.63604C4.32387 0.948212 6.61305 0 9 0V0ZM5.0625 8.4375C4.91332 8.4375 4.77024 8.49676 4.66475 8.60225C4.55926 8.70774 4.5 8.85082 4.5 9C4.5 9.14918 4.55926 9.29226 4.66475 9.39775C4.77024 9.50324 4.91332 9.5625 5.0625 9.5625H11.5796L9.16425 11.9767C9.11195 12.029 9.07047 12.0911 9.04216 12.1595C9.01386 12.2278 8.99929 12.301 8.99929 12.375C8.99929 12.449 9.01386 12.5222 9.04216 12.5905C9.07047 12.6589 9.11195 12.721 9.16425 12.7733C9.21655 12.8255 9.27864 12.867 9.34697 12.8953C9.4153 12.9236 9.48854 12.9382 9.5625 12.9382C9.63646 12.9382 9.7097 12.9236 9.77803 12.8953C9.84636 12.867 9.90845 12.8255 9.96075 12.7733L13.3358 9.39825C13.3881 9.346 13.4297 9.28393 13.4581 9.21559C13.4864 9.14725 13.501 9.07399 13.501 9C13.501 8.92601 13.4864 8.85275 13.4581 8.78441C13.4297 8.71607 13.3881 8.654 13.3358 8.60175L9.96075 5.22675C9.90845 5.17445 9.84636 5.13297 9.77803 5.10466C9.7097 5.07636 9.63646 5.06179 9.5625 5.06179C9.48854 5.06179 9.4153 5.07636 9.34697 5.10466C9.27864 5.13297 9.21655 5.17445 9.16425 5.22675C9.11195 5.27905 9.07047 5.34114 9.04216 5.40947C9.01386 5.4778 8.99929 5.55104 8.99929 5.625C8.99929 5.69896 9.01386 5.7722 9.04216 5.84053C9.07047 5.90886 9.11195 5.97095 9.16425 6.02325L11.5796 8.4375H5.0625Z" fill="#FF5740"/>
-                </svg>
-              </a>
+          </div>
+          <div class="advantage-item">
+            <p class="advantage-item-number">2</p>
+            <p class="advantage-item-content">
+              Il contribue positivement au dénouement des problèmes sociaux.
+            </p>
+          </div>
+          <div class="advantage-item">
+            <p class="advantage-item-number">3</p>
+            <p class="advantage-item-content">
+              Il permet d’être épanoui grâce aux bénéfices sociaux et
+              environnementaux générés.
             </p>
           </div>
         </div>
-        <div class="out-of-flow">
-          <p id="webinare-informations-next">Le prochain rendez-vous :</p>
-          <h2 class="section-second-title" id="webinare-informations-date"></h2>
-          <p id="webinare-informations-subject">
-            <strong>Le sujet: </strong><span></span>
-          </p>
-          <p id="webinar-informations-time">
-            <strong><span></span> - Livestorm</strong>
-          </p>
-          <button class="btn-cta">Je m’informe</button>
-        </div>
-        <picture class="webinar-decoration">
-          <img src="./images/logoTiret.svg" alt="Logo 'A Double Sens' Pointillé" />
-        </picture>
-      </section>
-      <section id="section-benefice">
-        <div class="max-width">
+      </div>
+    </section>
+    <section id="section-webinar">
+      <picture class="webinar-decoration">
+        <img src="./images/logoTiret.svg" alt="Logo 'A Double Sens' Pointillé" />
+      </picture>
+      <div class="max-width">
+        <div id="section-webinar-text-container">
           <h1 class="section-second-title">
-            <span class="section-second-title-orange">Et vous dans tout ça ?</span>
+            <span class="section-second-title-orange">Pour en savoir plus,</span>
             <br />
-            Les bénéfices de l’entrepreneuriat social
+            découvrez notre webinaire !
           </h1>
-          <div id="section-benefice-container">
-            <div class="benefice-item">
-              <picture class="benefice-item-image">
-                <img src="./images/PICTO1.svg" alt="Pictogramme Sens" />
-              </picture>
-              <div>
-                <h2 class="benefice-item-title">Mettre du sens dans ce que vous faites</h2>
-                <p class="benefice-item-description">
-                  Aujourd’hui, 63% des Français estiment que leur activité
-                  professionnelle manque de sens.
-                </p>
-              </div>
-            </div>
-            <div class="benefice-item">
-              <picture class="benefice-item-image">
-                <img src="./images/PICTO2.svg" alt="Pictogramme Valeur" />
-              </picture>
-              <div>
-                <h2 class="benefice-item-title">Concilier vos valeurs et votre activité</h2>
-                <p class="benefice-item-description">
-                  Un défi qui assure, à tous, plus de sérénité, plus de
-                  motivation, et plus de productivité.
-                </p>
-              </div>
-            </div>
-            <div class="benefice-item">
-              <picture class="benefice-item-image">
-                <img src="./images/PICTO3.svg" alt="Pictogramme Agir" />
-              </picture>
-              <div>
-                <h2 class="benefice-item-title">Agir pour les autres</h2>
-                <p class="benefice-item-description">
-                  Agir pour les autres est une source d’épanouissement et
-                  permet à chacun d’y trouver un intérêt.
-                </p>
-              </div>
-            </div>
-            <div class="benefice-item">
-              <picture class="benefice-item-image">
-                <img src="./images/PICTO4.svg" alt="Pictogramme Impact Positif" />
-              </picture>
-              <div>
-                <h2 class="benefice-item-title">Avoir un impact positif sur la société</h2>
-                <p class="benefice-item-description">
-                  Les entreprises sont de plus en plus nombreuses à adopter
-                  une approche de qui dépasse les simples enjeux du chiffre
-                  d’affaires et des bénéfices.
-                </p>
-              </div>
+          <p>
+            <strong>Au programme :</strong> des présentations sur des thématiques
+            de l’entrepreneuriat social, des intervenants spécialistes, des
+            interviews, des témoignages, des foires à questions et bien plus !
+          </p>
+          <p class="container-external-link">
+            <a class="external-link" title="Retrouvez nos webinaires en replay"
+              href="https://www.youtube.com/channel/UCQwmHpdiIuLl0htFlwTLmWA/featured" target="_blank">
+              Retrouvez nos webinaires en replay
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9 0C11.3869 0 13.6761 0.948212 15.364 2.63604C17.0518 4.32387 18 6.61305 18 9C18 11.3869 17.0518 13.6761 15.364 15.364C13.6761 17.0518 11.3869 18 9 18C6.61305 18 4.32387 17.0518 2.63604 15.364C0.948212 13.6761 0 11.3869 0 9C0 6.61305 0.948212 4.32387 2.63604 2.63604C4.32387 0.948212 6.61305 0 9 0V0ZM5.0625 8.4375C4.91332 8.4375 4.77024 8.49676 4.66475 8.60225C4.55926 8.70774 4.5 8.85082 4.5 9C4.5 9.14918 4.55926 9.29226 4.66475 9.39775C4.77024 9.50324 4.91332 9.5625 5.0625 9.5625H11.5796L9.16425 11.9767C9.11195 12.029 9.07047 12.0911 9.04216 12.1595C9.01386 12.2278 8.99929 12.301 8.99929 12.375C8.99929 12.449 9.01386 12.5222 9.04216 12.5905C9.07047 12.6589 9.11195 12.721 9.16425 12.7733C9.21655 12.8255 9.27864 12.867 9.34697 12.8953C9.4153 12.9236 9.48854 12.9382 9.5625 12.9382C9.63646 12.9382 9.7097 12.9236 9.77803 12.8953C9.84636 12.867 9.90845 12.8255 9.96075 12.7733L13.3358 9.39825C13.3881 9.346 13.4297 9.28393 13.4581 9.21559C13.4864 9.14725 13.501 9.07399 13.501 9C13.501 8.92601 13.4864 8.85275 13.4581 8.78441C13.4297 8.71607 13.3881 8.654 13.3358 8.60175L9.96075 5.22675C9.90845 5.17445 9.84636 5.13297 9.77803 5.10466C9.7097 5.07636 9.63646 5.06179 9.5625 5.06179C9.48854 5.06179 9.4153 5.07636 9.34697 5.10466C9.27864 5.13297 9.21655 5.17445 9.16425 5.22675C9.11195 5.27905 9.07047 5.34114 9.04216 5.40947C9.01386 5.4778 8.99929 5.55104 8.99929 5.625C8.99929 5.69896 9.01386 5.7722 9.04216 5.84053C9.07047 5.90886 9.11195 5.97095 9.16425 6.02325L11.5796 8.4375H5.0625Z"
+                  fill="#FF5740" />
+              </svg>
+            </a>
+          </p>
+        </div>
+      </div>
+      <div class="out-of-flow">
+        <p id="webinare-informations-next">Le prochain rendez-vous :</p>
+        <h2 class="section-second-title" id="webinare-informations-date"></h2>
+        <p id="webinare-informations-subject">
+          <strong>Le sujet: </strong><span></span>
+        </p>
+        <p id="webinar-informations-time">
+          <strong><span></span> - Livestorm</strong>
+        </p>
+        <button class="btn-cta">Je m’informe</button>
+      </div>
+      <picture class="webinar-decoration">
+        <img src="./images/logoTiret.svg" alt="Logo 'A Double Sens' Pointillé" />
+      </picture>
+    </section>
+    <section id="section-benefice">
+      <div class="max-width">
+        <h1 class="section-second-title">
+          <span class="section-second-title-orange">Et vous dans tout ça ?</span>
+          <br />
+          Les bénéfices de l’entrepreneuriat social
+        </h1>
+        <div id="section-benefice-container">
+          <div class="benefice-item">
+            <picture class="benefice-item-image">
+              <img src="./images/PICTO1.svg" alt="Pictogramme Sens" />
+            </picture>
+            <div>
+              <h2 class="benefice-item-title">Mettre du sens dans ce que vous faites</h2>
+              <p class="benefice-item-description">
+                Aujourd’hui, 63% des Français estiment que leur activité
+                professionnelle manque de sens.
+              </p>
             </div>
           </div>
-          <div
-            class="gallery js-flickity"
-            data-flickity-options='{
+          <div class="benefice-item">
+            <picture class="benefice-item-image">
+              <img src="./images/PICTO2.svg" alt="Pictogramme Valeur" />
+            </picture>
+            <div>
+              <h2 class="benefice-item-title">Concilier vos valeurs et votre activité</h2>
+              <p class="benefice-item-description">
+                Un défi qui assure, à tous, plus de sérénité, plus de
+                motivation, et plus de productivité.
+              </p>
+            </div>
+          </div>
+          <div class="benefice-item">
+            <picture class="benefice-item-image">
+              <img src="./images/PICTO3.svg" alt="Pictogramme Agir" />
+            </picture>
+            <div>
+              <h2 class="benefice-item-title">Agir pour les autres</h2>
+              <p class="benefice-item-description">
+                Agir pour les autres est une source d’épanouissement et
+                permet à chacun d’y trouver un intérêt.
+              </p>
+            </div>
+          </div>
+          <div class="benefice-item">
+            <picture class="benefice-item-image">
+              <img src="./images/PICTO4.svg" alt="Pictogramme Impact Positif" />
+            </picture>
+            <div>
+              <h2 class="benefice-item-title">Avoir un impact positif sur la société</h2>
+              <p class="benefice-item-description">
+                Les entreprises sont de plus en plus nombreuses à adopter
+                une approche de qui dépasse les simples enjeux du chiffre
+                d’affaires et des bénéfices.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery js-flickity" data-flickity-options='{
               "wrapAround": true,
               "prevNextButtons": false,
               "prevNextButtons": false,
               "autoPlay": true
-            }'
-          >
-            <div class="cell-item">
-              <div class="benefice-item">
-                <div>
+            }'>
+          <div class="cell-item">
+            <div class="benefice-item">
+              <div>
                 <picture class="benefice-item-image">
                   <img src="./images/PICTO1.svg" alt="Pictogramme Sens" />
                 </picture>
                 <h2 class="benefice-item-title">Mettre du sens dans ce que vous faites</h2>
               </div>
-                <p class="benefice-item-description">
+              <p class="benefice-item-description">
                 Aujourd’hui, 63% des Français estiment que leur activité
                 professionnelle manque de sens.
               </p>
-              </div>
             </div>
-            <div class="cell-item">
-              <div class="benefice-item">
-                <div>
+          </div>
+          <div class="cell-item">
+            <div class="benefice-item">
+              <div>
                 <picture class="benefice-item-image">
                   <img src="./images/PICTO2.svg" alt="Pictogramme Sens" />
                 </picture>
                 <h2 class="benefice-item-title">Concilier vos valeurs et votre activité</h2>
               </div>
-                <p class="benefice-item-description">
+              <p class="benefice-item-description">
                 Un défi qui assure, à tous, plus de sérénité, plus de
                 motivation, et plus de productivité.
               </p>
-              </div>
             </div>
-            <div class="cell-item">
-              <div class="benefice-item">
-                <div>
+          </div>
+          <div class="cell-item">
+            <div class="benefice-item">
+              <div>
                 <picture class="benefice-item-image">
                   <img src="./images/PICTO3.svg" alt="Pictogramme Sens" />
                 </picture>
                 <h2 class="benefice-item-title">Agir pour les autres</h2>
               </div>
-                <p class="benefice-item-description">
+              <p class="benefice-item-description">
                 Agir pour les autres est une source d’épanouissement et
                 permet à chacun d’y trouver un intérêt.
               </p>
-              </div>
             </div>
-            <div class="cell-item">
-              <div class="benefice-item">
-                <div>
+          </div>
+          <div class="cell-item">
+            <div class="benefice-item">
+              <div>
                 <picture class="benefice-item-image">
                   <img src="./images/PICTO4.svg" alt="Pictogramme Sens" />
                 </picture>
                 <h2 class="benefice-item-title">Avoir un impact positif sur la société</h2>
               </div>
-                <p class="benefice-item-description">
+              <p class="benefice-item-description">
                 Les entreprises sont de plus en plus nombreuses à adopter
                 une approche de qui dépasse les simples enjeux du chiffre
                 d’affaires et des bénéfices.
               </p>
-              </div>
             </div>
           </div>
-          <p class="container-external-link">
-            <a href="https://www.youtube.com/channel/UCQwmHpdiIuLl0htFlwTLmWA/featured" target="_blank" class="external-link">
-              Retrouvez notre vidéo explicative
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9 0C11.3869 0 13.6761 0.948212 15.364 2.63604C17.0518 4.32387 18 6.61305 18 9C18 11.3869 17.0518 13.6761 15.364 15.364C13.6761 17.0518 11.3869 18 9 18C6.61305 18 4.32387 17.0518 2.63604 15.364C0.948212 13.6761 0 11.3869 0 9C0 6.61305 0.948212 4.32387 2.63604 2.63604C4.32387 0.948212 6.61305 0 9 0V0ZM5.0625 8.4375C4.91332 8.4375 4.77024 8.49676 4.66475 8.60225C4.55926 8.70774 4.5 8.85082 4.5 9C4.5 9.14918 4.55926 9.29226 4.66475 9.39775C4.77024 9.50324 4.91332 9.5625 5.0625 9.5625H11.5796L9.16425 11.9767C9.11195 12.029 9.07047 12.0911 9.04216 12.1595C9.01386 12.2278 8.99929 12.301 8.99929 12.375C8.99929 12.449 9.01386 12.5222 9.04216 12.5905C9.07047 12.6589 9.11195 12.721 9.16425 12.7733C9.21655 12.8255 9.27864 12.867 9.34697 12.8953C9.4153 12.9236 9.48854 12.9382 9.5625 12.9382C9.63646 12.9382 9.7097 12.9236 9.77803 12.8953C9.84636 12.867 9.90845 12.8255 9.96075 12.7733L13.3358 9.39825C13.3881 9.346 13.4297 9.28393 13.4581 9.21559C13.4864 9.14725 13.501 9.07399 13.501 9C13.501 8.92601 13.4864 8.85275 13.4581 8.78441C13.4297 8.71607 13.3881 8.654 13.3358 8.60175L9.96075 5.22675C9.90845 5.17445 9.84636 5.13297 9.77803 5.10466C9.7097 5.07636 9.63646 5.06179 9.5625 5.06179C9.48854 5.06179 9.4153 5.07636 9.34697 5.10466C9.27864 5.13297 9.21655 5.17445 9.16425 5.22675C9.11195 5.27905 9.07047 5.34114 9.04216 5.40947C9.01386 5.4778 8.99929 5.55104 8.99929 5.625C8.99929 5.69896 9.01386 5.7722 9.04216 5.84053C9.07047 5.90886 9.11195 5.97095 9.16425 6.02325L11.5796 8.4375H5.0625Z" fill="#FF5740"/>
-              </svg>
-            </a>
-          </p>
         </div>
-      </section>
-      <section id="section-testimony">
-        <div class="max-width">
-          <h1 class="section-second-title">Ils en parlent le mieux</h1>
-          <div
-            class="gallery js-flickity"
-            data-flickity-options='{
+        <p class="container-external-link">
+          <a href="https://www.youtube.com/channel/UCQwmHpdiIuLl0htFlwTLmWA/featured" target="_blank"
+            class="external-link">
+            Retrouvez notre vidéo explicative
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9 0C11.3869 0 13.6761 0.948212 15.364 2.63604C17.0518 4.32387 18 6.61305 18 9C18 11.3869 17.0518 13.6761 15.364 15.364C13.6761 17.0518 11.3869 18 9 18C6.61305 18 4.32387 17.0518 2.63604 15.364C0.948212 13.6761 0 11.3869 0 9C0 6.61305 0.948212 4.32387 2.63604 2.63604C4.32387 0.948212 6.61305 0 9 0V0ZM5.0625 8.4375C4.91332 8.4375 4.77024 8.49676 4.66475 8.60225C4.55926 8.70774 4.5 8.85082 4.5 9C4.5 9.14918 4.55926 9.29226 4.66475 9.39775C4.77024 9.50324 4.91332 9.5625 5.0625 9.5625H11.5796L9.16425 11.9767C9.11195 12.029 9.07047 12.0911 9.04216 12.1595C9.01386 12.2278 8.99929 12.301 8.99929 12.375C8.99929 12.449 9.01386 12.5222 9.04216 12.5905C9.07047 12.6589 9.11195 12.721 9.16425 12.7733C9.21655 12.8255 9.27864 12.867 9.34697 12.8953C9.4153 12.9236 9.48854 12.9382 9.5625 12.9382C9.63646 12.9382 9.7097 12.9236 9.77803 12.8953C9.84636 12.867 9.90845 12.8255 9.96075 12.7733L13.3358 9.39825C13.3881 9.346 13.4297 9.28393 13.4581 9.21559C13.4864 9.14725 13.501 9.07399 13.501 9C13.501 8.92601 13.4864 8.85275 13.4581 8.78441C13.4297 8.71607 13.3881 8.654 13.3358 8.60175L9.96075 5.22675C9.90845 5.17445 9.84636 5.13297 9.77803 5.10466C9.7097 5.07636 9.63646 5.06179 9.5625 5.06179C9.48854 5.06179 9.4153 5.07636 9.34697 5.10466C9.27864 5.13297 9.21655 5.17445 9.16425 5.22675C9.11195 5.27905 9.07047 5.34114 9.04216 5.40947C9.01386 5.4778 8.99929 5.55104 8.99929 5.625C8.99929 5.69896 9.01386 5.7722 9.04216 5.84053C9.07047 5.90886 9.11195 5.97095 9.16425 6.02325L11.5796 8.4375H5.0625Z"
+                fill="#FF5740" />
+            </svg>
+          </a>
+        </p>
+      </div>
+    </section>
+    <section id="section-testimony">
+      <div class="max-width">
+        <h1 class="section-second-title">Ils en parlent le mieux</h1>
+        <div class="gallery js-flickity" data-flickity-options='{
               "wrapAround": true,
               "prevNextButtons": false,
               "prevNextButtons": false,
               "autoPlay": true
-            }'
-          >
-            <div class="gallery-cell">
-              <div class="gallery-cell-content">
-                <div class="gallery-cell-content-image">
-                  <picture class="gallery-cell-content-image-container">
-                    <source srcset="./images/florence_b.webp" type="image/webp">
-                    <img src="./images/florence_b.jpg" alt="Photo Florence B." loading="lazy">
-                  </picture>
-                </div>
-                <p class="gallery-cell-content-name">
-                  <strong>Florence B.</strong>
-                  <br />
-                  Head of Impact
-                </p>
-                <p class="gallery-cell-content-quote">
-                  <img src="./images/quote.svg" class="quote quote-open" alt="Guillemet ouvrant">
-                  Après un début de carrière dans le conseil et l'AMOA projet SI, j'ai choisi de prendre une direction différente afin de mettre à profit mes compétences pour lutter contre les changements climatiques et préserver la biodiversité<span class="color-orange">.</span>
-                  <img src="./images/quote.svg" class="quote quote-close" alt="Guillemet ouvrant">
-                </p>
+            }'>
+          <div class="gallery-cell">
+            <div class="gallery-cell-content">
+              <div class="gallery-cell-content-image">
+                <picture class="gallery-cell-content-image-container">
+                  <source srcset="./images/florence_b.webp" type="image/webp">
+                  <img src="./images/florence_b.jpg" alt="Photo Florence B." loading="lazy">
+                </picture>
               </div>
+              <p class="gallery-cell-content-name">
+                <strong>Florence B.</strong>
+                <br />
+                Head of Impact
+              </p>
+              <p class="gallery-cell-content-quote">
+                <img src="./images/quote.svg" class="quote quote-open" alt="Guillemet ouvrant">
+                Après un début de carrière dans le conseil et l'AMOA projet SI, j'ai choisi de prendre une direction
+                différente afin de mettre à profit mes compétences pour lutter contre les changements climatiques et
+                préserver la biodiversité<span class="color-orange">.</span>
+                <img src="./images/quote.svg" class="quote quote-close" alt="Guillemet ouvrant">
+              </p>
             </div>
-            <div class="gallery-cell">
-              <div class="gallery-cell-content">
-                <div class="gallery-cell-content-image">
-                  <picture class="gallery-cell-content-image-container">
-                    <source srcset="./images/bastien_j.webp" type="image/webp">
-                    <img src="./images/bastien_j.jpg" alt="Photo Léopoldine M." loading="lazy">
-                  </picture>
-                </div>
-                <p class="gallery-cell-content-name">
-                  <strong>Bastien J.</strong>
-                  <br />
-                  En reconversion professionnelle
-                </p>
-                <p class="gallery-cell-content-quote">
-                  <img src="./images/quote.svg" class="quote quote-open" alt="Guillemet ouvrant">
-                  J’avais ce qu’on appelle une dissonance cognitive : un écart entre ce que je pense dans ma tête, ce que je ressens dans notre cœur et comment j’agis de manière journalière au quotidien<span class="color-orange">.</span>
-                  <img src="./images/quote.svg" class="quote quote-close" alt="Guillemet ouvrant">
-                </p>
+          </div>
+          <div class="gallery-cell">
+            <div class="gallery-cell-content">
+              <div class="gallery-cell-content-image">
+                <picture class="gallery-cell-content-image-container">
+                  <source srcset="./images/bastien_j.webp" type="image/webp">
+                  <img src="./images/bastien_j.jpg" alt="Photo Léopoldine M." loading="lazy">
+                </picture>
               </div>
+              <p class="gallery-cell-content-name">
+                <strong>Bastien J.</strong>
+                <br />
+                En reconversion professionnelle
+              </p>
+              <p class="gallery-cell-content-quote">
+                <img src="./images/quote.svg" class="quote quote-open" alt="Guillemet ouvrant">
+                J’avais ce qu’on appelle une dissonance cognitive : un écart entre ce que je pense dans ma tête, ce que
+                je ressens dans notre cœur et comment j’agis de manière journalière au quotidien<span
+                  class="color-orange">.</span>
+                <img src="./images/quote.svg" class="quote quote-close" alt="Guillemet ouvrant">
+              </p>
             </div>
-            <div class="gallery-cell">
-              <div class="gallery-cell-content">
-                <div class="gallery-cell-content-image">
-                  <picture class="gallery-cell-content-image-container">
-                    <source srcset="./images/augustin_c.webp" type="image/webp">
-                    <img src="./images/augustin_c.jpg" alt="Photo Augustin C." loading="lazy">
-                  </picture>
-                </div>
-                <p class="gallery-cell-content-name">
-                  <strong>Augustin C.</strong>
-                  <br />
-                  Co-fondateur
-                  Tech for Good</p>
-                <p class="gallery-cell-content-quote">
-                  <img src="./images/quote.svg" class="quote quote-open" alt="Guillemet ouvrant">
-                  Je rentrais chez moi et j’avais l’impression que j’étais pas vraiment la même personne au boulot et dans ma vie personnelle, et ne pas être aligné sur ce que je faisais sur ma journée de travail<span class="color-orange">.</span>
-                  <img src="./images/quote.svg" class="quote quote-close" alt="Guillemet ouvrant">
-                </p>
+          </div>
+          <div class="gallery-cell">
+            <div class="gallery-cell-content">
+              <div class="gallery-cell-content-image">
+                <picture class="gallery-cell-content-image-container">
+                  <source srcset="./images/augustin_c.webp" type="image/webp">
+                  <img src="./images/augustin_c.jpg" alt="Photo Augustin C." loading="lazy">
+                </picture>
               </div>
+              <p class="gallery-cell-content-name">
+                <strong>Augustin C.</strong>
+                <br />
+                Co-fondateur
+                Tech for Good
+              </p>
+              <p class="gallery-cell-content-quote">
+                <img src="./images/quote.svg" class="quote quote-open" alt="Guillemet ouvrant">
+                Je rentrais chez moi et j’avais l’impression que j’étais pas vraiment la même personne au boulot et dans
+                ma vie personnelle, et ne pas être aligné sur ce que je faisais sur ma journée de travail<span
+                  class="color-orange">.</span>
+                <img src="./images/quote.svg" class="quote quote-close" alt="Guillemet ouvrant">
+              </p>
             </div>
-            <div class="gallery-cell">
-              <div class="gallery-cell-content">
-                <div class="gallery-cell-content-image">
-                  <picture class="gallery-cell-content-image-container">
-                    <source srcset="./images/julien_w.webp" type="image/webp">
-                    <img src="./images/julien_w.jpg" alt="Photo Julien W." loading="lazy">
-                  </picture>
-                </div>
-                <p class="gallery-cell-content-name">
-                  <strong>Julien W.</strong>
-                  <br />
-                  Développeur écoresponsable
-                </p>
-                <p class="gallery-cell-content-quote">
-                  <img src="./images/quote.svg" class="quote quote-open" alt="Guillemet ouvrant">
-                  J’ai totalement remodelé mes missions et mon métier pour être en lien avec mes convictions, le but, c’était de donner du sens pour moi, pour mes enfants<span class="color-orange">.</span>
-                  <img src="./images/quote.svg" class="quote quote-close" alt="Guillemet ouvrant">
-                </p>
+          </div>
+          <div class="gallery-cell">
+            <div class="gallery-cell-content">
+              <div class="gallery-cell-content-image">
+                <picture class="gallery-cell-content-image-container">
+                  <source srcset="./images/julien_w.webp" type="image/webp">
+                  <img src="./images/julien_w.jpg" alt="Photo Julien W." loading="lazy">
+                </picture>
               </div>
+              <p class="gallery-cell-content-name">
+                <strong>Julien W.</strong>
+                <br />
+                Développeur écoresponsable
+              </p>
+              <p class="gallery-cell-content-quote">
+                <img src="./images/quote.svg" class="quote quote-open" alt="Guillemet ouvrant">
+                J’ai totalement remodelé mes missions et mon métier pour être en lien avec mes convictions, le but,
+                c’était de donner du sens pour moi, pour mes enfants<span class="color-orange">.</span>
+                <img src="./images/quote.svg" class="quote quote-close" alt="Guillemet ouvrant">
+              </p>
             </div>
-            <div class="gallery-cell">
-              <div class="gallery-cell-content">
-                <div class="gallery-cell-content-image">
-                  <picture class="gallery-cell-content-image-container">
-                    <source srcset="./images/leopoldine_m.webp" type="image/webp">
-                    <img src="./images/leopoldine_m.jpg" alt="Photo Léopoldine M." loading="lazy">
-                  </picture>
-                </div>
-                <p class="gallery-cell-content-name">
-                  <strong>Léopoldine M.</strong>
-                  <br />
-                  Auto-entrepreneur
-                  ESS</p>
-                <p class="gallery-cell-content-quote">
-                  <img src="./images/quote.svg" class="quote quote-open" alt="Guillemet ouvrant">
-                  Mes valeurs ont pris plus de place et j’ai eu du mal à trouver des offres d’emplois qui correspondaient à ce que je recherchais, il n’y avait pas de notion de responsabilité<span class="color-orange">.</span>
-                  <img src="./images/quote.svg" class="quote quote-close" alt="Guillemet ouvrant">
-                </p>
+          </div>
+          <div class="gallery-cell">
+            <div class="gallery-cell-content">
+              <div class="gallery-cell-content-image">
+                <picture class="gallery-cell-content-image-container">
+                  <source srcset="./images/leopoldine_m.webp" type="image/webp">
+                  <img src="./images/leopoldine_m.jpg" alt="Photo Léopoldine M." loading="lazy">
+                </picture>
               </div>
+              <p class="gallery-cell-content-name">
+                <strong>Léopoldine M.</strong>
+                <br />
+                Auto-entrepreneur
+                ESS
+              </p>
+              <p class="gallery-cell-content-quote">
+                <img src="./images/quote.svg" class="quote quote-open" alt="Guillemet ouvrant">
+                Mes valeurs ont pris plus de place et j’ai eu du mal à trouver des offres d’emplois qui correspondaient
+                à ce que je recherchais, il n’y avait pas de notion de responsabilité<span class="color-orange">.</span>
+                <img src="./images/quote.svg" class="quote quote-close" alt="Guillemet ouvrant">
+              </p>
             </div>
           </div>
         </div>
-      </section>
-    </main>
-    <footer>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="max-width">
+      <div>
+        <h1 class="section-second-title">Restons connectés</h1>
+        <div class="container-newtworks">
+          <a href="https://www.facebook.com/%C3%80-double-sens-110598774778290" target="_blank"
+            title="La page Facebook 'A Double Sens'" class="footer-link-item">
+            <svg width="32" height="32" viewBox="0 0 15 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M3.7003 31.2205V16.5709H0V11.2964H3.7003V6.79124C3.7003 3.25106 5.88608 0 10.9226 0C12.9618 0 14.4697 0.204651 14.4697 0.204651L14.3509 5.13019C14.3509 5.13019 12.8131 5.11451 11.1349 5.11451C9.31869 5.11451 9.0277 5.99072 9.0277 7.445V11.2964H14.4952L14.2573 16.5709H9.0277V31.2205H3.7003Z"
+                fill="#DFE4EC" />
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/company/à-double-sens" target="_blank"
+            title="La page Linkedin 'A Double Sens'" class="footer-link-item">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M7.08975 31.2205V10.1561H0.397293V31.2205H7.08975ZM3.74438 7.27837C6.07816 7.27837 7.53082 5.66087 7.53082 3.63953C7.48734 1.57261 6.07825 0 3.78867 0C1.49945 0 0.00244141 1.57264 0.00244141 3.63953C0.00244141 5.66096 1.45475 7.27837 3.70069 7.27837H3.74418H3.74438ZM10.794 31.2205H17.4865V19.4571C17.4865 18.8275 17.5299 18.1986 17.7067 17.7486C18.1905 16.4908 19.2916 15.188 21.1404 15.188C23.5621 15.188 24.5309 17.1197 24.5309 19.9514V31.2204H31.223V19.1422C31.223 12.6721 27.9213 9.66156 23.518 9.66156C19.9077 9.66156 18.3226 11.7727 17.4419 13.2107H17.4866V10.1557H10.7941C10.882 12.1322 10.7941 31.2201 10.7941 31.2201L10.794 31.2205Z"
+                fill="#DFE4EC" />
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/a_double_sens/" target="_blank" title="Le compte Instagram 'A Double Sens'"
+            class="footer-link-item">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M15.6075 10.4046C12.7412 10.4046 10.402 12.7438 10.402 15.6103C10.402 18.4767 12.7412 20.8159 15.6075 20.8159C18.4739 20.8159 20.8131 18.4767 20.8131 15.6103C20.8131 12.7438 18.4739 10.4046 15.6075 10.4046ZM31.2202 15.6103C31.2202 13.4546 31.2398 11.3184 31.1187 9.16667C30.9977 6.66734 30.4275 4.44919 28.5999 2.62155C26.7684 0.790012 24.5542 0.223758 22.0549 0.102697C19.8993 -0.0183645 17.7632 0.00116158 15.6114 0.00116158C13.4558 0.00116158 11.3197 -0.0183645 9.16797 0.102697C6.66868 0.223758 4.45057 0.793918 2.62297 2.62155C0.791463 4.45309 0.225219 6.66734 0.10416 9.16667C-0.0168993 11.3223 0.0026264 13.4585 0.0026264 15.6103C0.0026264 17.762 -0.0168993 19.9021 0.10416 22.0538C0.225219 24.5532 0.795368 26.7713 2.62297 28.599C4.45448 30.4305 6.66868 30.9968 9.16797 31.1178C11.3236 31.2389 13.4597 31.2194 15.6114 31.2194C17.7671 31.2194 19.9032 31.2389 22.0549 31.1178C24.5542 30.9968 26.7723 30.4266 28.5999 28.599C30.4314 26.7674 30.9977 24.5532 31.1187 22.0538C31.2437 19.9021 31.2202 17.7659 31.2202 15.6103ZM15.6075 23.6198C11.1752 23.6198 7.59811 20.0427 7.59811 15.6103C7.59811 11.1779 11.1752 7.60069 15.6075 7.60069C20.0399 7.60069 23.617 11.1779 23.617 15.6103C23.617 20.0427 20.0399 23.6198 15.6075 23.6198ZM23.945 9.14324C22.9101 9.14324 22.0744 8.30753 22.0744 7.27265C22.0744 6.23777 22.9101 5.40206 23.945 5.40206C24.9798 5.40206 25.8155 6.23777 25.8155 7.27265C25.8158 7.51839 25.7677 7.76177 25.6738 7.98886C25.5799 8.21595 25.4421 8.42229 25.2684 8.59605C25.0946 8.76981 24.8883 8.90758 24.6612 9.00148C24.4341 9.09538 24.1907 9.14355 23.945 9.14324Z"
+                fill="#DFE4EC" />
+            </svg>
+          </a>
+        </div>
+        <p class="container-external-link">
+          <a href="https://www.youtube.com/channel/UCQwmHpdiIuLl0htFlwTLmWA/featured" target="_blank"
+            class="external-link" title="Retrouvez nos webinaires en replay">
+            Retrouvez nos webinaires en replay
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9 0C11.3869 0 13.6761 0.948212 15.364 2.63604C17.0518 4.32387 18 6.61305 18 9C18 11.3869 17.0518 13.6761 15.364 15.364C13.6761 17.0518 11.3869 18 9 18C6.61305 18 4.32387 17.0518 2.63604 15.364C0.948212 13.6761 0 11.3869 0 9C0 6.61305 0.948212 4.32387 2.63604 2.63604C4.32387 0.948212 6.61305 0 9 0V0ZM5.0625 8.4375C4.91332 8.4375 4.77024 8.49676 4.66475 8.60225C4.55926 8.70774 4.5 8.85082 4.5 9C4.5 9.14918 4.55926 9.29226 4.66475 9.39775C4.77024 9.50324 4.91332 9.5625 5.0625 9.5625H11.5796L9.16425 11.9767C9.11195 12.029 9.07047 12.0911 9.04216 12.1595C9.01386 12.2278 8.99929 12.301 8.99929 12.375C8.99929 12.449 9.01386 12.5222 9.04216 12.5905C9.07047 12.6589 9.11195 12.721 9.16425 12.7733C9.21655 12.8255 9.27864 12.867 9.34697 12.8953C9.4153 12.9236 9.48854 12.9382 9.5625 12.9382C9.63646 12.9382 9.7097 12.9236 9.77803 12.8953C9.84636 12.867 9.90845 12.8255 9.96075 12.7733L13.3358 9.39825C13.3881 9.346 13.4297 9.28393 13.4581 9.21559C13.4864 9.14725 13.501 9.07399 13.501 9C13.501 8.92601 13.4864 8.85275 13.4581 8.78441C13.4297 8.71607 13.3881 8.654 13.3358 8.60175L9.96075 5.22675C9.90845 5.17445 9.84636 5.13297 9.77803 5.10466C9.7097 5.07636 9.63646 5.06179 9.5625 5.06179C9.48854 5.06179 9.4153 5.07636 9.34697 5.10466C9.27864 5.13297 9.21655 5.17445 9.16425 5.22675C9.11195 5.27905 9.07047 5.34114 9.04216 5.40947C9.01386 5.4778 8.99929 5.55104 8.99929 5.625C8.99929 5.69896 9.01386 5.7722 9.04216 5.84053C9.07047 5.90886 9.11195 5.97095 9.16425 6.02325L11.5796 8.4375H5.0625Z"
+                fill="#FF5740" />
+            </svg>
+          </a>
+        </p>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <a title="Dossier de presse" href="./[A_DOUBLE_SENS]-dossier_presse.pdf.zip" target="_blank"
+              class="footer-link-item">
+              Dossier de presse
+            </a>
+          </li>
+          <li>
+            <a title="Communiqué de presse" href="./[A_DOUBLE_SENS]-communique-de-presse.pdf.zip" target="_blank"
+              class="footer-link-item">
+              Communiqué de presse
+            </a>
+          </li>
+          <li>
+            <a title="Politique de confidentialité" href="./pages/privacyPolicy.html" class="footer-link-item">
+              Politique de confidentialité & mentions légales
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="footer-copyright">
       <div class="max-width">
-        <div>
-          <h1 class="section-second-title">Restons connectés</h1>
-          <div class="container-newtworks">
-            <a
-              href="https://www.facebook.com/%C3%80-double-sens-110598774778290"
-              target="_blank"
-              title="La page Facebook 'A Double Sens'"
-              class="footer-link-item"
-            >
-              <svg width="32" height="32" viewBox="0 0 15 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.7003 31.2205V16.5709H0V11.2964H3.7003V6.79124C3.7003 3.25106 5.88608 0 10.9226 0C12.9618 0 14.4697 0.204651 14.4697 0.204651L14.3509 5.13019C14.3509 5.13019 12.8131 5.11451 11.1349 5.11451C9.31869 5.11451 9.0277 5.99072 9.0277 7.445V11.2964H14.4952L14.2573 16.5709H9.0277V31.2205H3.7003Z" fill="#DFE4EC"/>
-              </svg>
-            </a>
-            <a
-              href="https://www.linkedin.com/company/à-double-sens"
-              target="_blank"
-              title="La page Linkedin 'A Double Sens'"
-              class="footer-link-item"
-            >
-              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7.08975 31.2205V10.1561H0.397293V31.2205H7.08975ZM3.74438 7.27837C6.07816 7.27837 7.53082 5.66087 7.53082 3.63953C7.48734 1.57261 6.07825 0 3.78867 0C1.49945 0 0.00244141 1.57264 0.00244141 3.63953C0.00244141 5.66096 1.45475 7.27837 3.70069 7.27837H3.74418H3.74438ZM10.794 31.2205H17.4865V19.4571C17.4865 18.8275 17.5299 18.1986 17.7067 17.7486C18.1905 16.4908 19.2916 15.188 21.1404 15.188C23.5621 15.188 24.5309 17.1197 24.5309 19.9514V31.2204H31.223V19.1422C31.223 12.6721 27.9213 9.66156 23.518 9.66156C19.9077 9.66156 18.3226 11.7727 17.4419 13.2107H17.4866V10.1557H10.7941C10.882 12.1322 10.7941 31.2201 10.7941 31.2201L10.794 31.2205Z" fill="#DFE4EC"/>
-              </svg>
-            </a>
-            <a
-              href="https://www.instagram.com/a_double_sens/"
-              target="_blank"
-              title="Le compte Instagram 'A Double Sens'"
-              class="footer-link-item"
-            >
-              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M15.6075 10.4046C12.7412 10.4046 10.402 12.7438 10.402 15.6103C10.402 18.4767 12.7412 20.8159 15.6075 20.8159C18.4739 20.8159 20.8131 18.4767 20.8131 15.6103C20.8131 12.7438 18.4739 10.4046 15.6075 10.4046ZM31.2202 15.6103C31.2202 13.4546 31.2398 11.3184 31.1187 9.16667C30.9977 6.66734 30.4275 4.44919 28.5999 2.62155C26.7684 0.790012 24.5542 0.223758 22.0549 0.102697C19.8993 -0.0183645 17.7632 0.00116158 15.6114 0.00116158C13.4558 0.00116158 11.3197 -0.0183645 9.16797 0.102697C6.66868 0.223758 4.45057 0.793918 2.62297 2.62155C0.791463 4.45309 0.225219 6.66734 0.10416 9.16667C-0.0168993 11.3223 0.0026264 13.4585 0.0026264 15.6103C0.0026264 17.762 -0.0168993 19.9021 0.10416 22.0538C0.225219 24.5532 0.795368 26.7713 2.62297 28.599C4.45448 30.4305 6.66868 30.9968 9.16797 31.1178C11.3236 31.2389 13.4597 31.2194 15.6114 31.2194C17.7671 31.2194 19.9032 31.2389 22.0549 31.1178C24.5542 30.9968 26.7723 30.4266 28.5999 28.599C30.4314 26.7674 30.9977 24.5532 31.1187 22.0538C31.2437 19.9021 31.2202 17.7659 31.2202 15.6103ZM15.6075 23.6198C11.1752 23.6198 7.59811 20.0427 7.59811 15.6103C7.59811 11.1779 11.1752 7.60069 15.6075 7.60069C20.0399 7.60069 23.617 11.1779 23.617 15.6103C23.617 20.0427 20.0399 23.6198 15.6075 23.6198ZM23.945 9.14324C22.9101 9.14324 22.0744 8.30753 22.0744 7.27265C22.0744 6.23777 22.9101 5.40206 23.945 5.40206C24.9798 5.40206 25.8155 6.23777 25.8155 7.27265C25.8158 7.51839 25.7677 7.76177 25.6738 7.98886C25.5799 8.21595 25.4421 8.42229 25.2684 8.59605C25.0946 8.76981 24.8883 8.90758 24.6612 9.00148C24.4341 9.09538 24.1907 9.14355 23.945 9.14324Z" fill="#DFE4EC"/>
-              </svg>
-            </a>
-          </div>
-          <p class="container-external-link">
-            <a
-              href="https://www.youtube.com/channel/UCQwmHpdiIuLl0htFlwTLmWA/featured"
-              target="_blank"
-              class="external-link"
-              title="Retrouvez nos webinaires en replay"
-            >
-              Retrouvez nos webinaires en replay
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9 0C11.3869 0 13.6761 0.948212 15.364 2.63604C17.0518 4.32387 18 6.61305 18 9C18 11.3869 17.0518 13.6761 15.364 15.364C13.6761 17.0518 11.3869 18 9 18C6.61305 18 4.32387 17.0518 2.63604 15.364C0.948212 13.6761 0 11.3869 0 9C0 6.61305 0.948212 4.32387 2.63604 2.63604C4.32387 0.948212 6.61305 0 9 0V0ZM5.0625 8.4375C4.91332 8.4375 4.77024 8.49676 4.66475 8.60225C4.55926 8.70774 4.5 8.85082 4.5 9C4.5 9.14918 4.55926 9.29226 4.66475 9.39775C4.77024 9.50324 4.91332 9.5625 5.0625 9.5625H11.5796L9.16425 11.9767C9.11195 12.029 9.07047 12.0911 9.04216 12.1595C9.01386 12.2278 8.99929 12.301 8.99929 12.375C8.99929 12.449 9.01386 12.5222 9.04216 12.5905C9.07047 12.6589 9.11195 12.721 9.16425 12.7733C9.21655 12.8255 9.27864 12.867 9.34697 12.8953C9.4153 12.9236 9.48854 12.9382 9.5625 12.9382C9.63646 12.9382 9.7097 12.9236 9.77803 12.8953C9.84636 12.867 9.90845 12.8255 9.96075 12.7733L13.3358 9.39825C13.3881 9.346 13.4297 9.28393 13.4581 9.21559C13.4864 9.14725 13.501 9.07399 13.501 9C13.501 8.92601 13.4864 8.85275 13.4581 8.78441C13.4297 8.71607 13.3881 8.654 13.3358 8.60175L9.96075 5.22675C9.90845 5.17445 9.84636 5.13297 9.77803 5.10466C9.7097 5.07636 9.63646 5.06179 9.5625 5.06179C9.48854 5.06179 9.4153 5.07636 9.34697 5.10466C9.27864 5.13297 9.21655 5.17445 9.16425 5.22675C9.11195 5.27905 9.07047 5.34114 9.04216 5.40947C9.01386 5.4778 8.99929 5.55104 8.99929 5.625C8.99929 5.69896 9.01386 5.7722 9.04216 5.84053C9.07047 5.90886 9.11195 5.97095 9.16425 6.02325L11.5796 8.4375H5.0625Z" fill="#FF5740"/>
-              </svg>
-            </a>
-          </p>
-        </div>
-        <div>
-          <ul>
-            <li>
-              <a
-                title="Dossier de presse"
-                href="./[A_DOUBLE_SENS]-dossier_presse.pdf.zip"
-                target="_blank"
-                class="footer-link-item"
-              >
-                Dossier de presse
-              </a>
-            </li>
-            <li>
-              <a
-                title="Communiqué de presse"
-                href="./[A_DOUBLE_SENS]-communique-de-presse.pdf.zip"
-                target="_blank"
-                class="footer-link-item"
-              >
-                Communiqué de presse
-              </a>
-            </li>
-            <li>
-              <a
-                title="Politique de confidentialité"
-                href="#"
-                class="footer-link-item"
-              >
-                Politique de confidentialité
-              </a>
-            </li>
-            <li>
-              <a
-                title="Mention légales"
-                 href="#"
-                 class="footer-link-item"
-              >
-                Mentions légales
-              </a>
-            </li>
-          </ul>
-        </div>
+        <p>© PHOENIX INC 2021 Tous droits réservés</p>
+        <p>
+          <a href="mailto:contact@adoublesens.com" title="Contactez nous">
+            contact@adoublesens.com
+          </a>
+        </p>
       </div>
-      <div id="footer-copyright">
-        <div class="max-width">
-          <p>© PHOENIX INC 2021 Tous droits réservés</p>
-          <p>
-            <a
-              href="mailto:contact@adoublesens.com"
-              title="Contactez nous"
-            >
-              contact@adoublesens.com
-            </a>
-          </p>
-        </div>
-      </div>
-    </footer>
-    <script type="module" src="./main.js"></script>
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script>
-      window.axeptioSettings= {
-        clientId:"61aa00c743be4868f20f1b7f"
-      };
+    </div>
+  </footer>
+  <script type="module" src="./main.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script>
+    window.axeptioSettings = {
+      clientId: "61aa00c743be4868f20f1b7f"
+    };
 
-      (function(d,s) {
-        const t = d.getElementsByTagName(s)[0], e = d.createElement(s);
-        e.async = true; e.src = "//static.axept.io/sdk.js";
-        t.parentNode.insertBefore(e, t);
-      })(document, "script");
-    </script>
+    (function (d, s) {
+      const t = d.getElementsByTagName(s)[0], e = d.createElement(s);
+      e.async = true; e.src = "//static.axept.io/sdk.js";
+      t.parentNode.insertBefore(e, t);
+    })(document, "script");
+  </script>
 
-  </body>
+</body>
+
 </html>

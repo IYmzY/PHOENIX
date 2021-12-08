@@ -50,7 +50,7 @@ $grey: #dfe4ec;
 
 $primary-blue: #122545;
 
-$second-blue: #1B2D4B;
+$second-blue: #1b2d4b;
 
 $primary-orange: #ff5740;
 $second-orange: rgba(255, 87, 64, 0.6);
@@ -88,20 +88,19 @@ $offset-small: 32px;
 }
 @mixin keyframes($name) {
   @keyframes #{$name} {
-    @content
+    @content;
   }
 }
-@mixin animate($animation,$delay){
-  animation: $animation .5s $delay forwards;
+@mixin animate($animation, $delay) {
+  animation: $animation 0.5s $delay forwards;
 }
 
-
-html{
+html {
   font-size: 16px;
   scroll-behavior: smooth;
 }
 
-body{
+body {
   font-family: "SF Text", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -110,40 +109,45 @@ body{
 }
 
 strong,
-b{
+b {
   font-weight: 700;
 }
 
-h1, h2, h3, h4, h5, h6{
-  font-family: 'SF Display', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "SF Display", sans-serif;
 }
 
 a,
 button,
-svg path{
+svg path {
   transition-duration: $transition-duration;
 }
 
-.color-orange{
+.color-orange {
   color: $primary-orange;
 }
 
-.btn-cta{
+.btn-cta {
   background-color: $primary-orange;
   border-radius: 30px;
   color: white;
   font-weight: 700;
   padding: 10px 20px;
   border: 2px solid transparent;
-  &:hover{
+  &:hover {
     background-color: white;
     border-color: $primary-orange;
     color: $primary-orange;
   }
-  &:active{
+  &:active {
     border-color: transparent;
   }
-  &:focus-visible{
+  &:focus-visible {
     background-color: white;
     border-color: $primary-orange;
     color: $primary-orange;
@@ -153,26 +157,26 @@ svg path{
 
 #section-dispositif .flickity-page-dots,
 #section-testimony .flickity-page-dots,
-#section-benefice .flickity-page-dots{
+#section-benefice .flickity-page-dots {
   margin-top: 40px;
   display: flex;
   align-content: center;
   justify-content: center;
-  .dot{
+  .dot {
     background-color: rgba(255, 87, 64, 0.2);
     opacity: 1;
     width: 50px;
     height: 4px;
     border-radius: 5px;
-    transition-duration: .2s;
+    transition-duration: 0.2s;
   }
-  .is-selected{
+  .is-selected {
     background-color: $primary-orange;
     width: 100px;
   }
 }
 
-.container-external-link{
+.container-external-link {
   display: flex;
   a.external-link {
     align-items: center;
@@ -188,16 +192,16 @@ svg path{
     &:hover {
       border-bottom-color: $second-orange;
     }
-    &:active{
+    &:active {
       color: $grey;
-      svg path{
+      svg path {
         fill: $grey;
       }
     }
-    &:focus-visible{
+    &:focus-visible {
       border-bottom-color: $second-orange;
       color: $grey;
-      svg path{
+      svg path {
         fill: $grey;
       }
       box-shadow: $boxshadow-focus;
@@ -205,15 +209,15 @@ svg path{
   }
 }
 
-.quote{
+.quote {
   display: inline;
   width: 15px;
-  &-close{
+  &-close {
     transform: scale(-1);
   }
 }
 
-.out-of-flow{
+.out-of-flow {
   position: absolute;
   background: $grey;
   border: 1px solid #234174;
@@ -222,13 +226,13 @@ svg path{
   z-index: 1;
 }
 
-.max-width{
+.max-width {
   width: $max-width;
   margin: 0 auto;
   padding: 152px 0;
 }
 
-.btn-close{
+.btn-close {
   width: 40px;
   height: 40px;
   color: $primary-orange;
@@ -237,28 +241,28 @@ svg path{
   align-items: center;
   justify-content: center;
   border: 2px solid transparent;
-  &:hover{
+  &:hover {
     background-color: $grey;
     border-color: $primary-orange;
   }
-  &:active{
+  &:active {
     border-color: transparent;
   }
-  &:focus-visible{
+  &:focus-visible {
     background-color: $grey;
     border-color: transparent;
     box-shadow: $boxshadow-focus;
   }
 }
 
-.container-newtworks{
+.container-newtworks {
   margin-bottom: 2rem;
-  a{
+  a {
     margin-right: 25px;
   }
 }
 
-.section-second-title{
+.section-second-title {
   //padding-top: $offset-header;
   font-size: 2rem;
   line-height: 2rem;
@@ -269,8 +273,8 @@ svg path{
   }
 }
 
-.container-modale{
-  background-color: rgba(0, 0, 0, .5);
+.container-modale {
+  background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -283,26 +287,26 @@ svg path{
   transition-duration: $transition-duration;
 }
 
-.modale-is-open{
-  .container-modale{
+.modale-is-open {
+  .container-modale {
     visibility: visible;
     opacity: 1;
   }
-  #aside-menu{
+  #aside-menu {
     transform: translateX(0);
   }
-  &.container-modale{
+  &.container-modale {
     visibility: visible;
     opacity: 1;
   }
 }
 
-#container-modale-inscription{
+#container-modale-inscription {
   padding: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
-  #modale-inscription{
+  #modale-inscription {
     transition-duration: $transition-duration;
     z-index: 20;
     position: relative;
@@ -316,24 +320,24 @@ svg path{
       justify-content: right;
       margin-bottom: 43px;
     }
-    h2{
+    h2 {
       text-align: center;
       font-weight: 700;
       font-size: 2rem;
       line-height: 2.3rem;
       text-transform: uppercase;
     }
-    &-description{
+    &-description {
       margin: 1rem 0;
       line-height: 1.2rem;
     }
-    &-close{
+    &-close {
       position: absolute;
       top: 40px;
       right: 40px;
     }
-    &-form{
-      &.email-error{
+    &-form {
+      &.email-error {
         input {
           color: $primary-orange;
         }
@@ -346,7 +350,7 @@ svg path{
       margin: 1rem 0;
       text-align: right;
       width: 300px;
-      input{
+      input {
         width: 100%;
         color: $grey;
         display: block;
@@ -354,27 +358,28 @@ svg path{
         padding-bottom: 8px;
         border-bottom: 1px solid $grey;
         transition-duration: $transition-duration;
-        &:focus-visible{
+        &:focus-visible {
           border-bottom-color: $primary-orange;
         }
         &::-moz-selection,
-        &::selection { /* Code for Firefox */
+        &::selection {
+          /* Code for Firefox */
           color: $primary-blue;
           background: $grey;
         }
       }
-      & > div{
+      & > div {
         display: flex;
         #modale-inscription-form-error {
           display: none;
         }
-        button{
+        button {
           display: flex;
           align-items: center;
           justify-content: right;
           margin-left: auto;
           color: $primary-orange;
-          svg{
+          svg {
             margin-left: 6px;
           }
         }
@@ -383,9 +388,9 @@ svg path{
   }
 }
 
-#aside-menu{
+#aside-menu {
   transform: translateX(-270px);
-  transition: .2s;
+  transition: 0.2s;
   position: fixed;
   z-index: 25;
   top: 0;
@@ -397,16 +402,16 @@ svg path{
   box-shadow: 4px 0 8px rgba(0, 0, 0, 0.1);
   padding: 10px 25px;
   max-width: 264px;
-  nav{
+  nav {
     margin-top: 85px;
     font-weight: 600;
-    li{
+    li {
       margin: 47px 0;
     }
   }
 }
 
-header{
+header {
   position: sticky;
   top: 0;
   z-index: 5;
@@ -419,11 +424,11 @@ header{
     font-weight: 600;
     justify-content: space-between;
     color: $primary-blue;
-    &-responsive-button{
+    &-responsive-button {
       display: none;
     }
-    a:focus-visible{
-      img{
+    a:focus-visible {
+      img {
         box-shadow: $boxshadow-focus;
       }
     }
@@ -437,26 +442,26 @@ header{
       font-weight: 600;
       li {
         margin-left: 77px;
-        &:first-child{
+        &:first-child {
           margin-left: 0;
         }
         padding: 4px;
-        &:focus-within{
+        &:focus-within {
           box-shadow: $boxshadow-focus;
         }
         .current-navigation {
           color: $primary-orange;
         }
-        a{
+        a {
           border-bottom: 1px solid transparent;
           &:hover {
             color: $primary-orange;
             border-bottom-color: $primary-orange;
           }
-          &:active{
+          &:active {
             color: $primary-blue;
           }
-          &:focus-visible{
+          &:focus-visible {
             color: $primary-blue;
             border-bottom-color: $primary-orange;
           }
@@ -466,7 +471,7 @@ header{
   }
 }
 
-#first-section{
+#first-section {
   overflow: hidden;
   position: relative;
   display: flex;
@@ -496,7 +501,7 @@ header{
     width: 500px;
     height: 500px;
     margin-left: 50%;
-    .orbit{
+    .orbit {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -509,16 +514,16 @@ header{
     #inner-orbit {
       width: 30%;
       height: 30%;
-      &::before{
-        content: '';
+      &::before {
+        content: "";
         position: absolute;
         height: 30px;
         width: 30px;
         border-radius: 50%;
         background-color: $grey;
         margin-bottom: calc(100% - 2px);
-        @include keyframes(orangeInner){
-          to{
+        @include keyframes(orangeInner) {
+          to {
             background-color: rgb(249, 115, 98);
           }
         }
@@ -531,15 +536,15 @@ header{
       animation-duration: 10s;
       -webkit-animation-duration: 10s;
       &::before {
-        content: '';
+        content: "";
         position: absolute;
         height: 20px;
         width: 20px;
         border-radius: 50%;
         background-color: $grey;
         margin-bottom: calc(100% - 2px);
-        @include keyframes(orangeMiddle){
-          to{
+        @include keyframes(orangeMiddle) {
+          to {
             background-color: rgb(236, 171, 167);
           }
         }
@@ -553,31 +558,31 @@ header{
       -webkit-animation-duration: 25s;
       animation-name: spin-left;
       -webkit-animation-name: spin-left;
-      &::before{
-        content: '';
+      &::before {
+        content: "";
         position: absolute;
         height: 56px;
         width: 56px;
         background-color: $grey;
         border-radius: 50%;
         margin-top: calc(100% - 2px);
-        @include keyframes(orangeOuter1){
-          to{
+        @include keyframes(orangeOuter1) {
+          to {
             background-color: rgb(255, 87, 64);
           }
         }
         @include animate(orangeOuter1, 2s);
       }
-      &::after{
-        content: '';
+      &::after {
+        content: "";
         position: absolute;
         height: 30px;
         width: 30px;
         background-color: $grey;
         border-radius: 50%;
         margin-bottom: calc(100% - 2px);
-        @include keyframes(orangeOuter2){
-          to{
+        @include keyframes(orangeOuter2) {
+          to {
             background-color: rgb(229, 200, 202);
           }
         }
@@ -587,16 +592,16 @@ header{
   }
 }
 
-#section-dispositif{
+#section-dispositif {
   position: relative;
   background-color: $second-blue;
   display: flex;
   justify-content: center;
   align-items: center;
-  .max-width{
+  .max-width {
     padding-top: 252px;
   }
-  .out-of-flow{
+  .out-of-flow {
     max-width: 566px;
     padding: 49px 12% 34px 12%;
     top: -100px;
@@ -628,13 +633,13 @@ header{
       #dispositif-insight-title {
         margin-bottom: 1rem;
         display: flex;
-        div{
+        div {
           padding: 2px;
           margin-right: 45px;
-          &:focus-within{
+          &:focus-within {
             box-shadow: $boxshadow-focus;
           }
-          .dispositif-insight-button{
+          .dispositif-insight-button {
             font-weight: 600;
             color: $second-orange;
             padding: 2px;
@@ -644,23 +649,23 @@ header{
               border-bottom: 1px solid $primary-orange;
             }
             &[aria-selected="true"],
-            &:active{
+            &:active {
               color: $grey;
               border-bottom: 1px solid $primary-orange;
             }
-            &:focus-visible{
+            &:focus-visible {
               color: $grey;
               border-bottom: 1px solid $primary-orange;
             }
           }
         }
       }
-      #dispositif-insight-description{
+      #dispositif-insight-description {
         min-height: 77px;
       }
     }
   }
-  .gallery{
+  .gallery {
     display: none;
   }
   &-background {
@@ -669,7 +674,7 @@ header{
   }
 }
 
-#section-definition{
+#section-definition {
   display: flex;
   h1 {
     text-align: center;
@@ -698,22 +703,22 @@ header{
   }
 }
 
-#section-webinar{
+#section-webinar {
   background-color: $second-blue;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  .max-width{
+  .max-width {
     padding-bottom: 232px;
   }
-  .webinar-decoration{
+  .webinar-decoration {
     width: 302px;
     position: absolute;
-    &:first-child{
+    &:first-child {
       left: 0;
     }
-    &:last-child{
+    &:last-child {
       right: 0;
       transform: scaleX(-1);
     }
@@ -729,7 +734,7 @@ header{
       line-height: 1.1rem;
       margin-bottom: 1rem;
     }
-    a{
+    a {
       justify-content: center;
     }
   }
@@ -750,27 +755,27 @@ header{
     }
     #webinare-informations-next,
     .section-second-title,
-    #webinare-informations-subject{
+    #webinare-informations-subject {
       margin-bottom: 19px;
     }
     p:last-child {
       margin-bottom: 52px;
     }
-    .btn-cta{
+    .btn-cta {
       position: absolute;
       bottom: -20px;
     }
   }
-  .container-external-link{
+  .container-external-link {
     justify-content: center;
   }
 }
 
-#section-benefice{
-  .max-width{
+#section-benefice {
+  .max-width {
     padding-top: 274px;
   }
-  .gallery{
+  .gallery {
     display: none;
   }
   &-container {
@@ -783,18 +788,18 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    &-title{
+    &-title {
       font-weight: 700;
       margin-bottom: 1rem;
       font-size: 1.375rem;
     }
-    &-image{
+    &-image {
       padding: 24px;
       border: 1px solid $primary-orange;
       border-radius: 50%;
       margin-right: 20px;
     }
-    &-description{
+    &-description {
       font-size: 1rem;
       line-height: 19px;
       font-weight: 400;
@@ -803,28 +808,28 @@ header{
   }
 }
 
-#section-testimony{
+#section-testimony {
   background-color: $second-blue;
-  .max-width{
+  .max-width {
     width: unset;
   }
-  h1{
+  h1 {
     text-align: center;
     margin-bottom: 61px;
   }
   .gallery-cell {
     width: 40%;
     margin-right: 10px;
-    &-content{
+    &-content {
       max-width: 500px;
       margin: 69px auto 0 auto;
       border: 1px solid $primary-orange;
       text-align: center;
-      &-image{
+      &-image {
         position: relative;
         display: flex;
         justify-content: center;
-        &-container{
+        &-container {
           position: absolute;
           bottom: -69px;
           width: 139px;
@@ -835,16 +840,16 @@ header{
           display: flex;
           align-items: center;
           border: 8px solid $second-blue;
-          img{
+          img {
             height: 100%;
           }
         }
       }
-      &-name{
+      &-name {
         margin: 77px 0 1rem 0;
         line-height: 1.1rem;
       }
-      &-quote{
+      &-quote {
         margin: 0 10% 30px 10%;
         line-height: 1.1rem;
       }
@@ -852,9 +857,9 @@ header{
   }
 }
 
-footer{
+footer {
   margin-bottom: 0;
-  .max-width{
+  .max-width {
     padding: 80px 0 96px 0;
   }
   .max-width {
@@ -868,25 +873,25 @@ footer{
       }
     }
   }
-  .footer-link-item{
+  .footer-link-item {
     display: inline-block;
     padding: 3px;
-    &:hover{
+    &:hover {
       color: rgba(223, 228, 236, 0.6);
-      svg path{
+      svg path {
         fill: rgba(223, 228, 236, 0.6);
       }
     }
-    &:active{
+    &:active {
       color: $primary-orange;
-      svg path{
+      svg path {
         fill: $primary-orange;
       }
     }
-    &:focus-visible{
+    &:focus-visible {
       color: $primary-orange;
       box-shadow: $boxshadow-focus;
-      svg path{
+      svg path {
         fill: $primary-orange;
       }
     }
@@ -903,9 +908,86 @@ footer{
     }
     p {
       font-weight: 600;
-      a{
+      a {
         font-weight: 100;
       }
+    }
+  }
+}
+// privacy policy
+.privacy-policy-section {
+  overflow: hidden;
+  position: relative;
+}
+section .privacy-background {
+  position: absolute;
+  left: 23px;
+  top: -219px;
+  width: 100%;
+  z-index: -1;
+}
+.privacy-policy-container {
+  margin: 192px 144px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  color: $grey;
+  max-width: 60%;
+  text-align: start;
+
+  h1 {
+    font-size: 56px;
+    line-height: 67px;
+    font-weight: 700;
+    margin-bottom: 41px;
+  }
+  h2 {
+    font-size: 36px;
+    line-height: 38px;
+    font-weight: 700;
+    margin-bottom: 22px;
+  }
+  h3 {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    margin-bottom: 24px;
+    text-align: start;
+  }
+
+  ul li::marker {
+    color: $primary-orange;
+  }
+  ul li {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    text-align: start;
+    list-style: outside;
+  }
+  ul li:last-child {
+    margin-bottom: 24px;
+  }
+  span {
+    font-weight: 700;
+  }
+  a {
+    color: $primary-orange;
+    cursor: pointer;
+    svg {
+      transform: rotate(0.5turn);
+    }
+  }
+  .privacy-sub-container {
+    margin-bottom: 69px;
+    .privacy-item-container {
+      margin-bottom: 38px;
     }
   }
 }

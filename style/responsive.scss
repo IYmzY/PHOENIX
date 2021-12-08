@@ -1,127 +1,127 @@
 @media screen and (max-width: 1220px) {
-  #section-benefice{
-    .section-second-title{
+  #section-benefice {
+    .section-second-title {
       text-align: center;
     }
     &-container {
       grid-template-columns: 1fr;
       gap: 3rem 100px;
     }
-    .benefice-item-description {;
+    .benefice-item-description {
       max-width: 565px;
     }
-    .container-external-link{
+    .container-external-link {
       justify-content: center;
     }
   }
 }
 
 @media screen and (max-width: 1100px) {
-  #circle-orbit-container{
+  #circle-orbit-container {
     display: none;
   }
-  .webinar-decoration{
-    opacity: .2;
+  .webinar-decoration {
+    opacity: 0.2;
   }
 }
 
-@media screen and (max-width: 1240px){
-  #section-dispositif{
-    &-background{
-      opacity: .2;
+@media screen and (max-width: 1240px) {
+  #section-dispositif {
+    &-background {
+      opacity: 0.2;
     }
   }
 }
 
 @media screen and (max-width: 960px) {
-  #circle-orbit-container{
-    opacity: .3;
+  #circle-orbit-container {
+    opacity: 0.3;
   }
   #section-dispositif .flickity-page-dots,
   #section-testimony .flickity-page-dots,
-  #section-benefice .flickity-page-dots{
+  #section-benefice .flickity-page-dots {
     margin-top: 16px;
   }
-  .max-width{
+  .max-width {
     padding: 48px 0;
   }
-  header{
-    #header-navbar{
-      &-responsive-button{
+  header {
+    #header-navbar {
+      &-responsive-button {
         display: block;
       }
-      ul{
+      ul {
         display: none;
       }
     }
   }
-  #section-definition{
-    h1{
+  #section-definition {
+    h1 {
       margin-bottom: 31px;
     }
-    #container-advantage{
+    #container-advantage {
       margin-bottom: 0;
       flex-direction: column;
-      .advantage-item{
+      .advantage-item {
         max-width: unset;
         margin-top: 10px;
-        &-content{
+        &-content {
           width: 400px;
           text-align: left;
         }
-        &-number{
+        &-number {
           font-size: 92px;
           position: static;
-          color: #FF5740CC;
+          color: #ff5740cc;
           font-weight: 400;
           margin-right: 21px;
         }
-        &-content{
+        &-content {
           font-weight: 400;
         }
       }
     }
   }
-  #section-testimony{
-    .gallery-cell{
+  #section-testimony {
+    .gallery-cell {
       width: 100%;
     }
   }
 }
 
-@media screen and (max-width: 700px){
-  header picture{
+@media screen and (max-width: 700px) {
+  header picture {
     overflow: hidden;
     width: 57px;
     display: block;
   }
-  #section-benefice{
-    .container-external-link{
+  #section-benefice {
+    .container-external-link {
       margin-top: 1rem;
     }
-    &-container{
+    &-container {
       display: none;
     }
-    .gallery{
+    .gallery {
       display: block;
-      .cell-item{
+      .cell-item {
         width: 100%;
-        .benefice-item{
+        .benefice-item {
           display: block;
           max-width: 400px;
           padding: 0 20px;
           margin: 0 auto;
-          > div{
+          > div {
             display: flex;
             align-items: center;
             margin-bottom: 1rem;
           }
-          &-title{
+          &-title {
             margin-bottom: 0;
           }
-          &-image{
+          &-image {
             padding: 15px;
-            img{
+            img {
               width: 30px;
               height: 30px;
             }
@@ -130,75 +130,75 @@
       }
     }
   }
-  header #header-navbar{
+  header #header-navbar {
     width: 90%;
   }
-  .max-width{
+  .max-width {
     width: 90%;
   }
-  .webinar-decoration{
+  .webinar-decoration {
     display: none;
   }
-  #section-dispositif{
-    .max-width{
+  #section-dispositif {
+    .max-width {
       padding-top: 180px;
     }
-    .section-second-title{
+    .section-second-title {
       text-align: center;
     }
-    #section-dispositif-content{
+    #section-dispositif-content {
       display: none;
     }
-    .gallery{
+    .gallery {
       display: block;
-      &-cell{
+      &-cell {
         text-align: center;
         width: 100%;
         margin-right: 10px;
-        h3{
+        h3 {
           color: #ff5740;
           padding-bottom: 9px;
           font-weight: 600;
         }
-        p{
+        p {
           margin: auto;
           max-width: 328px;
         }
       }
     }
-    &-background{
+    &-background {
       display: none;
     }
   }
-  .section-second-title{
+  .section-second-title {
     text-align: center;
   }
-  #section-benefice{
-    .max-width{
+  #section-benefice {
+    .max-width {
       padding-top: 180px;
     }
   }
-  footer{
-    .max-width{
+  footer {
+    .max-width {
       display: block;
-      .container-newtworks{
+      .container-newtworks {
         text-align: center;
       }
-      #footer-container-newtworks{
+      #footer-container-newtworks {
         text-align: center;
       }
-      .container-external-link{
+      .container-external-link {
         justify-content: center;
       }
     }
-    ul{
+    ul {
       text-align: center;
     }
-    #footer-copyright{
-      .max-width{
+    #footer-copyright {
+      .max-width {
         flex-direction: column-reverse;
         text-align: center;
-        p:first-child{
+        p:first-child {
           margin-top: 1rem;
         }
       }
@@ -207,30 +207,112 @@
 }
 
 @media screen and (max-width: 520px) {
-  #first-section .max-width .main-section-title-container{
-    .section-main-title{
-      font-size: 2.0rem;
+  #first-section .max-width .main-section-title-container {
+    .section-main-title {
+      font-size: 2rem;
     }
   }
-  #section-webinar .out-of-flow{
+  #section-webinar .out-of-flow {
     padding: 32px 23px 52px 23px;
   }
-  #first-section .out-of-flow{
+  #first-section .out-of-flow {
     padding: 49px 23px 34px 23px;
   }
-  #container-modale-inscription{
-    #modale-inscription{
+  #container-modale-inscription {
+    #modale-inscription {
       padding: 63px 20px;
-      &-close{
+      &-close {
         top: 20px;
         right: 20px;
       }
     }
   }
-  #section-testimony{
-    .gallery-cell{
-      &-content{
+  #section-testimony {
+    .gallery-cell {
+      &-content {
         margin: 69px 20px 0 20px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 520px) {
+  .privacy-policy-section {
+    overflow: hidden;
+    position: relative;
+  }
+  section .privacy-background {
+    position: absolute;
+    width: 159%;
+    left: -109px;
+    top: -90px;
+    z-index: -1;
+  }
+  .privacy-policy-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: start;
+    margin: 88px 20px;
+    max-width: 100%;
+
+    h1 {
+      font-size: 40px;
+      line-height: 48px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    h2 {
+      font-size: 32px;
+      line-height: 32px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    h3 {
+      font-size: 22px;
+      line-height: 26px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 19px;
+      font-weight: 400;
+      margin-bottom: 24px;
+      text-align: start;
+    }
+    p:last-child {
+      margin-bottom: 0px;
+    }
+    ul li {
+      font-size: 16px;
+      line-height: 19px;
+      font-weight: 400;
+      text-align: start;
+      list-style: outside;
+      margin-bottom: 24px;
+    }
+    ul li:last-child {
+      margin-bottom: 24px;
+    }
+    span {
+      font-weight: 700;
+    }
+    a {
+      cursor: pointer;
+      svg {
+        transform: rotate(0.5turn);
+      }
+    }
+    a:first-child {
+      margin-bottom: 24px;
+    }
+    a:last-child {
+      margin-bottom: 24px;
+    }
+    .privacy-sub-container {
+      margin-bottom: 48px;
+      .privacy-item-container {
+        margin-bottom: 24px;
       }
     }
   }

@@ -49,19 +49,23 @@ function updateNavigation(elements) {
 }
 
 const sections = document.querySelectorAll('section')
+const articles = document.querySelectorAll('article')
 
 sections.forEach((section) => {
   observer.observe(section)
+})
+articles.forEach((article) => {
+  observer.observe(article)
 })
 
 
 window.onload = function () {
 
   // Fonction de chargement des éléments dynamique
-  function getInformation (range, element) {
+  function getInformation(range, element) {
     element.innerText = 'en cours de chargement'
     const xhttp = new XMLHttpRequest()
-    xhttp.onreadystatechange = function() {
+    xhttp.onreadystatechange = function () {
       if (this.readyState === 4 && this.status === 200) {
         element.innerText = this.responseText
       } else if (this.readyState === 4 && this.status !== 200) {
@@ -96,7 +100,7 @@ window.onload = function () {
     closeInscriptionModale()
   })
 
-  function closeInscriptionModale () {
+  function closeInscriptionModale() {
     modaleInscription.classList.remove('modale-is-open')
   }
 
@@ -110,7 +114,7 @@ window.onload = function () {
     if (!email.match(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3})|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)) {
       formNewsletter.classList.add('email-error')
     }
-    dataLayer.push({'event': 'inscription-newsletter'})
+    dataLayer.push({ 'event': 'inscription-newsletter' })
 
     // On créer une object qui sait ouvrir des url
     // let req = new XMLHttpRequest()
@@ -157,7 +161,7 @@ window.onload = function () {
     closeInscriptionModale()
   })
 
-  function closeAsideMenu () {
+  function closeAsideMenu() {
     asideMenu.classList.remove('modale-is-open')
   }
 }
