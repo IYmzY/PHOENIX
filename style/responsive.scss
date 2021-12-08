@@ -34,6 +34,9 @@
 }
 
 @media screen and (max-width: 960px) {
+  #circle-orbit-container{
+    opacity: .3;
+  }
   #section-dispositif .flickity-page-dots,
   #section-testimony .flickity-page-dots,
   #section-benefice .flickity-page-dots{

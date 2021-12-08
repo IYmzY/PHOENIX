@@ -1,15 +1,12 @@
+"use strict"
 import './style/reset.css'
 // import './style/fonts.css'
 import './style/main.scss'
 import './style/responsive.scss'
 import './style/flickity.min.css'
 
-let outerFirstOrbitCircle = document.querySelector('.outer-orbit-first-circle')
-let middleOrbitCircle = document.querySelector('.middle-orbit-circle')
-let innerOrbitCircle = document.querySelector('.inner-orbit-circle')
-let SecondOuterOrbitCircle = document.querySelector('.outer-orbit-second-circle')
 
-
+// Menu de sélection du dispostif
 const dispositifInsights = [
   '<strong>A double sens</strong> a pour objectif principal de valoriser l’épanouissement personnel par le biais de l’entrepreneuriat social. Il nous semble essentiel de mettre du sens à notre activité professionnelle et de concilier ses valeurs personnelles avec son travail.',
   '<strong>A double sens</strong> prône l’épanouissement personnel à travers l’entrepreneuriat social. Le partage, l’engagement, la tolérance et l’écoute sont les valeurs principales de ce dispositif. Ce sont des valeurs collectives qui paraissent essentielles pour une société solidaire et solide.',
@@ -29,6 +26,7 @@ function updateInsight(id) {
   })
 }
 
+// affichage automatique de la section courante
 const observer = new IntersectionObserver(updateNavigation, {
   rootMargin: '-300px',
   threshold: 0
@@ -56,16 +54,40 @@ sections.forEach((section) => {
   observer.observe(section)
 })
 
+
 window.onload = function () {
+
+  // Fonction de chargement des éléments dynamique
+  function getInformation (range, element) {
+    element.innerText = 'en cours de chargement'
+    const xhttp = new XMLHttpRequest()
+    xhttp.onreadystatechange = function() {
+      if (this.readyState === 4 && this.status === 200) {
+        element.innerText = this.responseText
+      } else if (this.readyState === 4 && this.status !== 200) {
+        element.innerText = 'Une erreur est survenue'
+      }
+    }
+    xhttp.open('GET', `https://docs.google.com/spreadsheet/pub?key=1m3RZRD98YRidJlRGwusfDyLcxRLMRZffnIGEjVP2Zic&single=true&gid=0&range=${range}&output=csv`, true)
+    xhttp.send()
+  }
+
+  getInformation('B1', document.querySelector('#webinare-informations-date'))
+  getInformation('B2', document.querySelector('#webinare-informations-subject span'))
+  getInformation('B3', document.querySelector('#webinar-informations-time strong span'))
 
   const buttonsCta = document.querySelectorAll('.btn-cta')
   const modaleInscription = document.querySelector('#container-modale-inscription')
   const buttonCloseModale = document.querySelector('#modale-inscription-close')
+  const formNewsletterInput = document.querySelector('#modale-inscription-form input')
 
   buttonsCta.forEach((button) => {
     button.addEventListener('click', (e) => {
       e.preventDefault()
       modaleInscription.classList.add('modale-is-open')
+      setTimeout(() => {
+        formNewsletterInput.focus()
+      }, 100)
     })
   })
 
@@ -84,10 +106,11 @@ window.onload = function () {
     e.preventDefault()
     formNewsletter.classList.remove('email-error')
 
-    const email = document.querySelector('#modale-inscription-form input').value
+    const email = formNewsletterInput.value
     if (!email.match(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3})|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)) {
       formNewsletter.classList.add('email-error')
     }
+    dataLayer.push({'event': 'inscription-newsletter'})
 
     // On créer une object qui sait ouvrir des url
     // let req = new XMLHttpRequest()
@@ -129,7 +152,7 @@ window.onload = function () {
     closeAsideMenu()
   })
 
-  containerModale.addEventListener('click', (e) => {
+  containerModale.addEventListener('click', () => {
     closeAsideMenu()
     closeInscriptionModale()
   })
@@ -138,26 +161,3 @@ window.onload = function () {
     asideMenu.classList.remove('modale-is-open')
   }
 }
-
-// const changeFisrtOuterOrbitCircleColor = () => {
-//   //outerOrbitCircle.style.transition = "all 2s"
-//   outerFirstOrbitCircle.style.backgroundColor = "#FF5740"
-// }
-// const changeSecondOuterOrbitCircleColor = () => {
-//   //middleOrbitCircle.style.transition = "all 2.5s"
-//   SecondOuterOrbitCircle.style.backgroundColor = "#E5C8CA"
-// }
-// const changeMiddleOrbitCircleColor = () => {
-//   //middleOrbitCircle.style.transition = "all 2.5s"
-//   middleOrbitCircle.style.backgroundColor = "#ECABA7"
-// }
-// const changeInnerOrbitCircleColor = () => {
-//   //middleOrbitCircle.style.transition = "all 2.5s"
-//   innerOrbitCircle.style.backgroundColor = "#F97362"
-// }
-// setInterval(changeFisrtOuterOrbitCircleColor, 1500);
-// setInterval(changeSecondOuterOrbitCircleColor, 3000);
-// setInterval(changeMiddleOrbitCircleColor, 2500);
-// setInterval(changeInnerOrbitCircleColor, 2000);
-
-

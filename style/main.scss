@@ -1,19 +1,19 @@
 // import police title (SF Display)
 @font-face {
   font-family: "SF Display";
-  src: url(https://adoublesens.s3.eu-west-3.amazonaws.com/fonts/SF-Pro-Display-Light.otf);
+  src: url(./fonts/SF-Pro-Display-Light.otf);
   font-weight: 100;
   font-style: normal;
 }
 @font-face {
   font-family: "SF Display";
-  src: url(https://adoublesens.s3.eu-west-3.amazonaws.com/fonts/SF-Pro-Display-Regular.otf);
+  src: url(./fonts/SF-Pro-Display-Regular.otf);
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "SF Display";
-  src: url(https://adoublesens.s3.eu-west-3.amazonaws.com/fonts/SF-Pro-Display-Bold.otf);
+  src: url(./fonts/SF-Pro-Display-Bold.otf);
   font-weight: 700;
   font-style: normal;
 }
@@ -21,25 +21,25 @@
 // Import police title (SF Text)
 @font-face {
   font-family: "SF Text";
-  src: url(https://adoublesens.s3.eu-west-3.amazonaws.com/fonts/SF-Pro-Text-Light.otf);
+  src: url(./fonts/SF-Pro-Text-Light.otf);
   font-weight: 100;
   font-style: normal;
 }
 @font-face {
   font-family: "SF Text";
-  src: url(https://adoublesens.s3.eu-west-3.amazonaws.com/fonts/SF-Pro-Text-Regular.otf);
+  src: url(./fonts/SF-Pro-Text-Regular.otf);
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "SF Text";
-  src: url(https://adoublesens.s3.eu-west-3.amazonaws.com/fonts/SF-Pro-Text-Semibold.otf);
+  src: url(./fonts/SF-Pro-Text-Semibold.otf);
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "SF Text";
-  src: url(https://adoublesens.s3.eu-west-3.amazonaws.com/fonts/SF-Pro-Text-Bold.otf);
+  src: url(./fonts/SF-Pro-Text-Bold.otf);
   font-weight: 700;
   font-style: normal;
 }
@@ -66,6 +66,34 @@ $offset-header: 70px;
 $offset-large: 152px;
 $offset-medium: 104px;
 $offset-small: 32px;
+
+/* ---------- Container for the orbiting circles animation ---------- */
+@keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin-left {
+  100% {
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+@mixin keyframes($name) {
+  @keyframes #{$name} {
+    @content
+  }
+}
+@mixin animate($animation,$delay){
+  animation: $animation .5s $delay forwards;
+}
 
 
 html{
@@ -115,7 +143,7 @@ svg path{
   &:active{
     border-color: transparent;
   }
-  &:focus-visible{
+  &:focus{
     background-color: white;
     border-color: $primary-orange;
     color: $primary-orange;
@@ -166,7 +194,7 @@ svg path{
         fill: $grey;
       }
     }
-    &:focus-visible{
+    &:focus{
       border-bottom-color: $second-orange;
       color: $grey;
       svg path{
@@ -204,6 +232,23 @@ svg path{
   width: 40px;
   height: 40px;
   color: $primary-orange;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid transparent;
+  &:hover{
+    background-color: $grey;
+    border-color: $primary-orange;
+  }
+  &:active{
+    border-color: transparent;
+  }
+  &:focus{
+    background-color: $grey;
+    border-color: transparent;
+    box-shadow: $boxshadow-focus;
+  }
 }
 
 .container-newtworks{
@@ -377,6 +422,11 @@ header{
     &-responsive-button{
       display: none;
     }
+    a:focus{
+      img{
+        box-shadow: $boxshadow-focus;
+      }
+    }
     img {
       height: 32px;
       margin: 15px 0;
@@ -386,17 +436,29 @@ header{
       align-items: center;
       font-weight: 600;
       li {
-        padding-left: 77px;
+        margin-left: 77px;
         &:first-child{
-          padding-left: 0;
+          margin-left: 0;
+        }
+        padding: 4px;
+        &:focus-within{
+          box-shadow: $boxshadow-focus;
         }
         .current-navigation {
           color: $primary-orange;
-          text-decoration: underline;
         }
-        a {
+        a{
+          border-bottom: 1px solid transparent;
           &:hover {
-            text-decoration: underline;
+            color: $primary-orange;
+            border-bottom-color: $primary-orange;
+          }
+          &:active{
+            color: $primary-blue;
+          }
+          &:focus{
+            color: $primary-blue;
+            border-bottom-color: $primary-orange;
           }
         }
       }
@@ -408,11 +470,13 @@ header{
   position: relative;
   display: flex;
   justify-content: center;
-  overflow: hidden;
+  align-items: center;
   .max-width {
     display: flex;
     justify-content: space-between;
     padding-bottom: 253px;
+    position: relative;
+    z-index: 5;
     .main-section-title-container {
       align-self: center;
       .section-main-title {
@@ -423,43 +487,14 @@ header{
       }
     }
   }
-  /* ---------- Container for the orbiting circles animation ---------- */
-  @keyframes spin-right {
-    100% {
-      -webkit-transform: rotate(360deg);
-      -moz-transform: rotate(360deg);
-      -ms-transform: rotate(360deg);
-      -o-transform: rotate(360deg);
-      transform: rotate(360deg);
-    }
-  }
-  @keyframes spin-left {
-    100% {
-      -webkit-transform: rotate(-360deg);
-      -moz-transform: rotate(-360deg);
-      -ms-transform: rotate(-360deg);
-      -o-transform: rotate(-360deg);
-      transform: rotate(-360deg);
-    }
-  }
-  @mixin keyframes($name) {
-    @keyframes #{$name} {
-      @content
-    }
-  }
-  @mixin animate($animation,$delay){
-    animation: $animation .5s $delay forwards;
-  }
   #circle-orbit-container {
-    opacity: 0.4;
     display: flex;
     position: absolute;
     justify-content: center;
     align-items: center;
-    width: 1200px;
-    height: 1200px;
-    right: -220px;
-    bottom: -400px;
+    width: 500px;
+    height: 500px;
+    margin-left: 50%;
     .orbit{
       display: flex;
       justify-content: center;
@@ -589,16 +624,31 @@ header{
       line-height: 1.2rem;
       #dispositif-insight-title {
         margin-bottom: 1rem;
-        .dispositif-insight-button {
+        display: flex;
+        div{
+          padding: 2px;
           margin-right: 45px;
-          font-weight: 600;
-          color: rgba(223, 228, 236, 0.6);
-          &:hover {
-            text-decoration: underline;
+          &:focus-within{
+            box-shadow: $boxshadow-focus;
           }
-          &[aria-selected="true"] {
-            color: $primary-orange;
-            text-decoration: underline;
+          .dispositif-insight-button{
+            font-weight: 600;
+            color: $second-orange;
+            padding: 2px;
+            border-bottom: 1px solid transparent;
+            &:hover {
+              color: $primary-orange;
+              border-bottom: 1px solid $primary-orange;
+            }
+            &[aria-selected="true"],
+            &:active{
+              color: $grey;
+              border-bottom: 1px solid $primary-orange;
+            }
+            &:focus{
+              color: $grey;
+              border-bottom: 1px solid $primary-orange;
+            }
           }
         }
       }
@@ -695,9 +745,9 @@ header{
         font-weight: 700;
       }
     }
-    #webinaire-informations-next,
+    #webinare-informations-next,
     .section-second-title,
-    #webinaire-informations-subject{
+    #webinare-informations-subject{
       margin-bottom: 19px;
     }
     p:last-child {
@@ -815,10 +865,27 @@ footer{
       }
     }
   }
-  .footer-link-item:hover{
-    color: rgba(223, 228, 236, 0.6);
-    svg path{
-      fill: rgba(223, 228, 236, 0.6);
+  .footer-link-item{
+    display: inline-block;
+    padding: 3px;
+    &:hover{
+      color: rgba(223, 228, 236, 0.6);
+      svg path{
+        fill: rgba(223, 228, 236, 0.6);
+      }
+    }
+    &:active{
+      color: $primary-orange;
+      svg path{
+        fill: $primary-orange;
+      }
+    }
+    &:focus{
+      color: $primary-orange;
+      box-shadow: $boxshadow-focus;
+      svg path{
+        fill: $primary-orange;
+      }
     }
   }
   #footer-copyright {
