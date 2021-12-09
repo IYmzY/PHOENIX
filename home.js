@@ -69,16 +69,16 @@ window.onload = function () {
     req.send(JSON.stringify({ "email": email }))
 
     req.onreadystatechange = function () {
-      document.querySelector('#modale-inscription-form-message').innerText = '*envois en cours'
+      document.querySelector('#modale-inscription-form-message').innerText = '*envoi en cours'
       // On attends que la requete atteigne le stade 4
       if (req.readyState === 4) {
         // Si la requete renvoit un statut 200 on resolve la promise
         if (req.status === 200) {
-          document.querySelector('#modale-inscription-form-message').innerText = '*votre inscription a été effectué'
+          document.querySelector('#modale-inscription-form-message').innerText = '*vous êtes bien inscrit'
           formNewsletterInput.value = ''
         } else {
           formNewsletter.classList.add('email-error')
-          document.querySelector('#modale-inscription-form-message').innerText = "*une erreur c'est produit"
+          document.querySelector('#modale-inscription-form-message').innerText = "*une erreur s'est produite"
         }
       }
     }

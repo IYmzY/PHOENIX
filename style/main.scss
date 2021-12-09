@@ -337,14 +337,18 @@ svg path {
       right: 40px;
     }
     &-form {
+      &-message{
+        font-size: .9rem;
+        text-align: left;
+        font-size: 0.8rem;
+        font-weight: 100;
+      }
       &.email-error {
         input {
           color: $primary-orange;
         }
-        #modale-inscription-form-error {
-          display: block;
+        #modale-inscription-form-message {
           color: $primary-orange;
-          font-weight: 100;
         }
       }
       margin: 1rem 0;
@@ -471,10 +475,6 @@ header {
         &:first-child {
           margin-left: 0;
         }
-        padding: 4px;
-        &:focus-within {
-          box-shadow: $boxshadow-focus;
-        }
         .current-navigation {
           color: $primary-orange;
         }
@@ -490,6 +490,7 @@ header {
           &:focus-visible {
             color: $primary-blue;
             border-bottom-color: $primary-orange;
+            box-shadow: $boxshadow-focus;
           }
         }
       }
@@ -657,32 +658,26 @@ header {
       max-width: 563px;
       line-height: 1.2rem;
       #dispositif-insight-title {
-        margin-bottom: 1rem;
-        display: flex;
-        div {
+        .dispositif-insight-button {
+          font-weight: 600;
+          color: $second-orange;
           padding: 2px;
+          border-bottom: 1px solid transparent;
           margin-right: 45px;
-          &:focus-within {
-            box-shadow: $boxshadow-focus;
+          margin-bottom: 1rem;
+          &:hover {
+            color: $primary-orange;
+            border-bottom: 1px solid $primary-orange;
           }
-          .dispositif-insight-button {
-            font-weight: 600;
-            color: $second-orange;
-            padding: 2px;
-            border-bottom: 1px solid transparent;
-            &:hover {
-              color: $primary-orange;
-              border-bottom: 1px solid $primary-orange;
-            }
-            &[aria-selected="true"],
-            &:active {
-              color: $grey;
-              border-bottom: 1px solid $primary-orange;
-            }
-            &:focus-visible {
-              color: $grey;
-              border-bottom: 1px solid $primary-orange;
-            }
+          &[aria-selected="true"],
+          &:active {
+            color: $grey;
+            border-bottom: 1px solid $primary-orange;
+          }
+          &:focus-visible {
+            color: $grey;
+            border-bottom: 1px solid $primary-orange;
+            box-shadow: $boxshadow-focus;
           }
         }
       }
@@ -934,10 +929,6 @@ footer {
     }
     p {
       font-weight: 600;
-      padding: 3px;
-      &:focus-within{
-        box-shadow: $boxshadow-focus;
-      }
       a {
         font-weight: 100;
         border-bottom: 1px solid transparent;
@@ -952,7 +943,7 @@ footer {
         &:focus-visible{
           border-bottom-color: $primary-orange;
           color: $primary-blue;
-          box-shadow: none;
+          box-shadow: $boxshadow-focus;
         }
       }
     }
