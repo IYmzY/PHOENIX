@@ -86,6 +86,24 @@ $offset-small: 32px;
     transform: rotate(-360deg);
   }
 }
+@-webkit-keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin-left {
+  100% {
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
 @mixin keyframes($name) {
   @keyframes #{$name} {
     @content;
@@ -502,7 +520,6 @@ header {
   overflow: hidden;
   position: relative;
   display: flex;
-  justify-content: center;
   align-items: center;
   .max-width {
     display: flex;
@@ -527,7 +544,7 @@ header {
     align-items: center;
     width: 500px;
     height: 500px;
-    margin-left: 50%;
+    right: 100px;
     .orbit {
       display: flex;
       justify-content: center;
@@ -548,7 +565,7 @@ header {
         width: 30px;
         border-radius: 50%;
         background-color: $grey;
-        margin-bottom: calc(100% - 2px);
+        left: calc(100% - 15px);
         @include keyframes(orangeInner) {
           to {
             background-color: rgb(249, 115, 98);
@@ -569,7 +586,7 @@ header {
         width: 20px;
         border-radius: 50%;
         background-color: $grey;
-        margin-bottom: calc(100% - 2px);
+        left: calc(100% - 10px);
         @include keyframes(orangeMiddle) {
           to {
             background-color: rgb(236, 171, 167);
@@ -592,7 +609,7 @@ header {
         width: 56px;
         background-color: $grey;
         border-radius: 50%;
-        margin-top: calc(100% - 2px);
+        bottom: calc(100% - 28px);
         @include keyframes(orangeOuter1) {
           to {
             background-color: rgb(255, 87, 64);
@@ -607,7 +624,7 @@ header {
         width: 30px;
         background-color: $grey;
         border-radius: 50%;
-        margin-bottom: calc(100% - 2px);
+        top: calc(100% - 15px);
         @include keyframes(orangeOuter2) {
           to {
             background-color: rgb(229, 200, 202);
