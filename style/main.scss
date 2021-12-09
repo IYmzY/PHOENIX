@@ -519,6 +519,7 @@ header {
   overflow: hidden;
   position: relative;
   display: flex;
+  justify-content: center;
   align-items: center;
   .max-width {
     display: flex;
@@ -543,7 +544,7 @@ header {
     align-items: center;
     width: 500px;
     height: 500px;
-    right: 100px;
+    margin-left: 50%;
     .orbit {
       display: flex;
       justify-content: center;
