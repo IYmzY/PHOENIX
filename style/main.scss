@@ -775,9 +775,6 @@ header {
       line-height: 1.1rem;
       font-weight: 400;
       text-align: center;
-      span {
-        font-weight: 700;
-      }
     }
     #webinare-informations-next,
     .section-second-title,
@@ -866,8 +863,11 @@ header {
           display: flex;
           align-items: center;
           border: 8px solid $second-blue;
-          img {
+          picture {
             height: 100%;
+            img{
+              height: 100%;
+            }
           }
         }
       }
@@ -934,8 +934,26 @@ footer {
     }
     p {
       font-weight: 600;
+      padding: 3px;
+      &:focus-within{
+        box-shadow: $boxshadow-focus;
+      }
       a {
         font-weight: 100;
+        border-bottom: 1px solid transparent;
+        &:hover{
+          border-bottom-color: $primary-orange;
+          color: $primary-orange;
+        }
+        &:active{
+          border-bottom-color: $primary-orange;
+          color: $primary-blue;
+        }
+        &:focus-visible{
+          border-bottom-color: $primary-orange;
+          color: $primary-blue;
+          box-shadow: none;
+        }
       }
     }
   }
